@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Prefabs/OldScene.unity
+- path: Assets/Scenes/RhythmScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
