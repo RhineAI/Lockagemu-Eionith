@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     private int earlyTap = 0;
     private int lateTap = 0;
     private int missTap = 0;
-    public int greatTap = 0;
+    private int goodTap = 0;
 
     void Awake() 
     {
@@ -34,8 +34,6 @@ public class GameManager : MonoBehaviour
             Transform noteHolderTransform = noteHolder.transform;
             totalNotes += noteHolderTransform.childCount;
         }
-        perfectTap = totalNotes;
-        perfectJudgement = totalNotes;
     }
     // Start is called before the first frame update
     void Start()
@@ -53,65 +51,73 @@ public class GameManager : MonoBehaviour
                 theMusic.Play();
             }
         }
-    }
-
-    float elapsedTime = 0f;
-    public void ScoreDisplay() {
-        // int oldScore = Score.scoreInstance.ScoringSystem(notesTapped, perfectJudgement, greatTap, missTap);
-        // elapsedTime += Time.deltaTime;
-
-        notesTapped++;
-        combo+=1;
-        
-        int currentScore = Score.scoreInstance.ScoringSystem(notesTapped, perfectJudgement, greatTap, missTap);
-
-        string scoreDisplay = Score.scoreInstance.FormattedScore(currentScore);
-        if(totalNotes == notesTapped) {
+        if(totalNotes == perfectTap + goodTap + missTap) {
+            string scoreDisplay = Score.scoreInstance.FormattedScore(Score.scoreInstance.score);
             string gradeDisplay = Score.scoreInstance.GradeSystem(Score.scoreInstance.score);
-            scoreText.text = $"{scoreDisplay} {gradeDisplay} \nPerfect : {perfectTap} \nGreat : {greatTap} \nMiss : {missTap}";
+            scoreText.text = $"{scoreDisplay} {gradeDisplay} \nPerfect : {perfectTap} \nGreat : {goodTap} \nMiss : {missTap}";
             lateEarlyText.gameObject.SetActive(true);
             lateEarlyText.text = $"e{earlyTap} l{lateTap}";
-        } else {
-            // scoreText.text = $"{(float)Mathf.Lerp(oldScore, currentScore, elapsedTime / 2f)}";
-            scoreText.text = scoreDisplay;
         }
-        comboText.text = $"Combo : {combo}";
+    }
 
+    public void ScoreDisplay() {
+        int oldScore = Score.scoreInstance.ScoringSystem(notesTapped, perfectJudgement, goodTap);
+        notesTapped+= 1;
+        combo+=1;
+
+        // Debug.Log($"Perfect: {perfectTap}, Notes: {notesTapped}, Great : {goodTap}, Miss : {missTap}");
+        int currentScore = Score.scoreInstance.ScoringSystem(notesTapped, perfectJudgement, goodTap);
+        Debug.Log($"Old Score: {oldScore}, Current Score: {currentScore}");
+        
+        StartCoroutine(CountScore(oldScore, currentScore, 0.5f));
+        comboText.text = $"Combo : {combo}";
+    }
+
+    IEnumerator CountScore(int startScore, int endScore, float countingDuration) {
+        float timer = 0f;
+        while (timer < countingDuration)
+        {
+            int currentDisplayedScore = (int)Mathf.Lerp(startScore, endScore, timer / countingDuration);
+            scoreText.text = $"{currentDisplayedScore}";
+
+            timer += Time.deltaTime;
+            yield return null; 
+        }
     }
 
     public void NotePerfect() 
     {
-                    // Debug.Log("Perfect");
+        // Debug.Log("Perfect");
+        perfectTap += 1;            
+        perfectJudgement += 1;     
         ScoreDisplay();
     }
     public void NoteEarlyPerfect() 
     {
-                    // Debug.Log("Early");
+        // Debug.Log("Early");
         earlyTap += 1;
-        perfectJudgement -= 1;
+        perfectTap += 1;            
         ScoreDisplay();
     }
 
     public void NoteLatePerfect() 
     {
-                    // Debug.Log("Late");
+        // Debug.Log("Late");
         lateTap += 1;
-        perfectJudgement -= 1;
+        perfectTap += 1;            
         ScoreDisplay();
     }
 
     public void NoteGood() 
     {
-                    // Debug.Log("Good");
-        greatTap += 1;
-        perfectTap -= 1;
+        // Debug.Log("Good");
+        goodTap += 1;
         perfectJudgement -= 1;
         ScoreDisplay();
     }
 
     public void NoteMissed() {
         missTap += 1;
-        perfectTap -= 1;
         comboText.text = $"Combo : {combo = 0}";
     }
 }

@@ -47,16 +47,16 @@ public class Score : MonoBehaviour
         return scoreString;
     }
     
-    public int ScoringSystem(int notesTapped, int perfectJudgement, int greatTap, int missTap)
+    public int ScoringSystem(int notesTapped, int perfectJudgement, int goodTap)
     {
         int totalNotes = GameManager.instance.totalNotes;
-        perfectTap = notesTapped - greatTap - missTap;
-            if(perfectTap == totalNotes) {
-                score = pureMemory + perfectJudgement;
-            } else {
-                int oneNoteScore = pureMemory / totalNotes;
-                score = (oneNoteScore * perfectTap) + (oneNoteScore * greatTap / 2) + perfectJudgement;
-            }
+        perfectTap = notesTapped - goodTap;
+        if(perfectTap == totalNotes) {
+            score = pureMemory + perfectJudgement;
+        } else {
+            int oneNoteScore = pureMemory / totalNotes;
+            score = (oneNoteScore * perfectTap) + (oneNoteScore * goodTap / 2) + perfectJudgement;
+        }
         return score;  
     }
 
