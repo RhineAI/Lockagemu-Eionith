@@ -365,6 +365,7 @@
 "Assets/Rythm Game Scripts/GameManager.cs"
 "Assets/Rythm Game Scripts/NoteObject.cs"
 "Assets/Rythm Game Scripts/Score.cs"
+"Assets/Scripts/RhythmSceneScript/BeatRun.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
