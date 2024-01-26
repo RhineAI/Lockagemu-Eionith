@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638416616242409243
+      ticks: 638418443388694295
     m_Hash: 105689471
   m_LockFileStatus:
     m_FilePath: D:/Unity Project/Rhythm-Project/Packages/packages-lock.json
@@ -13,24 +13,14 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< Updated upstream
-      ticks: 638416616242409243
-    m_Hash: 4138499133
-=======
-      ticks: 638417942490477266
-    m_Hash: 1176724763
->>>>>>> Stashed changes
+      ticks: 638418443388694295
+    m_Hash: 1993285578
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-<<<<<<< Updated upstream
 m_ProjectPath: D:/Unity Project/Rhythm-Project/Packages
-m_EditorVersion: 2022.3.17f1 (4fc78088f837)
-=======
-m_ProjectPath: C:/Users/Administrator/Documents/GitHub/Rhythm-Project/Packages
 m_EditorVersion: 2022.3.18f1 (d29bea25151d)
->>>>>>> Stashed changes
 m_ResolvedPackages:
 - packageId: com.unity.collab-proxy@2.2.0
   testable: 0
@@ -3217,11 +3207,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.5
   source: 1
-<<<<<<< Updated upstream
-  resolvedPath: D:\Unity Project\Rhythm-Project\Library\PackageCache\com.unity.testtools.codecoverage@1.2.4
-=======
-  resolvedPath: C:\Users\Administrator\Documents\GitHub\Rhythm-Project\Library\PackageCache\com.unity.testtools.codecoverage@1.2.5
->>>>>>> Stashed changes
+  resolvedPath: D:\Unity Project\Rhythm-Project\Library\PackageCache\com.unity.testtools.codecoverage@1.2.5
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
