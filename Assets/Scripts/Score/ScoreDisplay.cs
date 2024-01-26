@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using UnityEngine.UI;
 
 public class ScoreDisplay : MonoBehaviour
 {
-    public TextMeshPro comboText;
-    public TextMeshPro scoreText;
-    public TextMeshPro lateEarlyText;
+    public GameObject self;
+    private Text textDisplay;
     public static ScoreDisplay instance;
-    public int notesTapped = 0;
+    public int criticalTap = 0;
+    public int criticalJudgement = 0;
+    public int fairTap = 0;
     public int combo = 0;
     void Awake() 
     {
@@ -18,10 +20,15 @@ public class ScoreDisplay : MonoBehaviour
     }
     void Start() 
     {
+        textDisplay = self.GetComponent<Text>();
     }
 
     void update()
     {
+        criticalTap = 1; // Getting from note's Tap
+        criticalJudgement = 1; // Getting from note's Tap
+        fairTap = 1; // Getting from note's Tap
+        DisplayedScore(criticalJudgement, fairTap);
     }
 
     public string FormattedScore(int score) 
@@ -49,16 +56,14 @@ public class ScoreDisplay : MonoBehaviour
     }
 
     public void DisplayedScore(int criticalJudgement, int fairTap) {
-        int oldScore = ScoreService.instance.ScoringSystem(notesTapped, criticalJudgement, fairTap);
-        notesTapped+= 1;
+        int oldScore = ScoreService.instance.ScoringSystem(criticalTap, criticalJudgement, fairTap);
         combo+=1;
 
-        // Debug.Log($"Perfect: {perfectTap}, Notes: {notesTapped}, Great : {fairTap}, Miss : {missTap}");
-        int currentScore = ScoreService.instance.ScoringSystem(notesTapped, criticalJudgement, fairTap);
-        Debug.Log($"Old Score: {oldScore}, Current Score: {currentScore}");
+        // Debug.Log($"Perfect: {perfectTap}, Notes: {criticalTap}, Great : {fairTap}, Miss : {missTap}");
+        int currentScore = ScoreService.instance.ScoringSystem(criticalTap, criticalJudgement, fairTap);
+        // Debug.Log($"Old Score: {oldScore}, Current Score: {currentScore}");
         
         StartCoroutine(CountScore(oldScore, currentScore, 0.5f));
-        comboText.text = $"Combo : {combo}";
     }
 
     IEnumerator CountScore(int startScore, int endScore, float countingDuration) {
@@ -66,7 +71,7 @@ public class ScoreDisplay : MonoBehaviour
         while (timer < countingDuration)
         {
             int currentDisplayedScore = (int)Mathf.Lerp(startScore, endScore, timer / countingDuration);
-            scoreText.text = $"{currentDisplayedScore}";
+            textDisplay.text = $"{currentDisplayedScore}";
 
             timer += Time.deltaTime;
             yield return null; 

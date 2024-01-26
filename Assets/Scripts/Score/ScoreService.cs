@@ -24,10 +24,9 @@ public class ScoreService : MonoBehaviour
     }
 
     
-    public int ScoringSystem(int notesTapped, int criticalJudgement, int fairTap)
+    public int ScoringSystem(int criticalTap, int criticalJudgement, int fairTap)
     {
         int totalNotes = GameManager.instance.totalNotes;
-        criticalTap = notesTapped - fairTap;
         if(criticalTap == totalNotes) {
             score = allCritical + criticalJudgement;
         } else {
