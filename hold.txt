@@ -1,0 +1,37 @@
+ if (hold && Input.touchCount > 0) {
+            foreach (Touch touch in Input.touches) {
+                Ray ray = Camera.main.ScreenPointToRay(touch.position);
+
+                RaycastHit[] hits = Physics.RaycastAll(ray);
+                foreach (RaycastHit hit in hits) {
+                // Debug.Log(hit.collider == self.GetComponent<BoxCollider>());
+                    float hitPointY = hit.point.y;
+                    float hitPointX = hit.point.x;
+                    float yCoordinate = self.GetComponent<BoxCollider>().size.y / 2f;
+                    float xCoordinate = self.GetComponent<BoxCollider>().size.x / 2f;
+                    if (hit.collider == self.GetComponent<BoxCollider>()) {
+                        // Debug.Log($"Y : {yCoordinate}, HitDistance = {hitPoint}");
+                        if (already) {
+                            if (touch.phase == TouchPhase.Ended ) {
+                                Debug.Log("untouch");
+                                self.GetComponent<Renderer>().material.color = Color.white;
+                                already = false;
+                            }
+                            if (touch.phase == TouchPhase.Moved) {
+                                if(hitPointY <= yCoordinate && hitPointX <= xCoordinate) {
+                                    Debug.Log("Far away");
+                                    self.GetComponent<Renderer>().material.color = Color.white;
+                                    already = false;
+                                } 
+                            }
+                        } else {
+                            if (touch.phase == TouchPhase.Began) {
+                                Debug.Log("touching");
+                                self.GetComponent<Renderer>().material.color = Color.green;
+                                already = true;
+                            }
+                        } 
+                    } 
+                }
+            }
+        }

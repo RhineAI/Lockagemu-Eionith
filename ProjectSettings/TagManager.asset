@@ -5,11 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Activator
-  - Miss
-  - Great
-  - Perfect
-  - Early Perfect
-  - Late Perfect
+  - Hold
+  - Tap
+  - Flick
+  - Directional Flick
+  - Catch
+  - touch system
+  - falser
+  - JudgementLine
   layers:
   - Default
   - TransparentFX

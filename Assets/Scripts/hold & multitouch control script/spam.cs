@@ -60,7 +60,7 @@ public class spam : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
-                Debug.Log("touched");
+                // Debug.Log("touched");
                 touches.Add(new touchlocate(touch.fingerId, create(touch)));
 
             }
@@ -69,7 +69,7 @@ public class spam : MonoBehaviour
             {
                 touchesr.Add(new realsecontrol(touch2.fingerId, create2(touch2)));
                 //sampel2 = Resources.Load("cancler") as GameObject;
-                Debug.Log("release");
+                // Debug.Log("release");
                 //touchesr.Add(new realsecontrol(touch2.fingerId, create2(touch2)));
                 touchlocate thistouch = touches.Find(touchlocate => touchlocate.touchid == touch.fingerId);
                 //realsecontrol thistouchr = touchesr.Find(realsecontrol => realsecontrol.touchrel == touch2.fingerId);

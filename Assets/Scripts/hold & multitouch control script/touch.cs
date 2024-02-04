@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -25,6 +26,7 @@ public class touch : MonoBehaviour
     public bool hold2;
     public bool creator;
     public bool falsers;
+    public bool canBePressed = false;
 
     public bool collisionen;
     public bool wrongtouch;
@@ -108,346 +110,34 @@ public class touch : MonoBehaviour
             }
         }
 
-        if (hold && Input.touchCount > 0)
+        if (hold)
         {
-            foreach (Touch touch in Input.touches)
-            {
-                Ray ray = Camera.main.ScreenPointToRay(touch.position);
-                RaycastHit hit;
-
-                if (Physics.Raycast(ray, out hit))
+            if(canBePressed && Input.touchCount > 0) {
+                // Debug.Log("A");
+                foreach (Touch touch in Input.touches)
                 {
-                    //GameObject recipient = hit.transform.gameObject;
-                    //touchlist.Add(recipient);
+                    Ray ray = Camera.main.ScreenPointToRay(touch.position);
+                    RaycastHit hit;
 
-                    if (touch.phase == TouchPhase.Began)
+                    if (Physics.Raycast(ray, out hit))
                     {
-                        if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
-                        {
-                            gameObject.GetComponent<Renderer>().material.color = Color.green;
-                            Debug.Log("ontouch");
-                            already = true;
+                        Debug.Log(self);
+                        //GameObject recipient = hit.transform.gameObject;
+                        //touchlist.Add(recipient);
 
-                            
-
-
-                        }
-                        
-
-
-                        
-                    }
-
-                    /*if(c == 0)
-                    {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
-                        Debug.Log("rilis");
-                    }
-
-                    /*if(touch.phase == TouchPhase.Ended)
-                    {
-                        wrongtouch = false;
-                    }
-
-                    /*if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == falser)
-                    {
-                        if (touch.phase == TouchPhase.Began)
-                        {
-                            //gameObject.GetComponent<Renderer>().material.color = Color.green;
-                            Debug.Log("falsetouch");
-                            //already = true;
-                            //wrongtouch = true;
-                            
-
-
-                        }
-
-                        if (touch.phase == TouchPhase.Ended)
-                        {
-                            //gameObject.GetComponent<Renderer>().material.color = Color.green;
-                            Debug.Log("lol");
-                            //already = true;
-                            //wrongtouch = true;
-
-
-
-                        }
-
-
-
-
-                    }
-
-                    /*if(wrongtouch)
-                    {
-                        
-
-                        if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == falser)
-                        {
-                            //gameObject.GetComponent<Renderer>().material.color = Color.green;
-                            Debug.Log("falsetouch");
-                            //already = true;
-                            wrongtouch = true;
-
-
-
-                        }
-                        else
-                        {
-                            if (touch.phase == TouchPhase.Ended)
-                            {
-                                Debug.Log("LOL");
-                                //gameObject.GetComponent<Renderer>().material.color = Color.white;
-                                wrongtouch = false;
-                            }
-                        }
-                        
-                    }
-                    else
-                    {
-                        if (touch.phase == TouchPhase.Ended)
-                        {
-                            //Debug.Log("LOL");
-                            gameObject.GetComponent<Renderer>().material.color = Color.white;
-                        }
-                    }
-
-                    /*if(collisionen)
-                    {
-                        if (touch.phase == TouchPhase.Ended)
-                        {
-                            //gameObject.GetComponent<Renderer>().material.color = Color.white;
-                            Debug.Log("still");
-                        }
-
-                    }
-                    else
-                    {
-                        if (touch.phase == TouchPhase.Ended)
-                        {
-                            gameObject.GetComponent<Renderer>().material.color = Color.white;
-                            Debug.Log("release");
-                        }
-                    }
-
-                    /*if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
-                    {
-                        //locked = true;
                         if (touch.phase == TouchPhase.Began)
                         {
                             if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
                             {
                                 gameObject.GetComponent<Renderer>().material.color = Color.green;
                                 Debug.Log("ontouch");
-                            }
-                            else
-                            {
-                                if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == falser)
-                                {
-                                    gameObject.GetComponent<Renderer>().material.color = Color.white;
-                                    Debug.Log("ontouch");
-                                }
-                            }
-                                //already = true;
-                                //locked = true;
-                                //unlock = false;
-                               
-
-
-                        }
-
-
-                    }
-
-                    if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self && falser)
-                    {
-                        if (touch.phase == TouchPhase.Began)
-                        {
-                            gameObject.GetComponent<Renderer>().material.color = Color.green;
-                            Debug.Log("gerbangNN1");
-                        }
-
-
-
-                    }
-
-                    if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == falser)
-                    {
-                        if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
-                        {
-                            if (touch.phase == TouchPhase.Began)
-                            {
-                                gameObject.GetComponent<Renderer>().material.color = Color.green;
-                                Debug.Log("gerbangNN1");
-                            }
-                        }
-
-
-
-                    }
-
-                    if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == falser)
-                    {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
-                        Debug.Log("ontouch");
-
-
-                    }
-
-                    if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
-                    {
-                        //locked = true;
-                        if (touch.phase == TouchPhase.Began)
-                        {
-                            already = true;
-                            locked = true;
-                            unlock = false;
-                            gameObject.GetComponent<Renderer>().material.color = Color.green;
-                            Debug.Log("ontouch");
-
-
-
-
-
-                        }
-
-
-                    }
-                    if (already)
-                    {
-                        if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
-                        {
-                            locked = true;
-                            unlock = false;
-                        }
-
-                        if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == falser)
-                        {
-
-                            if(agree)
-                            {
-                                dissagree = false;
-                                locked = false;
-                                unlock = true;
-                            }
-                            
-                            if(dissagree)
-                            {
-                                agree = false;
-                                locked = true;
-                                unlock = false;
-                            }
-                            if(case1)
-                            {
-                                if (touch.phase == TouchPhase.Moved)
-                                {
-                                    //already = true;
-                                    //locked = false;
-                                    //unlock = true;
-                                    agree = true;
-                                    Debug.Log("movedect");
-                                    //gameObject.GetComponent<Renderer>().material.color = Color.green;
-                                    //Debug.Log("ontouch");
-
-
-                                }
-                            }
-                            
-
-                            if(case2)
-                            {
-                                if (touch.phase == TouchPhase.Stationary)
-                                {
-                                    case1 = false;
-                                    Debug.Log("detected");
-                                    //already = true;
-                                    //locked = true;
-                                    //unlock = false;
-                                    dissagree = true;
-                                    //gameObject.GetComponent<Renderer>().material.color = Color.green;
-                                    //Debug.Log("ontouch");
-
-
-
-                                }
-                            }
-                            
-
-
-                            if (touch.phase == TouchPhase.Began)
-                            {
                                 already = true;
-                                locked = false;
-                                unlock = true;
-                                gameObject.GetComponent<Renderer>().material.color = Color.green;
-                                Debug.Log("ontouch");
-
-
-                            }
+                            }   
                         }
-                            
                     }
-
-                    
-
-
-                   
-
-                    
-
-                    /*if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
-                    {
-                        if (touch.phase == TouchPhase.Began)
-                        {
-                            gameObject.GetComponent<Renderer>().material.color = Color.green;
-                            Debug.Log("ontouch");
-                        }
-                        else
-                        {
-                            //gameObject.GetComponent<Renderer>().material.color = Color.white;
-                        }
-
-                        if (touch.phase == TouchPhase.Ended)
-                        {
-                            gameObject.GetComponent<Renderer>().material.color = Color.white;
-                            Debug.Log("untouch");
-                            /*if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
-                            {
-                                gameObject.GetComponent<Renderer>().material.color = Color.white;
-                                Debug.Log("");
-                            }*/
-
-                    /*}
-
                 }
-                else
-                {
-                    if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == falser)
-                    {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
-                    }
-
-                    if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
-                    {
-                        gameObject.GetComponent<Renderer>().material.color = Color.green;
-                    }
-
-                }*/
-
-
-
-
-
-
-                    /*GameObject recipient = hit.transform.gameObject;
-                    if(touch.phase == TouchPhase.Began)
-                    {
-                        gameObject.GetComponent<Renderer>().material.color = Color.green;
-                    }*/
-                }
-
-
-
+            } else {
+                canBePressed = false;
             }
         }
 
@@ -736,6 +426,11 @@ public class touch : MonoBehaviour
         
         if (hold)
         {
+            // Debug.Log("B");
+            if(collision.collider.CompareTag("JudgementLine")) {
+            // Debug.Log("true");
+                canBePressed = true;
+            }
             if (already)
             {
                 if (collision.collider.CompareTag("touch system"))
@@ -744,13 +439,7 @@ public class touch : MonoBehaviour
                     gameObject.GetComponent<Renderer>().material.color = Color.green;
                     c += 1;
                     Debug.Log("collision ok");
-
-                    
-
                 }
-
-                
-
 
             }
             else
@@ -760,36 +449,24 @@ public class touch : MonoBehaviour
                     gameObject.GetComponent<Renderer>().material.color = Color.white;
                     Debug.Log("can't");
                 }
-
             }
 
             if (collision.collider.CompareTag("falser"))
             {
                 if(c > 0)
                 {
-                    
                     c -= 1;
                     gameObject.GetComponent<Renderer>().material.color = Color.green;
                     Debug.Log("still");
 
                 }
-                
-                
-
                 if (c < 1)
                 {
                     gameObject.GetComponent<Renderer>().material.color = Color.white;
                     Debug.Log("release");
                 }
-
             }
-
-
-
         }
-        
-
-
     }
 
     private void OnCollisionExit(Collision collision)
