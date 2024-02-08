@@ -24,14 +24,14 @@ public class ScoreService : MonoBehaviour
     }
 
     
-    public int ScoringSystem(int criticalTap, int criticalJudgement, int fairTap)
+    public int ScoringSystem(int criticalTap, int fairTap)
     {
         int totalNotes = GameManager.instance.totalNotes;
         if(criticalTap == totalNotes) {
-            score = allCritical + criticalJudgement;
+            score = allCritical;
         } else {
             int oneNoteScore = allCritical / totalNotes;
-            score = (oneNoteScore * criticalTap) + (oneNoteScore * fairTap / 2) + criticalJudgement;
+            score = (oneNoteScore * criticalTap) + (oneNoteScore * fairTap / 2);
         }
         return score;  
     }

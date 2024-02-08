@@ -1,0 +1,187 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+public class Hold : MonoBehaviour
+{
+    // public LayerMask touchinputmask;
+    //private List<GameObject> touchlist = new List<GameObject>();
+    //private GameObject[] touchesold;
+
+    public GameObject self;
+    public GameObject falser;
+    public GameObject create;
+
+    // private MeshRenderer meshRenderer;
+    private Material[] meshMaterials;
+    public Material beforeTap;
+    public Material afterTap;
+
+    public int c;
+    private bool hold;
+    public bool already;
+    public bool creator;
+    public bool falsers;
+    public bool canBePressed = false;
+
+    public bool wrongtouch;
+    public static Hold boolian;
+   
+    // Start is called before the first frame update
+    void Start()
+    {
+        boolian = this;
+        meshMaterials = gameObject.GetComponent<MeshRenderer>().materials;
+    }
+
+    // Update is called once per frame
+    void Update()
+    { 
+        if (hold)
+        {
+            if(canBePressed && Input.touchCount > 0) {
+                foreach (Touch touch in Input.touches)
+                {
+                    Ray ray = Camera.main.ScreenPointToRay(touch.position);
+                    RaycastHit hit;
+
+                    if (Physics.Raycast(ray, out hit))
+                    {
+                        if (touch.phase == TouchPhase.Began)
+                        {
+                            if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
+                            {
+                                meshMaterials[1] = afterTap;
+
+                                gameObject.GetComponent<MeshRenderer>().materials = meshMaterials;
+
+                                Debug.Log("hold touch");
+                                already = true;
+                            }   
+                        }
+                    }
+                }
+            } 
+        }
+
+        if(creator)
+        {
+            if(Input.touchCount > 0)
+            {
+                Touch touch = Input.GetTouch(0);
+                Vector3 touchpos = Camera.main.ScreenToWorldPoint(touch.position);
+
+                if(touch.phase == TouchPhase.Began)
+                {
+                    Instantiate(create, touchpos, Quaternion.identity);
+                }
+            }
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //collisionen = true;
+        //int c = 0;
+        
+        if(collision.collider.CompareTag("JudgementLine")) {
+            hold = true;
+            canBePressed = true;
+        }
+
+        if (hold)
+        {
+            if (already)
+            {
+                if (collision.collider.CompareTag("touch system"))
+                {
+                    meshMaterials[1] = afterTap;
+                    gameObject.GetComponent<MeshRenderer>().materials = meshMaterials;
+
+                    gameObject.GetComponent<Renderer>().material.color = Color.green;
+                    c += 1;
+                    Debug.Log("collision ok");
+                }
+            }
+            else
+            {
+                if (collision.collider.CompareTag("touch system"))
+                {
+                    meshMaterials[1] = beforeTap;
+                    gameObject.GetComponent<MeshRenderer>().materials = meshMaterials;
+
+                    gameObject.GetComponent<Renderer>().material.color = Color.white;
+                    Debug.Log("can't");
+                }
+            }
+
+            if (collision.collider.CompareTag("falser"))
+            {
+                if(c > 0)
+                {
+                    c -= 1;
+                    gameObject.GetComponent<Renderer>().material.color = Color.green;
+                    Debug.Log("still");
+                }
+                if (c < 1)
+                {
+                    meshMaterials[1] = beforeTap;
+                    gameObject.GetComponent<MeshRenderer>().materials = meshMaterials;
+                    Debug.Log("hold release");
+                }
+            }
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if(collision.collider.CompareTag("JudgementLine")) {
+            hold = false;
+            canBePressed = false;
+        }
+        if (hold)
+        {
+            if (already)
+            {
+                if (collision.collider.CompareTag("touch system"))
+                {
+                    if (c > 1 || c == 1)
+                    {
+                        c -= 1;
+                    }
+                    
+                    if (c == 0)
+                    {
+                        gameObject.GetComponent<Renderer>().material.color = Color.white;
+                        Debug.Log("release");
+                    }
+                }
+            }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(falser)
+        {
+            if (other.tag == "touch system")
+            {
+                Debug.Log("hi");
+                Hold.boolian.booler();
+                Debug.Log("hi");
+            }
+        }
+    }
+
+    public void booler()
+    {
+        wrongtouch = true;
+    }
+
+    public void debooler()
+    {
+        wrongtouch = false;
+    }
+}
