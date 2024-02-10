@@ -17,9 +17,9 @@ public class ComboDisplay : MonoBehaviour
         if(error) {
             combo = 0;
         } else {
-            combo+=1;
+            combo += 1;
         }
-        Debug.Log("test");
-        // self.GetComponent<TextMeshProUGUI>().text = $"{combo}";
+        // Debug.Log("test");
+        self.GetComponent<TextMeshPro>().text = $"{combo}";
     }
 }

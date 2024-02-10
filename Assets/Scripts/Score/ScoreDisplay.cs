@@ -8,6 +8,7 @@ using System;
 public class ScoreDisplay : MonoBehaviour
 {
     public GameObject self;
+    public GameObject noteObjects;
     public static ScoreDisplay instance;
 
     public int criticalJudgement = 0;
@@ -18,9 +19,15 @@ public class ScoreDisplay : MonoBehaviour
     public int score = 0;
     public int maxScore = 1_000_000;
 
+    public int totalNotes = 0;
+
     void Start() 
     {
         instance = this;
+        if(noteObjects != null) {
+            Transform noteObjectsTransform = noteObjects.transform;
+            totalNotes += noteObjectsTransform.childCount;
+        }
     }
 
     void update()
@@ -33,13 +40,30 @@ public class ScoreDisplay : MonoBehaviour
 
     public void DisplayedScore(bool critical, bool fair, bool error) 
     {
-        int oldScore = critical ? ScoringSystem(criticalTap - 1, fairTap) : ScoringSystem(criticalTap, fairTap);
-        oldScore = fair ? ScoringSystem(criticalTap, fairTap - 1) : oldScore;
+        int oldCriticalTap = 0;
+        int oldFairTap = 0;
+        if(critical) {
+            if(criticalTap - 1 <= 0) {
+                oldCriticalTap = 0;
+            } else {
+                oldCriticalTap = criticalTap - 1;
+            }
+        }
+
+        if(fair) {
+            if(fairTap - 1 <= 0) {
+                oldFairTap = 0;
+            } else {
+                oldFairTap = fairTap - 1;
+            }
+        }
+
+        int oldScore = ScoringSystem(oldCriticalTap, oldFairTap);
         ComboDisplay.instance.comboDisplay(error);
-        // Debug.Log($"Perfect: {perfectTap}, Notes: {criticalTap}, Great : {fairTap}, Miss : {missTap}");
+        Debug.Log($"Critical: {criticalTap}, Fair : {fairTap}, Error : {errorTap}");
         int currentScore = ScoringSystem(criticalTap, fairTap);
         // Debug.Log($"Old Score: {oldScore}, Current Score: {currentScore}");
-        StartCoroutine(CountScore(oldScore, currentScore, 0.5f));
+        StartCoroutine(CountScore(oldScore, currentScore, 0.4f));
     }
 
     public IEnumerator CountScore(int startScore, int endScore, float countingDuration) 
@@ -48,10 +72,13 @@ public class ScoreDisplay : MonoBehaviour
         while (timer < countingDuration)
         {
             int currentDisplayedScore = (int)Mathf.Lerp(startScore, endScore, timer / countingDuration);
-            self.GetComponent<TextMeshProUGUI>().text = $"{currentDisplayedScore}";
+            self.GetComponent<TextMeshPro>().text = $"{currentDisplayedScore}";
 
             timer += Time.deltaTime;
             yield return null; 
+        }
+        if(countingDuration == 0.4f) {
+            self.GetComponent<TextMeshPro>().text = $"{endScore}";
         }
     }
 

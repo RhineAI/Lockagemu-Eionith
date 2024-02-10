@@ -21,6 +21,7 @@ public class Tap : MonoBehaviour
     public bool creator;
     public bool falsers;
     public bool canBePressed = false;
+    public bool isActive = true;
 
     public bool wrongtouch;
     public static Tap boolian;
@@ -51,11 +52,11 @@ public class Tap : MonoBehaviour
                         // float hitPosition = hit.point.z;
                         float objectPosition = self.transform.position.z;
                         // Debug.Log($"JudgementLine : {Mathf.Abs(judgementLine.transform.position.z)}, HitPoint : {(float)Math.Round(Mathf.Abs(hit.point.z))}");
-                        Debug.Log($"Judgement : {Math.Abs(judgementZPosition)} ObjectPosition : {Math.Abs(objectPosition)}");
+                        // Debug.Log($"Judgement : {Math.Abs(judgementZPosition)} ObjectPosition : {Math.Abs(objectPosition)}");
                         if (touch.phase == TouchPhase.Began)
                         {
                             Debug.Log("tap");
-                            if (Math.Abs(Math.Abs(judgementZPosition) - Math.Abs(objectPosition)) <= 0.3)
+                            if (Math.Abs(Math.Abs(judgementZPosition) - Math.Abs(objectPosition)) <= 0.25)
                             {
                                 critical = true;
                                 Debug.Log("Critical");
@@ -74,26 +75,34 @@ public class Tap : MonoBehaviour
                         if (touch.phase == TouchPhase.Ended)
                         {
                             gameObject.SetActive(false);
+                            isActive = false;
                             Debug.Log("tap-release");
                         }
                     }
                 }
 
-                if(critical || fair || error) {
-                    if(critical) {
-                        ScoreDisplay.instance.criticalTap += 1;
-                    }
+                if(!isActive) 
+                {
+                    if(critical || fair || error) 
+                    {
+                        if(critical) 
+                        {
+                            ScoreDisplay.instance.criticalTap += 1;
+                        }
 
-                    if(fair) {
-                        ScoreDisplay.instance.fairTap += 1;
-                    }
+                        if(fair) 
+                        {
+                            ScoreDisplay.instance.fairTap += 1;
+                        }
 
-                    if(error) {
-                        ScoreDisplay.instance.errorTap += 1;
+                        if(error) 
+                        {
+                            ScoreDisplay.instance.errorTap += 1;
+                        }
+                        ScoreDisplay.instance.DisplayedScore(critical, fair, error);
                     }
-                    ScoreDisplay.instance.DisplayedScore(critical, fair, error);
+                    // isActive = true;
                 }
-
             }
         }
 
@@ -168,8 +177,9 @@ public class Tap : MonoBehaviour
             canBePressed = false;
             critical = false;
             fair = false;
-            error = false;
+            error = true;
             ScoreDisplay.instance.errorTap += 1;
+            ScoreDisplay.instance.DisplayedScore(critical, fair, error);
         }
         if (tap)
         {
