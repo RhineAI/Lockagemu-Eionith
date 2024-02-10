@@ -103,9 +103,11 @@
     <Compile Include="Assets\Scripts\hold &amp; multitouch control script\spam.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Scripts\Notes\DirectionalFlick.cs" />
+    <Compile Include="Assets\Scripts\Score\ComboDisplay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\all type note script\touch.cs" />
+    <Compile Include="Assets\Scripts\RhythmSceneScript\JudgementLine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\RhythmSceneScript\TapNote.cs" />
     <Compile Include="Assets\Rythm Game Scripts\ButtonController.cs" />

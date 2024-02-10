@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,32 +7,31 @@ using UnityEngine.EventSystems;
 
 public class Tap : MonoBehaviour
 {
-    // public LayerMask touchinputmask;
-    //private List<GameObject> touchlist = new List<GameObject>();
-    //private GameObject[] touchesold;
-
     public GameObject self;
     public GameObject falser;
     public GameObject create;
 
     public int c;
-
+    public bool critical = false;
+    public bool fair = false;
+    public bool error = false;
     private bool tap = false;
+
     public bool already;
     public bool creator;
     public bool falsers;
     public bool canBePressed = false;
 
-    public GameObject judgementLine;
-
     public bool wrongtouch;
     public static Tap boolian;
+
+    public double judgementZPosition;
    
     // Start is called before the first frame update
     void Start()
     {
-
         boolian = this;
+        judgementZPosition = JudgementLine.instance.judgementZPosition;
     }
 
     // Update is called once per frame
@@ -48,27 +48,27 @@ public class Tap : MonoBehaviour
 
                     if (Physics.Raycast(ray, out hit))
                     {
-                        float hitPosition = Mathf.Abs(judgementLine.transform.position.z - hit.point.z);
-                        // Debug.Log($"JudgementLine : {judgementLine.transform.position.z}, HitPoint : {hit.point.z}");
-                        // Debug.Log($"HitPosition : {hitPosition/2}");
+                        // float hitPosition = hit.point.z;
+                        float objectPosition = self.transform.position.z;
+                        // Debug.Log($"JudgementLine : {Mathf.Abs(judgementLine.transform.position.z)}, HitPoint : {(float)Math.Round(Mathf.Abs(hit.point.z))}");
+                        Debug.Log($"Judgement : {Math.Abs(judgementZPosition)} ObjectPosition : {Math.Abs(objectPosition)}");
                         if (touch.phase == TouchPhase.Began)
                         {
                             Debug.Log("tap");
-                            if (hitPosition/2 <= 0.2)
+                            if (Math.Abs(Math.Abs(judgementZPosition) - Math.Abs(objectPosition)) <= 0.3)
                             {
-                                ScoreDisplay.instance.criticalTap += 1;
+                                critical = true;
                                 Debug.Log("Critical");
                             }
-                            else if (hitPosition/2 <= 0.4)
+                            else if (Math.Abs(Math.Abs(judgementZPosition) - Math.Abs(objectPosition)) <= 1.5)
                             {
-                                ScoreDisplay.instance.fairTap += 1;
+                                fair = true;
                                 Debug.Log("Fair");
                             } 
                             else {
-                                ScoreDisplay.instance.errorTap += 1;
+                                error = true;
                                 Debug.Log("Error");
                             }
-                            ScoreDisplay.instance.DisplayedScore();
                         }
 
                         if (touch.phase == TouchPhase.Ended)
@@ -78,6 +78,22 @@ public class Tap : MonoBehaviour
                         }
                     }
                 }
+
+                if(critical || fair || error) {
+                    if(critical) {
+                        ScoreDisplay.instance.criticalTap += 1;
+                    }
+
+                    if(fair) {
+                        ScoreDisplay.instance.fairTap += 1;
+                    }
+
+                    if(error) {
+                        ScoreDisplay.instance.errorTap += 1;
+                    }
+                    ScoreDisplay.instance.DisplayedScore(critical, fair, error);
+                }
+
             }
         }
 
@@ -150,6 +166,10 @@ public class Tap : MonoBehaviour
         if(collision.collider.CompareTag("JudgementLine")) {
             tap = false;
             canBePressed = false;
+            critical = false;
+            fair = false;
+            error = false;
+            ScoreDisplay.instance.errorTap += 1;
         }
         if (tap)
         {
