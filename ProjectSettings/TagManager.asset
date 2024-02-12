@@ -13,6 +13,7 @@ TagManager:
   - touch system
   - falser
   - JudgementLine
+  - JudgementLineCenter
   layers:
   - Default
   - TransparentFX

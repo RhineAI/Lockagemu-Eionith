@@ -19,16 +19,19 @@ public class Hold : MonoBehaviour
     public Material beforeTap;
     public Material afterTap;
 
-    public int c;
     private bool hold;
+    public bool critical = false;
+    public bool fair = false;
+    public bool error = false;
+
+    public int c;
     public bool already;
     public bool creator;
-    public bool falsers;
-    public bool canBePressed = false;
+    private bool canBePressed = false;
 
     public bool wrongtouch;
     public static Hold boolian;
-   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +42,9 @@ public class Hold : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
+        Vector3 scale = self.transform.localScale;
+        float endHold = scale.z;
+        bool alreadyCritical = false;
         if (hold)
         {
             if(canBePressed && Input.touchCount > 0) {
@@ -51,17 +57,32 @@ public class Hold : MonoBehaviour
                     {
                         if (touch.phase == TouchPhase.Began)
                         {
-                            if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
-                            {
+                            // if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
+                            // {
                                 meshMaterials[1] = afterTap;
 
                                 gameObject.GetComponent<MeshRenderer>().materials = meshMaterials;
 
                                 Debug.Log("hold touch");
                                 already = true;
-                            }   
+                                critical = true;
+                            // }   
                         }
+
                     }
+                }
+
+                if(critical && !alreadyCritical) 
+                {
+                    float bpm = BeatRun.instance.beatTempo;
+                    // while (self.transform.position.z <= endHold) {
+                        // while (bpm <= bpm * 4) {
+                            ScoreDisplay.instance.criticalTap += 1;
+                            ScoreDisplay.instance.DisplayedScore(critical, fair, error);
+                            
+                        // }
+                    // }
+                    alreadyCritical = true;
                 }
             } 
         }
@@ -86,7 +107,7 @@ public class Hold : MonoBehaviour
         //collisionen = true;
         //int c = 0;
         
-        if(collision.collider.CompareTag("JudgementLine")) {
+        if(collision.collider.CompareTag("JudgementLineCenter")) {
             hold = true;
             canBePressed = true;
         }
@@ -100,7 +121,7 @@ public class Hold : MonoBehaviour
                     meshMaterials[1] = afterTap;
                     gameObject.GetComponent<MeshRenderer>().materials = meshMaterials;
 
-                    gameObject.GetComponent<Renderer>().material.color = Color.green;
+                    // gameObject.GetComponent<Renderer>().material.color = Color.green;
                     c += 1;
                     Debug.Log("collision ok");
                 }
@@ -112,7 +133,7 @@ public class Hold : MonoBehaviour
                     meshMaterials[1] = beforeTap;
                     gameObject.GetComponent<MeshRenderer>().materials = meshMaterials;
 
-                    gameObject.GetComponent<Renderer>().material.color = Color.white;
+                    // gameObject.GetComponent<Renderer>().material.color = Color.white;
                     Debug.Log("can't");
                 }
             }
@@ -122,7 +143,8 @@ public class Hold : MonoBehaviour
                 if(c > 0)
                 {
                     c -= 1;
-                    gameObject.GetComponent<Renderer>().material.color = Color.green;
+                    meshMaterials[1] = afterTap;
+                    gameObject.GetComponent<MeshRenderer>().materials = meshMaterials;
                     Debug.Log("still");
                 }
                 if (c < 1)
@@ -137,9 +159,17 @@ public class Hold : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if(collision.collider.CompareTag("JudgementLine")) {
+        bool alreadyError = false;
+        if(collision.collider.CompareTag("JudgementLineCenter")) {
             hold = false;
             canBePressed = false;
+            error = true;
+            if(error && !alreadyError) {
+                ScoreDisplay.instance.errorTap += 1;
+                ScoreDisplay.instance.DisplayedScore(critical, fair, error);
+                alreadyError = true;
+            }
+
         }
         if (hold)
         {
@@ -154,6 +184,8 @@ public class Hold : MonoBehaviour
                     
                     if (c == 0)
                     {
+                        meshMaterials[1] = beforeTap;
+                        gameObject.GetComponent<MeshRenderer>().materials = meshMaterials;
                         gameObject.GetComponent<Renderer>().material.color = Color.white;
                         Debug.Log("release");
                     }

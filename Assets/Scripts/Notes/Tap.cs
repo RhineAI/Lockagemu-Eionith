@@ -11,22 +11,22 @@ public class Tap : MonoBehaviour
     public GameObject falser;
     public GameObject create;
 
-    public int c;
+    private bool tap = false;
     public bool critical = false;
     public bool fair = false;
     public bool error = false;
-    private bool tap = false;
+    
+    private int c;
 
-    public bool already;
-    public bool creator;
-    public bool falsers;
-    public bool canBePressed = false;
-    public bool isActive = true;
+    private bool already;
+    private bool creator;
+    private bool canBePressed = false;
+    private bool noteActive = true;
 
-    public bool wrongtouch;
+    private bool wrongtouch;
     public static Tap boolian;
 
-    public double judgementZPosition;
+    private double judgementZPosition;
    
     // Start is called before the first frame update
     void Start()
@@ -75,13 +75,13 @@ public class Tap : MonoBehaviour
                         if (touch.phase == TouchPhase.Ended)
                         {
                             gameObject.SetActive(false);
-                            isActive = false;
+                            noteActive = false;
                             Debug.Log("tap-release");
                         }
                     }
                 }
 
-                if(!isActive) 
+                if(!noteActive) 
                 {
                     if(critical || fair || error) 
                     {

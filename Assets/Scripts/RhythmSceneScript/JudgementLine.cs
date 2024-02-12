@@ -8,9 +8,12 @@ public class JudgementLine : MonoBehaviour
     public static JudgementLine instance;
     public float judgementZPosition;
 
-    void Start()
+    void Awake()
     {
         instance = this;
+    }
+    void Start()
+    {
         judgementZPosition = self.transform.position.z;
     }
 }
