@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/RhythmScene.unity
+    guid: 5f05a1d0dbd518340a780fc38193e04f
   m_configObjects: {}

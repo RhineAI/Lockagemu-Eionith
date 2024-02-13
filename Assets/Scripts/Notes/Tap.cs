@@ -18,10 +18,10 @@ public class Tap : MonoBehaviour
     
     private int c;
 
-    private bool already;
-    private bool creator;
-    private bool canBePressed = false;
-    private bool noteActive = true;
+    public bool already;
+    public bool creator;
+    public bool canBePressed = false;
+    public bool noteActive = true;
 
     private bool wrongtouch;
     public static Tap boolian;
@@ -32,7 +32,7 @@ public class Tap : MonoBehaviour
     void Start()
     {
         boolian = this;
-        judgementZPosition = JudgementLine.instance.judgementZPosition;
+        
     }
 
     // Update is called once per frame
@@ -42,6 +42,7 @@ public class Tap : MonoBehaviour
         {
             if (canBePressed && Input.touchCount > 0)
             {
+                judgementZPosition = JudgementLine.instance.judgementZPosition;
                 foreach (Touch touch in Input.touches)
                 {
                     Ray ray = Camera.main.ScreenPointToRay(touch.position);
@@ -51,8 +52,8 @@ public class Tap : MonoBehaviour
                     {
                         // float hitPosition = hit.point.z;
                         float objectPosition = self.transform.position.z;
-                        // Debug.Log($"JudgementLine : {Mathf.Abs(judgementLine.transform.position.z)}, HitPoint : {(float)Math.Round(Mathf.Abs(hit.point.z))}");
-                        // Debug.Log($"Judgement : {Math.Abs(judgementZPosition)} ObjectPosition : {Math.Abs(objectPosition)}");
+                        //Debug.Log($"JudgementLine : {Mathf.Abs(judgementLine.transform.position.z)}, HitPoint : {(float)Math.Round(Mathf.Abs(hit.point.z))}");
+                        Debug.Log($"Judgement : {Math.Abs(judgementZPosition)} ObjectPosition : {Math.Abs(objectPosition)}");
                         if (touch.phase == TouchPhase.Began)
                         {
                             Debug.Log("tap");

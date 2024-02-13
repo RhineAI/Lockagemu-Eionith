@@ -42,6 +42,7 @@ public class ScoreDisplay : MonoBehaviour
     public void DisplayedScore(bool critical, bool fair, bool error) 
     {
         if(!error) {
+            ComboDisplay.instance.comboDisplay(error);
             int oldCriticalTap = 0;
             int oldFairTap = 0;
             if(critical) {
