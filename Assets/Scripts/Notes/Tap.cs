@@ -44,13 +44,12 @@ public class Tap : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit))
                 {
-                    // float hitPosition = hit.point.z;
                     float objectPosition = self.transform.position.z;
                     // Debug.Log($"Judgement : {Math.Abs(judgementZPosition)} ObjectPosition : {Math.Abs(objectPosition)}");
                     if(!getTheScoreStatus)
                     {
-                        // if (Input.GetTouch(0).phase == TouchPhase.Began)
-                        // {
+                        if (Input.GetTouch(0).phase == TouchPhase.Ended)
+                        {
                             // Debug.Log("tap");
                             // Debug.Log(Math.Abs(Math.Abs(judgementZPosition) - Math.Abs(objectPosition)));
                             if (Math.Abs(Math.Abs(judgementZPosition) - Math.Abs(objectPosition)) <= 0.3)
@@ -75,11 +74,8 @@ public class Tap : MonoBehaviour
                             }
                             getTheScoreStatus = true;
                             ScoreDisplay.instance.DisplayedScore(critical, fair, error);
-                        // }
-                    }
-                    if (Input.GetTouch(0).phase == TouchPhase.Ended)
-                    {
-                        gameObject.SetActive(false);
+                            gameObject.SetActive(false);
+                        }
                     }
                 }
             // }
