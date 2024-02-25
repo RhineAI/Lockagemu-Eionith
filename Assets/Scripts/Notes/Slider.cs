@@ -10,15 +10,20 @@ public class Slider : MonoBehaviour
     public GameObject falser;
     public GameObject create;
 
-    public int c;
-    public bool slide;
+    private bool slider = false;
+    public bool critical = false;
+    public bool fair = false;
+    public bool error = false;
+
+
     public bool already;
     public bool creator;
-    public bool falsers;
+
+    public bool noteActiveStatus;
     public bool canBePressed = false;
 
     public bool wrongtouch;
-    public static Slider boolian;
+    public static Slider instance;
    
     // Start is called before the first frame update
     void Start()
@@ -26,13 +31,13 @@ public class Slider : MonoBehaviour
         //gameObject.transform.localPosition = new Vector3();
         //case1 = true;
         //case2 = true;
-        boolian = this;
+        instance = this;
     }
 
     // Update is called once per frame
     void Update()
     { 
-         if(slide)
+         if(slider)
         {
             if (Input.touchCount > 0)
             {
@@ -45,17 +50,41 @@ public class Slider : MonoBehaviour
                     {
                         if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
                         {
-                            gameObject.GetComponent<Renderer>().material.color = Color.green;
+                            critical = true;
+                            Debug.Log("Critical");
                         }
                     }
                     else
                     {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
+                        error = true;
+                        Debug.Log("Error");
                     }
+
                     if(touch.phase == TouchPhase.Ended)
                     {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
+                        gameObject.SetActive(false);
+                        noteActiveStatus = false;
+                        Debug.Log("tap-release");
                     }
+                }
+
+                if(!noteActiveStatus) 
+                {
+                    if(critical || error) 
+                    {
+                        if(critical) 
+                        {
+                            ScoreDisplay.instance.criticalTap += 1;
+                        }
+
+
+                        if(error) 
+                        {
+                            ScoreDisplay.instance.errorTap += 1;
+                        }
+                        ScoreDisplay.instance.DisplayedScore(critical, fair, error);
+                    }
+                    // isActive = true;
                 }
             }
         }
@@ -77,79 +106,17 @@ public class Slider : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //collisionen = true;
-        //int c = 0;
-        
-        if (slide)
-        {
-            // Debug.Log("B");
-            if(collision.collider.CompareTag("JudgementLine")) {
-            // Debug.Log("true");
-                canBePressed = true;
-            }
-            if (already)
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    //wrongtouch = true;
-                    gameObject.GetComponent<Renderer>().material.color = Color.green;
-                    c += 1;
-                    Debug.Log("collision ok");
-                }
-
-            }
-            else
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    gameObject.GetComponent<Renderer>().material.color = Color.white;
-                    Debug.Log("can't");
-                }
-            }
-
-            if (collision.collider.CompareTag("falser"))
-            {
-                if(c > 0)
-                {
-                    c -= 1;
-                    gameObject.GetComponent<Renderer>().material.color = Color.green;
-                    Debug.Log("still");
-
-                }
-                if (c < 1)
-                {
-                    gameObject.GetComponent<Renderer>().material.color = Color.white;
-                    Debug.Log("release");
-                }
-            }
+        if(collision.collider.CompareTag("JudgementLineCenter")) {
+            slider = true;
+            canBePressed = true;
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        //collisionen = false;
-        if (slide)
-        {
-            if (already)
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    if (c > 1 || c == 1)
-                    {
-
-                        c -= 1;
-
-                    }
-                    
-                    if (c == 0)
-                    {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
-                        Debug.Log("release");
-                    }
-                }
-
-            }
-            
+        if(collision.collider.CompareTag("JudgementLineCenter")) {
+            slider = false;
+            canBePressed = false;
         }
     }
 
@@ -160,7 +127,7 @@ public class Slider : MonoBehaviour
             if (other.tag == "touch system")
             {
                 Debug.Log("hi");
-                Slider.boolian.booler();
+                Slider.instance.booler();
                 Debug.Log("hi");
             }
         }

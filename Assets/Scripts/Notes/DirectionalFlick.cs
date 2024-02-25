@@ -10,8 +10,6 @@ public class DirectionalFlick : MonoBehaviour
     public GameObject falser;
     public GameObject create;
 
-    public int c;
-
     public bool tap;
     public bool directionalFlick;
     public bool already;
@@ -19,19 +17,20 @@ public class DirectionalFlick : MonoBehaviour
     public bool falsers;
     public bool canBePressed = false;
     public bool wrongtouch;
-    public static DirectionalFlick boolian;
+    public static DirectionalFlick instance;
    
+    private double judgementZPosition;
+
 
     Vector2 startpos;
     Vector2 movepos;
-    Vector2 targetup = new Vector2(0f, 100f);
     // Start is called before the first frame update
     void Start()
     {
         //gameObject.transform.localPosition = new Vector3();
         //case1 = true;
         //case2 = true;
-        boolian = this;
+        instance = this;
     }
 
     // Update is called once per frame
@@ -39,8 +38,9 @@ public class DirectionalFlick : MonoBehaviour
     {
         if (directionalFlick)
         {
-            if (Input.touchCount > 0)
+            if (canBePressed && Input.touchCount > 0)
             {
+                judgementZPosition = JudgementLine.instance.judgementZPosition;
                 foreach (Touch touch in Input.touches)
                 {
                     Ray ray = Camera.main.ScreenPointToRay(touch.position);
@@ -121,79 +121,15 @@ public class DirectionalFlick : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //collisionen = true;
-        //int c = 0;
-        
-        if (directionalFlick)
-        {
-            // Debug.Log("B");
-            if(collision.collider.CompareTag("JudgementLine")) {
-            // Debug.Log("true");
-                canBePressed = true;
-            }
-            if (already)
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    //wrongtouch = true;
-                    gameObject.GetComponent<Renderer>().material.color = Color.green;
-                    c += 1;
-                    Debug.Log("collision ok");
-                }
-
-            }
-            else
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    gameObject.GetComponent<Renderer>().material.color = Color.white;
-                    Debug.Log("can't");
-                }
-            }
-
-            if (collision.collider.CompareTag("falser"))
-            {
-                if(c > 0)
-                {
-                    c -= 1;
-                    gameObject.GetComponent<Renderer>().material.color = Color.green;
-                    Debug.Log("still");
-
-                }
-                if (c < 1)
-                {
-                    gameObject.GetComponent<Renderer>().material.color = Color.white;
-                    Debug.Log("release");
-                }
-            }
+        if(collision.collider.CompareTag("JudgementLine")) {
+            canBePressed = true;
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        //collisionen = false;
-        if (directionalFlick)
-        {
-            if (already)
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    if (c > 1 || c == 1)
-                    {
-
-                        c -= 1;
-
-                    }
-                    
-                    if (c == 0)
-                    {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
-                        Debug.Log("release");
-                    }
-                }
-
-            }
-            
+        if(collision.collider.CompareTag("JudgementLine")) {
+            canBePressed = false;
         }
     }
 
@@ -204,7 +140,7 @@ public class DirectionalFlick : MonoBehaviour
             if (other.tag == "touch system")
             {
                 Debug.Log("hi");
-                DirectionalFlick.boolian.booler();
+                DirectionalFlick.instance.booler();
                 Debug.Log("hi");
             }
         }

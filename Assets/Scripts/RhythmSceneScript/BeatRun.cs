@@ -29,7 +29,7 @@ public class BeatRun : MonoBehaviour
             //     hasStarted = true;
             // }
         } else {
-            transform.position -= new Vector3(0f, 0f, speed * Time.deltaTime);
+            transform.position += new Vector3(0f, 0f, speed * Time.deltaTime);
         }
     }
 }
