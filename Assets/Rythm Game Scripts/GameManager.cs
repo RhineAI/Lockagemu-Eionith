@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(!startPlaying) {
             if(Input.anyKeyDown) {
                 startPlaying = true;

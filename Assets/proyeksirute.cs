@@ -9,6 +9,7 @@ public class proyeksirute : MonoBehaviour
     public Transform controlcurve;
 
     public bool drawing;
+    
     // Start is called before the first frame update
     void Start()
     {

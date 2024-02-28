@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/RhythmScene.unity
-    guid: 5f05a1d0dbd518340a780fc38193e04f
+    path: Assets/Scenes/jancokgaming.unity
+    guid: 3cc8b78fe64f6424f8e39cbbb89cae79
   m_configObjects: {}

@@ -117,6 +117,7 @@ public class touch1 : MonoBehaviour
                             {
                                 gameObject.GetComponent<Renderer>().material.color = Color.green;
                                 Debug.Log("ontouch");
+                                gameObject.SetActive(false);
                             }
                             else
                             {
