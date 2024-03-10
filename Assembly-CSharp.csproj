@@ -126,11 +126,8 @@
     <Compile Include="Assets\Rythm Game Scripts\Score.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Scripts\hold &amp; multitouch control script\life.cs" />
-<<<<<<< HEAD
-=======
     <Compile Include="Assets\proyeksirute.cs" />
     <Compile Include="Assets\Samples\Advertisement Legacy\4.4.2\UnityAds Example App\Scripts\UnityAdsManager.cs" />
->>>>>>> 80439c0228cd69db351153846c4a9a96d9d2f129
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Rythm Game Scripts\ArrowUp.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />

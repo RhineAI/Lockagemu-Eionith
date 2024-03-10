@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/RhythmScene.unity
-=======
 - path: Assets/Scenes/trial.unity
->>>>>>> 80439c0228cd69db351153846c4a9a96d9d2f129
   isLoaded: 1
   isActive: 1
   isSubScene: 0
