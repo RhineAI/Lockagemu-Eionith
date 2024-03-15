@@ -1,82 +1,102 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class Flick : MonoBehaviour
 {
     public GameObject self;
-    public GameObject falser;
     public GameObject create;
 
-    public int c;
+    public bool critical = false;
+    public bool fair = false;
+    public bool error = false;
 
-    public bool flick;
     public bool creator;
     public bool already;
     public bool canBePressed = false;
+    public bool getTheScoreStatus = false;
+
     public bool wrongtouch;
-    public static Flick boolian;
+    public static Flick instance;
    
+    private double judgementZPosition;
 
     Vector2 startpos;
     Vector2 movepos;
-    Vector2 targetup = new Vector2(0f, 100f);
     // Start is called before the first frame update
     void Start()
     {
-        //gameObject.transform.localPosition = new Vector3();
-        //case1 = true;
-        //case2 = true;
-        boolian = this;
+        instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (flick)
+        if (canBePressed && Input.touchCount > 0)
         {
-            if (Input.touchCount > 0)
-            {
-                foreach (Touch touch in Input.touches)
+            judgementZPosition = JudgementLine.instance.judgementZPosition;
+
+            // foreach (Touch touch in Input.touches)
+            // {
+                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit))
                 {
-                    Ray ray = Camera.main.ScreenPointToRay(touch.position);
-                    RaycastHit hit;
-
-                    if (Physics.Raycast(ray, out hit))
+                    float objectPosition = self.transform.position.z;
+                    // Debug.Log($"Judgement : {Math.Abs(judgementZPosition)} ObjectPosition : {Math.Abs(objectPosition)}");
+                   
+                    if(!getTheScoreStatus) 
                     {
-                        if (touch.phase == TouchPhase.Moved)
+                        if (Input.GetTouch(0).phase == TouchPhase.Moved)
                         {
-                            if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
+                            movepos = Input.GetTouch(0).position;
+
+                            if (movepos.y < startpos.y + 25f || movepos.y > startpos.y - 25f)
                             {
-
-                                movepos = Input.GetTouch(0).position;
-
-                                if (movepos.y > startpos.y)
+                                if (Math.Abs(Math.Abs(judgementZPosition) - Math.Abs(objectPosition)) <= 0.3)
                                 {
-                                    gameObject.GetComponent<Renderer>().material.color = Color.green;
-                                    Debug.Log("haveflicked");
-                                }
+                                    critical = true;
+                                    ScoreDisplay.instance.criticalTap += 1;
 
-                                if (movepos.y < startpos.y)
+                                    Debug.Log("Flicked Critical");
+                                }
+                                else if (Math.Abs(Math.Abs(judgementZPosition) - Math.Abs(objectPosition)) <= 1.5)
                                 {
-                                    gameObject.GetComponent<Renderer>().material.color = Color.green;
-                                    Debug.Log("haveflicked");
-                                }
+                                    fair = true;
+                                    ScoreDisplay.instance.fairTap += 1;
 
+                                    Debug.Log("Flicked Fair");
+                                } 
+                                else {
+                                    error = true;
+                                    ScoreDisplay.instance.errorTap += 1;
+
+                                    Debug.Log("Flicked Error");
+                                }
+                                getTheScoreStatus = true;
                             }
-                           
-                        }
-                    }
+                            else 
+                            {
+                                fair = true;
+                                Debug.Log("Flicked Fair");
+                                ScoreDisplay.instance.DisplayedScore(critical, fair, error);
+                                getTheScoreStatus = true;
+                            }
 
-                    if (touch.phase == TouchPhase.Ended)
+                            ScoreDisplay.instance.DisplayedScore(critical, fair, error);
+                        }
+                    } 
+
+                    if (Input.GetTouch(0).phase == TouchPhase.Ended)
                     {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
+                        gameObject.SetActive(false);
                     }
                 }
-
-            }
+            // }
         }
 
         if(creator)
@@ -96,91 +116,27 @@ public class Flick : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (flick)
-        {
-            // Debug.Log("B");
-            if(collision.collider.CompareTag("JudgementLine")) {
-            // Debug.Log("true");
-                canBePressed = true;
-            }
-            if (already)
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    //wrongtouch = true;
-                    gameObject.GetComponent<Renderer>().material.color = Color.green;
-                    c += 1;
-                    Debug.Log("collision ok");
-                }
-
-            }
-            else
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    gameObject.GetComponent<Renderer>().material.color = Color.white;
-                    Debug.Log("can't");
-                }
-            }
-
-            if (collision.collider.CompareTag("falser"))
-            {
-                if(c > 0)
-                {
-                    c -= 1;
-                    gameObject.GetComponent<Renderer>().material.color = Color.green;
-                    Debug.Log("still");
-
-                }
-                if (c < 1)
-                {
-                    gameObject.GetComponent<Renderer>().material.color = Color.white;
-                    Debug.Log("release");
-                }
-            }
+        if(collision.collider.CompareTag("JudgementLine")) {
+            canBePressed = true;
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        //collisionen = false;
-        if (flick)
+        if(gameObject.activeSelf)
         {
-            if (already)
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    if (c > 1 || c == 1)
-                    {
-
-                        c -= 1;
-
-                    }
-                    
-                    if (c == 0)
-                    {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
-                        Debug.Log("release");
-                    }
-                }
-
-            }
-            
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(falser)
-        {
-            if (other.tag == "touch system")
-            {
-                Debug.Log("hi");
-                Flick.boolian.booler();
-                Debug.Log("hi");
+            if(collision.collider.CompareTag("JudgementLine")) {
+                Debug.Log("Keluar");
+                canBePressed = false;
+                critical = false;
+                fair = false;
+                error = true;
+                ScoreDisplay.instance.errorTap += 1;
+                ScoreDisplay.instance.DisplayedScore(critical, fair, error);
             }
         }
     }
+
 
     public void booler()
     {

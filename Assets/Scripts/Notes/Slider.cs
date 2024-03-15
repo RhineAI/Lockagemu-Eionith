@@ -1,4 +1,4 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -7,18 +7,18 @@ using UnityEngine.EventSystems;
 public class Slider : MonoBehaviour
 {
     public GameObject self;
-    public GameObject falser;
     public GameObject create;
 
-    public int c;
-    public bool slide;
-    public bool already;
-    public bool creator;
-    public bool falsers;
-    public bool canBePressed = false;
+    public bool critical = false;
+    public bool fair = false;
+    public bool error = false;
 
-    public bool wrongtouch;
-    public static Slider boolian;
+    public bool creator;
+
+    public bool canBePressed = false;
+    public bool getTheScoreStatus = false;
+
+    public static Slider instance;
    
     // Start is called before the first frame update
     void Start()
@@ -26,39 +26,46 @@ public class Slider : MonoBehaviour
         //gameObject.transform.localPosition = new Vector3();
         //case1 = true;
         //case2 = true;
-        boolian = this;
+        instance = this;
     }
 
     // Update is called once per frame
     void Update()
     { 
-         if(slide)
+        if (Input.touchCount > 0)
         {
-            if (Input.touchCount > 0)
+            foreach(Touch touch in Input.touches)
             {
-                foreach(Touch touch in Input.touches)
-                {
-                    Ray ray = Camera.main.ScreenPointToRay(touch.position);
-                    RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(touch.position);
+                RaycastHit hit;
 
-                    if(Physics.Raycast(ray, out hit))
+                if(!getTheScoreStatus)
+                {
+                    if(canBePressed)
                     {
-                        if (hit.transform.gameObject.GetComponent<BoxCollider>().gameObject == self)
+                        if(Physics.Raycast(ray, out hit))
                         {
-                            gameObject.GetComponent<Renderer>().material.color = Color.green;
+                                gameObject.SetActive(false);
+                                critical = true;
+                                ScoreDisplay.instance.criticalTap += 1;
+
+                                Debug.Log("Critical");
+                                ScoreDisplay.instance.DisplayedScore(critical, fair, error);
                         }
-                    }
-                    else
-                    {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
-                    }
-                    if(touch.phase == TouchPhase.Ended)
-                    {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
+                        else
+                        {
+                            error = true;
+                            ScoreDisplay.instance.errorTap += 1;
+
+                            Debug.Log("Error");
+                            ScoreDisplay.instance.DisplayedScore(critical, fair, error);
+                        }
+                        getTheScoreStatus = true;
                     }
                 }
             }
         }
+
 
         if(creator)
         {
@@ -77,102 +84,21 @@ public class Slider : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        //collisionen = true;
-        //int c = 0;
-        
-        if (slide)
-        {
-            // Debug.Log("B");
-            if(collision.collider.CompareTag("JudgementLine")) {
-            // Debug.Log("true");
-                canBePressed = true;
-            }
-            if (already)
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    //wrongtouch = true;
-                    gameObject.GetComponent<Renderer>().material.color = Color.green;
-                    c += 1;
-                    Debug.Log("collision ok");
-                }
-
-            }
-            else
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    gameObject.GetComponent<Renderer>().material.color = Color.white;
-                    Debug.Log("can't");
-                }
-            }
-
-            if (collision.collider.CompareTag("falser"))
-            {
-                if(c > 0)
-                {
-                    c -= 1;
-                    gameObject.GetComponent<Renderer>().material.color = Color.green;
-                    Debug.Log("still");
-
-                }
-                if (c < 1)
-                {
-                    gameObject.GetComponent<Renderer>().material.color = Color.white;
-                    Debug.Log("release");
-                }
-            }
+        if(collision.collider.CompareTag("JudgementLineCenter")) {
+            canBePressed = true;
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        //collisionen = false;
-        if (slide)
-        {
-            if (already)
-            {
-                if (collision.collider.CompareTag("touch system"))
-                {
-                    if (c > 1 || c == 1)
-                    {
-
-                        c -= 1;
-
-                    }
-                    
-                    if (c == 0)
-                    {
-                        gameObject.GetComponent<Renderer>().material.color = Color.white;
-                        Debug.Log("release");
-                    }
-                }
-
-            }
-            
+        if(collision.collider.CompareTag("JudgementLineCenter")) {
+            Debug.Log("Keluar");
+            canBePressed = false;
+            critical = false;
+            fair = false;
+            error = true;
+            ScoreDisplay.instance.errorTap += 1;
+            ScoreDisplay.instance.DisplayedScore(critical, fair, error);
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(falser)
-        {
-            if (other.tag == "touch system")
-            {
-                Debug.Log("hi");
-                Slider.boolian.booler();
-                Debug.Log("hi");
-            }
-        }
-    }
-
-    public void booler()
-    {
-        wrongtouch = true;
-    }
-
-    public void debooler()
-    {
-        wrongtouch = false;
     }
 }

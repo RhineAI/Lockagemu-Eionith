@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class scenecontrol : MonoBehaviour
 {
-    public float waktu;
+    // public float waktu;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +19,9 @@ public class scenecontrol : MonoBehaviour
         //waktu += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Debug.Log("how");
+            // Debug.Log("how");
             //Time.timeScale = 1;
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

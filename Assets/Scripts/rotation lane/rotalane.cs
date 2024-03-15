@@ -1,70 +1,82 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class rotalane : MonoBehaviour
 {
-    public Transform lane;
+    //public Transform lane;
     private float rotationspeed;
-    private float durasi = 1.5f;
-    public Quaternion currentrota;
-    public Quaternion targetrota;
-    public float rotaspeed;
+    // private float durasi = 1.5f;
+    // public Quaternion currentrota;
+    // public Quaternion targetrota;
+    // public float rotaspeed;
     
     public bool rotate;
     [SerializeField]
     private AnimationCurve curve;
 
     //part 2
+    public float timelapsed;
 
-    public float rotasidurasi;
-    public float timeelapsed;
 
+    //part 4
+    [SerializeField]
+    [Range (0, 100)]
+    private float speed;
+    public float rotationTime;
+    private float currentAngle = 0f;
+
+    public bool startRotating;
+    public bool stopRotating;
+    public bool locked;
+
+
+    [SerializeField]
+    private GameObject lane;
     // Start is called before the first frame update
     void Start()
     {
         //currentrota = transform.rotation;
         //StartCoroutine(rotasi());
-        timeelapsed = 0f;
+        timelapsed = 0f;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        //currentrota = transform.rotation;
-        if (rotate)
+        if(startRotating)
         {
-            rotationspeed += Time.deltaTime;
-            float percentagecomplete = rotationspeed / durasi;
-            currentrota = gameObject.transform.rotation;
-            
-            if (currentrota == targetrota)
-            {
-                currentrota = targetrota;
-                Debug.Log("rotate");
-                rotate = false;
-            }
-            else
-            {
-                transform.rotation = Quaternion.Lerp(currentrota, targetrota, rotaspeed * Time.deltaTime);
-            }
-
+            stopRotating = false;
+            StartCoroutine(LerpRotate());
+            startRotating = false;
+            Debug.Log($"Start : {currentAngle}");
         }
-        
-        
-    }
 
-    public IEnumerator rotasi()
+        if(stopRotating) {
+            StopCoroutine(LerpRotate());
+            lane.transform.eulerAngles = new Vector3(0, 0, currentAngle);
+            Debug.Log($"Stop : {currentAngle}");
+        }
+    }
+    private IEnumerator LerpRotate()
     {
-        
-        while(timeelapsed < durasi)
+        float startAngle = currentAngle;
+        float rotationSpeed;
+        while (timelapsed < rotationTime && !stopRotating)
         {
-            float t = timeelapsed / durasi;
-            transform.rotation = Quaternion.Lerp(currentrota, targetrota, t);
-            timeelapsed += Time.deltaTime;
+            timelapsed += Time.deltaTime;
+            
+            rotationSpeed = speed * Time.deltaTime;
+            startAngle += rotationSpeed;
+
+            lane.transform.rotation = Quaternion.Euler(0, 0, startAngle);
+            
+            currentAngle = lane.transform.eulerAngles.z;
             yield return null;
         }
-
-        currentrota = targetrota;
+        
+        // lane.transform.rotation = Quaternion.Euler(0, 0, 360);
     }
 }
