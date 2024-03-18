@@ -9,7 +9,7 @@ public class proyeksirute : MonoBehaviour
     public Transform controlcurve;
 
     public bool drawing;
-    
+    public int dotnumber;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,11 +35,11 @@ public class proyeksirute : MonoBehaviour
             return;
         }
 
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 3; i++)
         {
             if(drawing)
             {
-                Gizmos.DrawSphere(evaluasi(i / 20f), 0.1f);
+                Gizmos.DrawSphere(evaluasi(i / 3f), 0.1f);
             }
         }
     }

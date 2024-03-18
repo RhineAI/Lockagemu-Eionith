@@ -16,6 +16,7 @@ TagManager:
   - JudgementLineCenter
   - route
   - exitroute
+  - target1
   layers:
   - Default
   - TransparentFX
