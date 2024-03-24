@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class rotalane: MonoBehaviour
 {
+    //[Header("liat catatan di dalam script klau bingung")]
     [Header("Give Role")]
     public bool is_lane;
     public bool is_notetowards;
+    [Header("variable pembelokan jalur note memakai variable notoward diatas 50")]
+    public bool is_note;
     
     [Header("precentage")]
     public float maxvalue = 420;
@@ -15,7 +18,7 @@ public class rotalane: MonoBehaviour
     public float precentage;
 
 
-    [Header("value & variable")]
+    [Header("value & variable untuk rotanale & notetowards dengan tospeed range -50 sampai 50")]
     //BOOL
     public bool startRotating;
     public bool stopRotating;
@@ -27,7 +30,7 @@ public class rotalane: MonoBehaviour
     public float timelapsed;
     public float fromspeed = 0f;
     public float tospeed;
-    public float factorial;
+    public float factorial = 0.5f;
     float rotationSpeed;
     float timelapsestop;
     float absolute;
@@ -39,12 +42,15 @@ public class rotalane: MonoBehaviour
     [Header("var for notetowards")]
     //2 type condition
     public bool slowrotate;
+    [Header("jika slowrotate maka pakai variable rotasi yg sama dengan lane")]
     public bool fastrotate;
     //BOOL
     bool orieuler;
     bool canrotate;
+    [Header("nyalakan untuk memulai analisis float yg dibuat")]
     public bool play;
     bool checking;
+    [Header("var notetowards yg hanya berlaku untuk tospeed diatas 50 atau -50")]
     //Float
     public float currentZ;
     public float speedrotatoward;
@@ -107,7 +113,7 @@ public class rotalane: MonoBehaviour
             currentfloat = tospeed + 50f;
         }*/
         //currentZ = lane.transform.eulerAngles.z;
-        if (is_notetowards)
+        if (is_notetowards || is_note)
         {
             if (tospeed > 50)
             {
@@ -289,6 +295,18 @@ public class rotalane: MonoBehaviour
         
         
         
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("target1"))
+        {
+            if(is_note)
+            {
+                play = true;
+            }
+            
+        }
     }
     private IEnumerator LerpRotate()
     {

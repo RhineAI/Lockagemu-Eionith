@@ -17,6 +17,7 @@ TagManager:
   - route
   - exitroute
   - target1
+  - active area
   layers:
   - Default
   - TransparentFX

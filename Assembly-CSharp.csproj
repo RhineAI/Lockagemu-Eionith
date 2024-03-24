@@ -72,6 +72,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\Scripts\updated script\lanescriptupdatev1.cs" />
     <Compile Include="Assets\Scripts\RhythmSceneScript\BeatRun.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\for charting\charter.cs" />
@@ -84,18 +85,20 @@
     <Compile Include="Assets\Scripts\Score\ScoreDisplay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\for charting\chartbpm.cs" />
+    <Compile Include="Assets\Scripts\updated script\sideflicknote.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\projectormesh.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scripts\hold &amp; multitouch control script\touch.cs" />
+    <Compile Include="Assets\Scripts\experiment script\chiildcommand.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Samples\Advertisement Legacy\4.4.2\UnityAds Example App\Scripts\UnityAdsExampleUI.cs" />
     <Compile Include="Assets\Rythm Game Scripts\GameManager.cs" />
     <Compile Include="Assets\Rythm Game Scripts\ArrowLeft.cs" />
+    <Compile Include="Assets\Scripts\experiment script\expsimplecoroutine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\Scripts\Notes\expsimplecoroutine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\Scripts\Notes\Flick.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
@@ -112,6 +115,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\all type note script\touch.cs" />
+    <Compile Include="Assets\Scripts\updated script\changetarget.cs" />
     <Compile Include="Assets\Scripts\RhythmSceneScript\JudgementLine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\RhythmSceneScript\TapNote.cs" />
@@ -133,8 +137,11 @@
     <Compile Include="Assets\Rythm Game Scripts\ArrowDown.cs" />
     <Compile Include="Assets\Scripts\Notes\Slider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Scripts\updated script\notescriptupdatev1.cs" />
+    <Compile Include="Assets\Scripts\updated script\noteupdatescriptv2.cs" />
     <Compile Include="Assets\holdtrial.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets\Scripts\experiment script\rotationoptimizing.cs" />
     <Compile Include="Assets\followrute.cs" />
   </ItemGroup>
   <ItemGroup>

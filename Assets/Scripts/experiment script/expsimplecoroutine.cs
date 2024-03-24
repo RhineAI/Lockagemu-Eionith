@@ -9,7 +9,7 @@ public class expsimplecoroutine : MonoBehaviour
     public bool start;
     public bool stop;
     public float ex2;
-
+    public static expsimplecoroutine exs;
     //exp vctr x rotate
     Vector3 posisisblmnya;
     // Start is called before the first frame update
@@ -17,6 +17,7 @@ public class expsimplecoroutine : MonoBehaviour
     {
         mykorotin = controller();
         posisisblmnya = transform.position;
+        
     }
 
     // Update is called once per frame
@@ -30,7 +31,9 @@ public class expsimplecoroutine : MonoBehaviour
         {
             start = true;
             stop = false;
-            StartCoroutine(mykorotin);
+            //StartCoroutine(mykorotin);
+            StartCoroutine(simplex());
+
         }
 
         if(stop)
@@ -40,14 +43,20 @@ public class expsimplecoroutine : MonoBehaviour
             StopCoroutine(mykorotin);
             StartCoroutine(controller2());
         }
+
+        /*if (sebuah kondisi) {
+            perintah;
+            perintah;
+        perintah; }*/
     }
 
     IEnumerator simplex()
     {
-        while(ex2 > 30)
+        while(ex < 10)
         {
             ex += Time.deltaTime;
-            yield return null;
+            yield return new WaitForSeconds(2f);
+            Debug.Log("Coroutine selesai.");
         }
     }
 

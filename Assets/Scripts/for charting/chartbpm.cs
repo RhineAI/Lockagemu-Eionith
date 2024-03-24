@@ -17,6 +17,7 @@ public class chartbpm : MonoBehaviour
     public float bpmgim;
     public float speedgim;
     public float speed;
+    //public float bpmfixfloat;
     public float bpm;
 
     public bool ongimmick;
@@ -24,71 +25,85 @@ public class chartbpm : MonoBehaviour
 
     public int listgimmick;
     public int listcount;
+
+    public static chartbpm speednote;
     // Start is called before the first frame update
     void Start()
     {
         listcount = targetwaktu.Length - 1;
         listgimmick = 0;
-        bpm = bpm / 60;
+        bpm = (bpm *4) / 60;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, 0, bpm * Time.deltaTime);
 
-        if(ongimmick)
+        
+        int childCount = transform.childCount;
+
+        
+        for (int i = 0; i < childCount; i++)
         {
-            if (targetwaktu.Length > 0)
-            {
-                floatarget = targetwaktu[listgimmick];
-            }
-            else
-            {
-                listgimmick = 0;
-            }
+            Transform child = transform.GetChild(i);
+            
+            child.transform.position += new Vector3(0, 0, bpm * Time.deltaTime);
 
-            if (gimmickbpm.Length > 0)
+            if (ongimmick)
             {
-                bpmgim = gimmickbpm[listgimmick];
-            }
-            else
-            {
-                listgimmick = 0;
-            }
-
-            if (speedprojectorgimmick.Length > 0)
-            {
-                speedgim = speedprojectorgimmick[listgimmick];
-            }
-            else
-            {
-                listgimmick = 0;
-            }
-
-            //targetwaktu.Length
-
-
-
-
-            realtime += Time.deltaTime;
-            //listtime = floatarget;
-            //listimpact = bpmgim;
-            if (realtime >= floatarget)
-            {
-                if (listgimmick == listcount)
+                if (targetwaktu.Length > 0)
                 {
-                    listgimmick = listcount;
+                    floatarget = targetwaktu[listgimmick];
                 }
                 else
                 {
-                    listgimmick++;
+                    listgimmick = 0;
                 }
 
-                bpm = bpmgim / 60;
-                speed = speedgim;
+                if (gimmickbpm.Length > 0)
+                {
+                    bpmgim = gimmickbpm[listgimmick];
+                }
+                else
+                {
+                    listgimmick = 0;
+                }
+
+                if (speedprojectorgimmick.Length > 0)
+                {
+                    speedgim = speedprojectorgimmick[listgimmick];
+                }
+                else
+                {
+                    listgimmick = 0;
+                }
+
+                //targetwaktu.Length
+
+
+
+
+                realtime += Time.deltaTime;
+                //listtime = floatarget;
+                //listimpact = bpmgim;
+                if (realtime >= floatarget)
+                {
+                    if (listgimmick == listcount)
+                    {
+                        listgimmick = listcount;
+                    }
+                    else
+                    {
+                        listgimmick++;
+                    }
+
+                    bpm = bpmgim / 60;
+                    speed = speedgim;
+                }
             }
         }
+        
         
     }
 }
