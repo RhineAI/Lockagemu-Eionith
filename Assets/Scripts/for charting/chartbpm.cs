@@ -6,24 +6,34 @@ public class chartbpm : MonoBehaviour
 {
     public float[] targetwaktu;
     public float[] gimmickbpm;
+    [HideInInspector]
     public float[] speedprojectorgimmick;
+    [HideInInspector]
     public float realtime;
     //public float targettime;
     //public float detik;
     //public float dtrans;
     //public float listtime;
     //public float listimpact;
+    [HideInInspector]
     public float floatarget;
+    [HideInInspector]
     public float bpmgim;
+    [HideInInspector]
     public float speedgim;
+    [HideInInspector]
     public float speed;
+    //[HideInInspector]
     //public float bpmfixfloat;
     public float bpm;
+    [HideInInspector]
+    public float fixbpm;
 
     public bool ongimmick;
     //public float samplewaktu;
-
+    [HideInInspector]
     public int listgimmick;
+    [HideInInspector]
     public int listcount;
 
     public static chartbpm speednote;
@@ -34,13 +44,14 @@ public class chartbpm : MonoBehaviour
         listgimmick = 0;
         bpm = (bpm *4) / 60;
         
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        
+        fixbpm = bpm * 60 / 4;
         int childCount = transform.childCount;
 
         
@@ -98,7 +109,7 @@ public class chartbpm : MonoBehaviour
                         listgimmick++;
                     }
 
-                    bpm = bpmgim / 60;
+                    bpm = (bpmgim * 4) / 60;
                     speed = speedgim;
                 }
             }

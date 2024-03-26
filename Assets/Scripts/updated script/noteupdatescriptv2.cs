@@ -5,22 +5,28 @@ using UnityEngine;
 public class noteupdatescriptv2 : MonoBehaviour
 {
     //optimalization
+    [HideInInspector]
     public
-        bool on_area, rotate_to_target, slowrotate;
+        bool on_area;
 
     public
         GameObject anchorpoint_script, bpmcontroller, lane;
 
-    public float maxvalue = 420;
+    [HideInInspector]
+    public float maxvalue = 500;
 
+    [HideInInspector]
     public
-        float currentfloat, percentage, timelapsed, acumulation, currentlanez, accel, targetspeed, rotaz;
-
+        float currentfloat, percentage, timelapsed, acumulation, currentZ, accel, targetspeed, currentfloat2, speedrotapercentage, targetrota, rotaz;
+    [HideInInspector]
+    public float rotapercentage, bpmpercentage, penambahan;
+    [HideInInspector]
     float factorial = 0.5f;
+    [HideInInspector]
     float rotaspeed;
 
     public static noteupdatescriptv2 notescr;
-
+    [HideInInspector]
     public
         int kind;
 
@@ -49,29 +55,97 @@ public class noteupdatescriptv2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        maxvalue = 500;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(on_area)
+        rotaz = anchorpoint_script.transform.eulerAngles.z;
+        if (rotaz < 180)
         {
-            if (lane.GetComponent<lanescriptupdatev1>().targetspeed > -50 && lane.GetComponent<lanescriptupdatev1>().targetspeed < 50)
-            {
-                slowrotate = true;
-            }
-            else
-            {
-                slowrotate = false;
-            }
+            currentZ = rotaz;
+        }
+        else if (rotaz > 180)
+        {
+            currentZ = rotaz - 360;
+        }
+
+        currentfloat = lane.GetComponent<lanescriptupdatev1>().targetspeed;
+        percentage = (currentfloat / maxvalue) * 165f;
+        percentage = Mathf.Min(percentage, 165f);
+        if(currentfloat < -500)
+        {
+            percentage = -165;
+        }
+
+        //currentfloat2 = targetspeed;
+        //speedrotapercentage = (currentfloat2 / percentage) * 55f;
+        //speedrotapercentage = Mathf.Min(speedrotapercentage, 55f);
+
+        //percentage = Mathf.Max(percentage, 165f);
+
+        if (on_area)
+        {
+            //float tempres;
+            //targetspeed = 0.3f * targetrota;
+            //targetspeed = tempres * 0.2175f;
+            targetrota = percentage;
+            penambahan = bpmcontroller.GetComponent<chartbpm>().fixbpm / 10;
+            bpmpercentage = (20 + penambahan) / 100;
+            rotapercentage = (bpmcontroller.GetComponent<chartbpm>().fixbpm * bpmpercentage) / 100;
+            targetspeed = targetrota * rotapercentage;
+            timelapsed += Time.deltaTime;
+            StartCoroutine(toward());
         }
 
         
 
-        if (slowrotate)
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("active area"))
         {
-            anchorpoint_script.transform.rotation = Quaternion.Euler(0, 0, lane.transform.eulerAngles.z);
+            on_area = true;
+
         }
+    }
+
+    IEnumerator toward()
+    {
+        float startangle = acumulation;
+        if(percentage > 0)
+        {
+            while (currentZ < targetrota)
+            {
+                accel = Mathf.Lerp(0, targetspeed, timelapsed / factorial);
+                rotaspeed = accel * Time.deltaTime;
+                startangle += rotaspeed;
+
+                anchorpoint_script.transform.rotation = Quaternion.Euler(0, 0, startangle);
+                acumulation = anchorpoint_script.transform.eulerAngles.z;
+                //slowrotate = false;
+                //running = true;
+                yield return null;
+            }
+        }
+
+        if (percentage < 0)
+        {
+            while (currentZ > targetrota)
+            {
+                accel = Mathf.Lerp(0, targetspeed, timelapsed / factorial);
+                rotaspeed = accel * Time.deltaTime;
+                startangle += rotaspeed;
+
+                anchorpoint_script.transform.rotation = Quaternion.Euler(0, 0, startangle);
+                acumulation = anchorpoint_script.transform.eulerAngles.z;
+                //slowrotate = false;
+                //running = true;
+                yield return null;
+            }
+        }
+
     }
 }

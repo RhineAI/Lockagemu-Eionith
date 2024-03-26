@@ -24,7 +24,7 @@ public class lanescriptupdatev1 : MonoBehaviour
     public
         GameObject lane;
 
-    //[HideInInspector]
+    [HideInInspector]
     public
         float timelapsed, timelapsestop, rotationTime, speedrotation, targetspeed, currentspeed;
     float factorial;

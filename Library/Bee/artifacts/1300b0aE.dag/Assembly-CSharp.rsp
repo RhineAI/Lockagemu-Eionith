@@ -379,6 +379,8 @@
 "Assets/Samples/Advertisement Legacy/4.4.2/UnityAds Example App/Scripts/UnityAdsManager.cs"
 "Assets/scenecontrol.cs"
 "Assets/Scripts/all type note script/touch.cs"
+"Assets/Scripts/experiment script/beatlineplaytester.cs"
+"Assets/Scripts/experiment script/beatlineposbynotespeed.cs"
 "Assets/Scripts/experiment script/chiildcommand.cs"
 "Assets/Scripts/experiment script/expsimplecoroutine.cs"
 "Assets/Scripts/experiment script/rotationoptimizing.cs"

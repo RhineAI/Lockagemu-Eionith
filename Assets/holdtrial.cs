@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class holdtrial : MonoBehaviour
 {
+    
     public float waktu;
     public int pure;
     public int lost;

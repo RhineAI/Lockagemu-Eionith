@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class changetarget : MonoBehaviour
 {
+    [HideInInspector]
     public GameObject[] target;
+    [HideInInspector]
     public GameObject currenttarget;
+ 
     public GameObject parenttarget;
+    [HideInInspector]
     public 
         int listtarget;
     //public float receiver_impact;
     //public float receiver_duration;
+    [HideInInspector]
     public 
         bool aktive;
+    [HideInInspector]
     public static changetarget targetchanger;
     // Start is called before the first frame update
     void Start()

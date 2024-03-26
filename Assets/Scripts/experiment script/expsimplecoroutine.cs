@@ -4,35 +4,41 @@ using UnityEngine;
 
 public class expsimplecoroutine : MonoBehaviour
 {
-    public float ex;
-    IEnumerator mykorotin;
-    public bool start;
-    public bool stop;
-    public float ex2;
+    //public float 
+    //IEnumerator mykorotin;
+
+    //public bool start;
+    //public bool stop;
+    public float Note_speed;
     public static expsimplecoroutine exs;
+
+    public float penambahan;
+    public float bpm;
+    public float percentage;
+    public static expsimplecoroutine exp;
     //exp vctr x rotate
     Vector3 posisisblmnya;
     // Start is called before the first frame update
     void Start()
     {
-        mykorotin = controller();
+       //mykorotin = controller();
         posisisblmnya = transform.position;
-        
+        //percentage = 20;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 perubahan = transform.position - posisisblmnya;
-        float sudutrotasi = Mathf.Atan2(perubahan.x, perubahan.y) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, sudutrotasi);
+        /*penambahan = (bpm / 10);
 
-        if(start)
+        percentage = (20 + penambahan);
+
+        if (start)
         {
             start = true;
             stop = false;
             //StartCoroutine(mykorotin);
-            StartCoroutine(simplex());
+            //StartCoroutine(simplex());
 
         }
 
@@ -40,8 +46,8 @@ public class expsimplecoroutine : MonoBehaviour
         {
             stop = true;
             start = false;
-            StopCoroutine(mykorotin);
-            StartCoroutine(controller2());
+            //StopCoroutine(mykorotin);
+            //StartCoroutine(controller2());
         }
 
         /*if (sebuah kondisi) {
@@ -50,7 +56,7 @@ public class expsimplecoroutine : MonoBehaviour
         perintah; }*/
     }
 
-    IEnumerator simplex()
+    /*IEnumerator simplex()
     {
         while(ex < 10)
         {
@@ -70,7 +76,7 @@ public class expsimplecoroutine : MonoBehaviour
     {
         StopCoroutine(simplex());
         yield return null;
-    }
+    }*/
 
 
 }
