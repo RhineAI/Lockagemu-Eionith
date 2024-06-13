@@ -18,6 +18,8 @@ TagManager:
   - exitroute
   - target1
   - active area
+  - judgeline
+  - fx
   layers:
   - Default
   - TransparentFX

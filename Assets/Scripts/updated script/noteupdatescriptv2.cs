@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class noteupdatescriptv2 : MonoBehaviour
 {
@@ -10,7 +11,10 @@ public class noteupdatescriptv2 : MonoBehaviour
         bool on_area;
 
     public
-        GameObject anchorpoint_script, bpmcontroller, lane;
+        GameObject anchorpoint_script, bpmcontroller, lane, VFX;
+
+    public
+        Transform selfpos;
 
     [HideInInspector]
     public float maxvalue = 500;
@@ -110,6 +114,27 @@ public class noteupdatescriptv2 : MonoBehaviour
             on_area = true;
 
         }
+
+        if (collision.collider.CompareTag("judgeline"))
+        {
+            //VFX.SetActive(true);
+            //gameObject.SetActive(false);
+            Instantiate(VFX, selfpos.position, selfpos.rotation);
+            //VFX.GetComponent<VideoPlayer>().Play();
+            //Renderer rend = GetComponent<Renderer>();
+            //Material material = rend.material;
+            //rend
+            //Invoke("vfx", 0.1f);
+            
+
+        }
+
+        
+    }
+
+    void vfx()
+    {
+        VFX.GetComponent<VideoPlayer>().playOnAwake = false;
     }
 
     IEnumerator toward()

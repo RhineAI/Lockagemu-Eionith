@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/jancokgaming.unity
     guid: 3cc8b78fe64f6424f8e39cbbb89cae79
   m_configObjects: {}

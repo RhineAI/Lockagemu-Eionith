@@ -363,6 +363,7 @@
 -analyzer:"D:/_MY SOFTWARE/Unity/2022.3.18f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/followrute.cs"
 "Assets/holdtrial.cs"
+"Assets/Materials/Vfx/startstopcontrol.cs"
 "Assets/projectormesh.cs"
 "Assets/proyeksirute.cs"
 "Assets/Rythm Game Scripts/ArrowDown.cs"
