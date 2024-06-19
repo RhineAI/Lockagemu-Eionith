@@ -36,7 +36,11 @@ public class chartbpm : MonoBehaviour
     [HideInInspector]
     public int listcount;
 
+    public bool opt_1;
+    public bool fix_2;
+
     public static chartbpm speednote;
+    public GameObject position_point;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,16 +54,78 @@ public class chartbpm : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        fixbpm = bpm * 60 / 4;
-        int childCount = transform.childCount;
-
-        
-        for (int i = 0; i < childCount; i++)
+        if(opt_1)
         {
-            Transform child = transform.GetChild(i);
-            
-            child.transform.position += new Vector3(0, 0, bpm * Time.deltaTime);
+            fixbpm = bpm * 60 / 4;
+            int childCount = transform.childCount;
+
+
+            for (int i = 0; i < childCount; i++)
+            {
+                Transform child = transform.GetChild(i);
+
+                child.transform.position += new Vector3(0, 0, bpm * Time.deltaTime);
+
+                if (ongimmick)
+                {
+                    if (targetwaktu.Length > 0)
+                    {
+                        floatarget = targetwaktu[listgimmick];
+                    }
+                    else
+                    {
+                        listgimmick = 0;
+                    }
+
+                    if (gimmickbpm.Length > 0)
+                    {
+                        bpmgim = gimmickbpm[listgimmick];
+                    }
+                    else
+                    {
+                        listgimmick = 0;
+                    }
+
+                    if (speedprojectorgimmick.Length > 0)
+                    {
+                        speedgim = speedprojectorgimmick[listgimmick];
+                    }
+                    else
+                    {
+                        listgimmick = 0;
+                    }
+
+                    //targetwaktu.Length
+
+
+
+
+                    realtime += Time.deltaTime;
+                    //listtime = floatarget;
+                    //listimpact = bpmgim;
+                    if (realtime >= floatarget)
+                    {
+                        if (listgimmick == listcount)
+                        {
+                            listgimmick = listcount;
+                        }
+                        else
+                        {
+                            listgimmick++;
+                        }
+
+                        bpm = (bpmgim * 4) / 60;
+                        speed = speedgim;
+                    }
+                }
+            }
+        }
+
+        if(fix_2)
+        {
+            fixbpm = bpm * 60 / 4;
+            transform.position += new Vector3(0, 0, bpm * Time.deltaTime);
+            position_point.transform.position += new Vector3(0, 0, bpm * Time.deltaTime);
 
             if (ongimmick)
             {
@@ -114,6 +180,8 @@ public class chartbpm : MonoBehaviour
                 }
             }
         }
+
+        
         
         
     }

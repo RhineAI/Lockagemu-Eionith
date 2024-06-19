@@ -10,11 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-<<<<<<< Updated upstream
-    <ProjectGuid>{00FAB218-D1ED-0BB9-416E-2D46B4868F8C}</ProjectGuid>
-=======
     <ProjectGuid>{3758214C-26D1-508E-6E24-7DB21C20A59C}</ProjectGuid>
->>>>>>> Stashed changes
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,16 +55,13 @@
     <UnityVersion>2022.3.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< Updated upstream
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-=======
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
->>>>>>> Stashed changes
     <Analyzer Include="D:\_MY SOFTWARE\Unity\2022.3.18f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\_MY SOFTWARE\Unity\2022.3.18f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\experiment script\beatlineposbynotespeed.cs" />
+    <Compile Include="Assets\Scripts\updated note script\noteupdatescriptv2.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\Notes\Tap.cs" />
     <Compile Include="Assets\Rythm Game Scripts\EarlyLateJudgement.cs" />
@@ -82,7 +75,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Materials\Vfx\startstopcontrol.cs" />
-    <Compile Include="Assets\Scripts\updated script\lanescriptupdatev1.cs" />
     <Compile Include="Assets\Scripts\RhythmSceneScript\BeatRun.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\for charting\charter.cs" />
@@ -95,8 +87,8 @@
     <Compile Include="Assets\Scripts\Score\ScoreDisplay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\for charting\chartbpm.cs" />
-    <Compile Include="Assets\Scripts\updated script\sideflicknote.cs" />
     <Compile Include="Assets\Materials\Vfx\livefx.cs" />
+    <Compile Include="Assets\Scripts\updated note script\sideflicknote.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\projectormesh.cs" />
@@ -110,6 +102,7 @@
     <Compile Include="Assets\Scripts\experiment script\expsimplecoroutine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\Scripts\updated note script\notescriptupdatev1.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\Scripts\Notes\Flick.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
@@ -126,7 +119,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\all type note script\touch.cs" />
-    <Compile Include="Assets\Scripts\updated script\changetarget.cs" />
+    <Compile Include="Assets\Materials\Vfx\vfx_instans.cs" />
+    <Compile Include="Assets\Scripts\updated note script\lanescriptupdatev1.cs" />
     <Compile Include="Assets\Scripts\RhythmSceneScript\JudgementLine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\RhythmSceneScript\TapNote.cs" />
@@ -149,8 +143,7 @@
     <Compile Include="Assets\Scripts\Notes\Slider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\experiment script\beatlineplaytester.cs" />
-    <Compile Include="Assets\Scripts\updated script\notescriptupdatev1.cs" />
-    <Compile Include="Assets\Scripts\updated script\noteupdatescriptv2.cs" />
+    <Compile Include="Assets\Scripts\updated note script\changetarget.cs" />
     <Compile Include="Assets\holdtrial.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\experiment script\rotationoptimizing.cs" />
@@ -218,8 +211,6 @@
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
       <HintPath>D:\_MY SOFTWARE\Unity\2022.3.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
-<<<<<<< Updated upstream
-=======
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ClusterInputModule">
@@ -228,7 +219,6 @@
     </Reference>
     <Reference Include="UnityEngine.ClusterRendererModule">
       <HintPath>D:\_MY SOFTWARE\Unity\2022.3.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
->>>>>>> Stashed changes
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ContentLoadModule">
@@ -441,13 +431,10 @@
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
       <HintPath>D:\_MY SOFTWARE\Unity\2022.3.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
-<<<<<<< Updated upstream
-=======
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.VirtualTexturingModule">
       <HintPath>D:\_MY SOFTWARE\Unity\2022.3.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
->>>>>>> Stashed changes
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.WindModule">

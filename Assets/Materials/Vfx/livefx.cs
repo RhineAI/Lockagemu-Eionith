@@ -6,6 +6,7 @@ public class livefx : MonoBehaviour
 {
     public bool parent;
     public bool child;
+    public bool lastframe;
     public GameObject firstframe, nextframe, thisframe;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,11 @@ public class livefx : MonoBehaviour
         if (child)
         {
             Invoke("change", 0.03f);
+        }
+
+        if(lastframe)
+        {
+
         }
 
     }
