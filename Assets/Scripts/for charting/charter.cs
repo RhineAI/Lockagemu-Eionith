@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +18,7 @@ public class charter : MonoBehaviour
     void Start()
     {
         bpm = bpm / 60;
+        notetransform = this.transform;
     }
 
     // Update is called once per frame
@@ -26,7 +27,7 @@ public class charter : MonoBehaviour
         
         //Debug.Log("spawn");
         if (movecontrol)
-        {
+        {  
             transform.position -= new Vector3(0, 0, bpm * Time.deltaTime);
         }
 

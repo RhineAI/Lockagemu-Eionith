@@ -30,7 +30,7 @@ public class ScoreDisplay : MonoBehaviour
         }
     }
 
-    void update()
+    void Update()
     {
         // criticalTap = 1; 
         // criticalJudgement = 1; 

@@ -125,7 +125,7 @@ public class chartbpm : MonoBehaviour
         {
             fixbpm = bpm * 60 / 4;
             transform.position += new Vector3(0, 0, bpm * Time.deltaTime);
-            position_point.transform.position += new Vector3(0, 0, bpm * Time.deltaTime);
+            //position_point.transform.position += new Vector3(0, 0, bpm * Time.deltaTime);
 
             if (ongimmick)
             {

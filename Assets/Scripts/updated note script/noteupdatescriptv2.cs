@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Video;
 
@@ -11,7 +12,7 @@ public class noteupdatescriptv2 : MonoBehaviour
         bool on_area;
 
     public
-        GameObject anchorpoint_script, bpmcontroller, lane, VFX;
+        GameObject anchorpoint_script, bpmcontroller, lane, VFX, judge2;
 
     public
         Transform selfpos, canvas_vfx;
@@ -65,11 +66,17 @@ public class noteupdatescriptv2 : MonoBehaviour
     {
         maxvalue = 500;
         selfpos = gameObject.transform;
+        judge2 = GameObject.Find("Judgement 2");
+        lane = GameObject.Find("inti_lane");
+        GameObject canvasfx = GameObject.Find("vfx spawn");
+        if(canvasfx != null) { canvas_vfx = canvasfx.transform; }
+        bpmcontroller = GameObject.Find("Note");
     }
 
     // Update is called once per frame
     void Update()
     {
+        Vector3 selfposreal = new Vector3(selfpos.transform.position.x, selfpos.transform.position.y, judge2.transform.position.z);
         rotaz = anchorpoint_script.transform.eulerAngles.z;
         if (rotaz < 180)
         {
@@ -112,8 +119,7 @@ public class noteupdatescriptv2 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.D))
             {
-                vfxscr.vfxspawn();
-                gameObject.SetActive(false);
+                Instantiate(VFX, selfposreal, selfpos.rotation, canvas_vfx);
             }
         }
 
@@ -129,12 +135,15 @@ public class noteupdatescriptv2 : MonoBehaviour
 
         }
 
-        if (collision.collider.CompareTag("judgeline"))
+        if (collision.gameObject == judge2)
         {
-            vfxscr.vfxspawn();
+            gameObject.SetActive(false);
+            float poz = selfpos.transform.position.z;
+            Vector3 selfposreal = new Vector3(selfpos.transform.position.x, selfpos.transform.position.y, judge2.transform.position.z);
+            //vfxscr.vfxspawn();
             //VFX.SetActive(true);
             //gameObject.SetActive(false);
-            //Instantiate(VFX, /*selfpos.position, selfpos.rotation,*/ canvas_vfx);
+            Instantiate(VFX, selfposreal, selfpos.rotation, canvas_vfx);
             //VFX.GetComponent<VideoPlayer>().Play();
             //Renderer rend = GetComponent<Renderer>();
             //Material material = rend.material;
@@ -157,7 +166,7 @@ public class noteupdatescriptv2 : MonoBehaviour
         float startangle = acumulation;
         if(percentage > 0)
         {
-            while (currentZ < targetrota)
+            while (currentZ < 360)
             {
                 accel = Mathf.Lerp(0, targetspeed, timelapsed / factorial);
                 rotaspeed = accel * Time.deltaTime;
@@ -173,7 +182,7 @@ public class noteupdatescriptv2 : MonoBehaviour
 
         if (percentage < 0)
         {
-            while (currentZ > targetrota)
+            while (currentZ < 360)
             {
                 accel = Mathf.Lerp(0, targetspeed, timelapsed / factorial);
                 rotaspeed = accel * Time.deltaTime;

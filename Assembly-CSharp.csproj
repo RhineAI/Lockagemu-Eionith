@@ -70,11 +70,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\Rythm Game Scripts\BeatScroller.cs" />
+    <Compile Include="Assets\Scripts\Gimmick\Glitch.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-    <Compile Include="Assets\Materials\Vfx\startstopcontrol.cs" />
     <Compile Include="Assets\Scripts\RhythmSceneScript\BeatRun.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\for charting\charter.cs" />
@@ -87,7 +87,6 @@
     <Compile Include="Assets\Scripts\Score\ScoreDisplay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\for charting\chartbpm.cs" />
-    <Compile Include="Assets\Materials\Vfx\livefx.cs" />
     <Compile Include="Assets\Scripts\updated note script\sideflicknote.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -98,6 +97,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Samples\Advertisement Legacy\4.4.2\UnityAds Example App\Scripts\UnityAdsExampleUI.cs" />
     <Compile Include="Assets\Rythm Game Scripts\GameManager.cs" />
+    <Compile Include="Assets\Materials\Vfx\Script\livefx.cs" />
     <Compile Include="Assets\Rythm Game Scripts\ArrowLeft.cs" />
     <Compile Include="Assets\Scripts\experiment script\expsimplecoroutine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
@@ -119,7 +119,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\all type note script\touch.cs" />
-    <Compile Include="Assets\Materials\Vfx\vfx_instans.cs" />
     <Compile Include="Assets\Scripts\updated note script\lanescriptupdatev1.cs" />
     <Compile Include="Assets\Scripts\RhythmSceneScript\JudgementLine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
@@ -135,18 +134,25 @@
     <Compile Include="Assets\proyeksirute.cs" />
     <Compile Include="Assets\Samples\Advertisement Legacy\4.4.2\UnityAds Example App\Scripts\UnityAdsManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Materials\Vfx\warehouse\vfx_instans.cs" />
     <Compile Include="Assets\Rythm Game Scripts\ArrowUp.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Notes\Hold.cs" />
+    <Compile Include="Assets\Scripts\Gimmick\gimmickanchor.cs" />
     <Compile Include="Assets\scenecontrol.cs" />
     <Compile Include="Assets\Rythm Game Scripts\ArrowDown.cs" />
     <Compile Include="Assets\Scripts\Notes\Slider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\experiment script\beatlineplaytester.cs" />
+    <Compile Include="Assets\Scripts\for charting\positionissue.cs" />
+    <Compile Include="Assets\Materials\Vfx\warehouse\startstopcontrol.cs" />
+    <Compile Include="Assets\Scripts\updated note script\HoldTrialScr.cs" />
     <Compile Include="Assets\Scripts\updated note script\changetarget.cs" />
+    <Compile Include="Assets\Materials\Vfx\Script\HoldVfx.cs" />
     <Compile Include="Assets\holdtrial.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Scripts\experiment script\rotationoptimizing.cs" />
+    <Compile Include="Assets\AudioControl.cs" />
     <Compile Include="Assets\followrute.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -158,7 +164,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Materials\Vfx\ChromaKeyer.shader" />
+    <None Include="Assets\Materials\Vfx\warehouse\ChromaKeyer.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -1045,8 +1051,8 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UI">
@@ -1057,12 +1063,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.Advertisements.Editor">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.Advertisements.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
