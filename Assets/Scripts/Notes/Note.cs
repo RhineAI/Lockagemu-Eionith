@@ -5,22 +5,31 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Tap : MonoBehaviour
+public class Note : MonoBehaviour, IChartElement
 {
+    // CONSTRUCTOR NOTE (USED LATER)
+    public int StartTimingPosition { get; set; }
+    public int LanePosition { get; set; }
+
+    public Note(int startTimingPosition, int lanePosition)
+    {
+        StartTimingPosition = startTimingPosition;
+        LanePosition = lanePosition;
+    }
+
+
     public GameObject self;
-    public GameObject falser;
     public GameObject create;
 
     public bool critical = false;
     public bool fair = false;
     public bool error = false;
     
-    public bool already;
     public bool creator;
     public bool canBePressed = false;
     public bool getTheScoreStatus = false;
 
-    public static Tap instance;
+    public static Note instance;
 
     private double judgementZPosition;
    

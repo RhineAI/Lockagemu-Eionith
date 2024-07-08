@@ -68,7 +68,7 @@
     <Compile Include="Assets\Scripts\updated note script\noteupdatescriptv2.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\Scripts\Rhythm Scene Script\BeatRun.cs" />
-    <Compile Include="Assets\Scripts\Notes\Tap.cs" />
+    <Compile Include="Assets\Scripts\Notes\Slide.cs" />
     <Compile Include="Assets\Rythm Game Scripts\EarlyLateJudgement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\hold &amp; multitouch control script\realsecontrol.cs" />
@@ -90,6 +90,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\Chart\ChartReader.cs" />
     <Compile Include="Assets\Scripts\updated note script\sideflicknote.cs" />
+    <Compile Include="Assets\Scripts\Notes\Note.cs" />
     <Compile Include="Assets\Scripts\Rhythm Scene Script\resetSceneControl.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
@@ -144,7 +145,6 @@
     <Compile Include="Assets\Scripts\Gimmick\gimmickanchor.cs" />
     <Compile Include="Assets\Scripts\Rhythm Scene Script\TapNote.cs" />
     <Compile Include="Assets\Rythm Game Scripts\ArrowDown.cs" />
-    <Compile Include="Assets\Scripts\Notes\Slider.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\experiment script\beatlineplaytester.cs" />
     <Compile Include="Assets\Scripts\Chart\chartbpm.cs" />

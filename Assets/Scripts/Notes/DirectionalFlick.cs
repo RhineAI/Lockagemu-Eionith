@@ -4,15 +4,25 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DirectionalFlick : MonoBehaviour
+public class DirectionalFlick : MonoBehaviour, IChartElement
 {
+    // CONSTRUCTOR FLICK (USED LATER)
+    public int StartTimingPosition { get; set; }
+    public float LanePosition { get; set; }
+    public string Type { get; set; }
+
+    public DirectionalFlick(int startTimingPosition, int lanePosition, string type)
+    {
+        StartTimingPosition = startTimingPosition;
+        LanePosition = lanePosition;
+        Type = type;
+    }
+
     public GameObject self;
     public GameObject falser;
     public GameObject create;
 
-    public bool tap;
     public bool directionalFlick;
-    public bool already;
     public bool creator;
     public bool falsers;
     public bool canBePressed = false;
@@ -26,9 +36,6 @@ public class DirectionalFlick : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //gameObject.transform.localPosition = new Vector3();
-        //case1 = true;
-        //case2 = true;
         instance = this;
     }
 

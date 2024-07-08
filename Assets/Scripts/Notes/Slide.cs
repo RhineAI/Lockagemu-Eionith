@@ -4,8 +4,19 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Slider : MonoBehaviour
+public class Slide : MonoBehaviour, IChartElement
 {
+    // CONSTRUCTOR SLIDE (USED LATER)
+    public int StartTimingPosition { get; set; }
+    public float Position { get; set; }
+
+    public Slide(int startTimingPosition, float position)
+    {
+        StartTimingPosition = startTimingPosition;
+        Position = position;
+    }
+
+
     public GameObject self;
     public GameObject create;
 
@@ -18,14 +29,11 @@ public class Slider : MonoBehaviour
     public bool canBePressed = false;
     public bool getTheScoreStatus = false;
 
-    public static Slider instance;
+    public static Slide instance;
    
     // Start is called before the first frame update
     void Start()
     {
-        //gameObject.transform.localPosition = new Vector3();
-        //case1 = true;
-        //case2 = true;
         instance = this;
     }
 

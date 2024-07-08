@@ -4,8 +4,26 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Hold : MonoBehaviour
+public class Hold : MonoBehaviour, IChartElement
 {
+    // CONSTRUCTOR HOLD (USED LATER)
+    public int StartTimingPosition { get; set; }
+    public int EndTimingPosition { get; set; }
+    public int StartLanePosition { get; set; }
+    public int EndLanePosition { get; set; }
+    public float LanePosition { get; set; }
+    public string Type { get; set; }
+
+    public Hold(int startTimingPosition, int endTimingPosition, int startLanePosition, int endLanePosition, string type)
+    {
+        StartTimingPosition = startTimingPosition;
+        EndTimingPosition = endTimingPosition;
+        StartLanePosition = startLanePosition;
+        EndLanePosition = endLanePosition;
+        Type = type;
+    }
+
+
     // public LayerMask touchinputmask;
     //private List<GameObject> touchlist = new List<GameObject>();
     //private GameObject[] touchesold;

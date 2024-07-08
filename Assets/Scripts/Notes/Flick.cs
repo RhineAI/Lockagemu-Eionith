@@ -1,12 +1,21 @@
 using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-//using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Flick : MonoBehaviour
+public class Flick : MonoBehaviour, IChartElement
 {
+    // CONSTRUCTOR FLICK (USED LATER)
+    public int StartTimingPosition { get; set; }
+    public float LanePosition { get; set; }
+
+    public Flick(int startTimingPosition, int lanePosition)
+    {
+        StartTimingPosition = startTimingPosition;
+        LanePosition = lanePosition;
+    }
+
     public GameObject self;
     public GameObject create;
 
@@ -15,7 +24,6 @@ public class Flick : MonoBehaviour
     public bool error = false;
 
     public bool creator;
-    public bool already;
     public bool canBePressed = false;
     public bool getTheScoreStatus = false;
 

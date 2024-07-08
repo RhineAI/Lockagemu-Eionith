@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LaneRotation : MonoBehaviour
+public class LaneRotation : MonoBehaviour, IChartElement
 {
-    // // CONSTRUCTOR ROTATION
+    // // CONSTRUCTOR ROTATION (USED LATER)
     public int StartTiming { get; set; }
     public int EndTiming { get; set; }
     public int ShiftAmount { get; set; }
@@ -19,10 +19,7 @@ public class LaneRotation : MonoBehaviour
     public float timelapsed = 0f;
     [SerializeField]
     [Range (0, 60)]
-    public float speed;
     public float currentAngle;
-    public int shiftHowManyLanes;
-    
     private Dictionary<string, float> lanes = new Dictionary<string, float>
     {
         { "1", 30f },
@@ -80,16 +77,16 @@ public class LaneRotation : MonoBehaviour
             string laneKey = laneAngle.Key;
             float laneValue = laneAngle.Value;
 
-            if (shiftHowManyLanes < 0)
+            if (ShiftAmount < 0)
             {
-                if (Mathf.Abs(shiftHowManyLanes).ToString() == laneKey)
+                if (Mathf.Abs(ShiftAmount).ToString() == laneKey)
                 {
                     return currentAngle - laneValue; // Adjust rotation for negative shift
                 }
             }
             else
             {
-                if (shiftHowManyLanes.ToString() == laneKey)
+                if (ShiftAmount.ToString() == laneKey)
                 {
                     return currentAngle + laneValue; // Keep positive shift as is
                 }
@@ -106,14 +103,14 @@ public class LaneRotation : MonoBehaviour
 
         Debug.Log($"Start : {startAngle}, Target : {targetAngle}");
 
-        // Clamp speed to maximum 60
-        speed = Mathf.Min(speed, 60);
+        // Clamp RotationSpeed to maximum 60
+        RotationSpeed = Mathf.Min(RotationSpeed, 60);
 
         while (!stopRotating)
         {
             timelapsed += Time.deltaTime;
 
-            currentAngle = Mathf.Lerp(startAngle, targetAngle, timelapsed * speed / totalRotation);
+            currentAngle = Mathf.Lerp(startAngle, targetAngle, timelapsed * RotationSpeed / totalRotation);
 
             lane.transform.rotation = Quaternion.Euler(0, 0, currentAngle);
             
