@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Rhythm-Project.sln"
+    "dotnet.defaultSolution": "Lockagemu-Eionith.sln"
 }
