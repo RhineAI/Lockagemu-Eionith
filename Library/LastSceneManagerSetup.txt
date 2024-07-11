@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/trial.unity
+- path: Assets/Scenes/ProfileUI.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 Base path: 'E:/Unity/Editor/2022.3.18f1/Editor/Data', plugins path 'E:/Unity/Editor/2022.3.18f1/Editor/Data/PlaybackEngines'
+=======
+Base path: 'D:/Pictures/Game/Unity/Unity Engine/2022.3.18f1/Editor/Data', plugins path 'D:/Pictures/Game/Unity/Unity Engine/2022.3.18f1/Editor/Data/PlaybackEngines'
+>>>>>>> Stashed changes
 Cmd: initializeCompiler
 
 Cmd: compileSnippet

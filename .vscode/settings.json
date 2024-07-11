@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Rhythm-Project.sln"
+    "dotnet.defaultSolution": "Rhythm-Project.sln",
+    "dotnet.preferCSharpExtension": true
 }
