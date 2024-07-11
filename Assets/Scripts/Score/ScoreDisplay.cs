@@ -7,7 +7,6 @@ using System;
 
 public class ScoreDisplay : MonoBehaviour
 {
-    // a
     public GameObject self;
     public GameObject noteObjects;
     public static ScoreDisplay instance;
