@@ -110200,11 +110200,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 295ffad2358e9144aa9729341146a372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShiftAmount: 4
   timelapsed: 0
-  speed: 59.6
+  RotationSpeed: 0
   currentAngle: 0
-  shiftHowManyLanes: 4
-  startRotating: 1
+  startRotating: 0
   stopRotating: 0
   lane: {fileID: 4576028884521167221}
 --- !u!33 &8424511540368004675
