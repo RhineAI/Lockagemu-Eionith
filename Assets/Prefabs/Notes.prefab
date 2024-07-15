@@ -258,11 +258,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 4998652945417574894}
-  falser: {fileID: 0}
   create: {fileID: 0}
   critical: 0
   fair: 0
   error: 0
+  creator: 0
+  canBePressed: 0
+  getTheScoreStatus: 0
 --- !u!54 &6438155345159185471
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -320,7 +322,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3235935862917959406}
-  - component: {fileID: 3425142797598637019}
   m_Layer: 0
   m_Name: Notes
   m_TagString: Untagged
@@ -346,21 +347,6 @@ Transform:
   - {fileID: 3679446873362527655}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3425142797598637019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6793416882192506341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd51e8115ead6164a89ad14a53f94f47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  beatTempo: 250
-  hasStarted: 1
-  speed: 9
 --- !u!1 &8054106920779850057
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,11 +446,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   self: {fileID: 8054106920779850057}
-  falser: {fileID: 0}
   create: {fileID: 0}
   critical: 0
   fair: 0
   error: 0
+  creator: 0
+  canBePressed: 0
+  getTheScoreStatus: 0
 --- !u!54 &8762506981645460675
 Rigidbody:
   m_ObjectHideFlags: 0

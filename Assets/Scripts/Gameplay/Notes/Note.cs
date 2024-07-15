@@ -5,19 +5,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Note : MonoBehaviour, IChartElement
+public class Note : MonoBehaviour
 {
-    // CONSTRUCTOR NOTE (USED LATER)
-    public int StartTimingPosition { get; set; }
-    public int LanePosition { get; set; }
-
-    public Note(int startTimingPosition, int lanePosition)
-    {
-        StartTimingPosition = startTimingPosition;
-        LanePosition = lanePosition;
-    }
-
-
     public GameObject self;
     public GameObject create;
 

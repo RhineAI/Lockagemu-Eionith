@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class scenecontrol : MonoBehaviour
+public class ResetSceneControl : MonoBehaviour
 {
     // public float waktu;
     // Start is called before the first frame update

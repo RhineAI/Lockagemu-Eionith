@@ -4,20 +4,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DirectionalFlick : MonoBehaviour, IChartElement
+public class DirectionalFlick : MonoBehaviour
 {
-    // CONSTRUCTOR FLICK (USED LATER)
-    public int StartTimingPosition { get; set; }
-    public float LanePosition { get; set; }
-    public string Type { get; set; }
-
-    public DirectionalFlick(int startTimingPosition, int lanePosition, string type)
-    {
-        StartTimingPosition = startTimingPosition;
-        LanePosition = lanePosition;
-        Type = type;
-    }
-
     public GameObject self;
     public GameObject falser;
     public GameObject create;
