@@ -4,18 +4,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Flick : MonoBehaviour, IChartElement
+public class Flick : MonoBehaviour
 {
-    // CONSTRUCTOR FLICK (USED LATER)
-    public int StartTimingPosition { get; set; }
-    public float LanePosition { get; set; }
-
-    public Flick(int startTimingPosition, int lanePosition)
-    {
-        StartTimingPosition = startTimingPosition;
-        LanePosition = lanePosition;
-    }
-
     public GameObject self;
     public GameObject create;
 

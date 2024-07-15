@@ -4,19 +4,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Slide : MonoBehaviour, IChartElement
+public class Slide : MonoBehaviour
 {
-    // CONSTRUCTOR SLIDE (USED LATER)
-    public int StartTimingPosition { get; set; }
-    public float Position { get; set; }
-
-    public Slide(int startTimingPosition, float position)
-    {
-        StartTimingPosition = startTimingPosition;
-        Position = position;
-    }
-
-
     public GameObject self;
     public GameObject create;
 

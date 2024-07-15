@@ -726,50 +726,71 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101241813}
   m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
---- !u!1 &104043055
-GameObject:
+--- !u!1001 &139959658
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 104043056}
-  - component: {fileID: 104043057}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &104043056
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104043055}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3203057712747844046}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &104043057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1770783807952775857, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      propertyPath: m_Name
+      value: Final Product For Autoplay
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 401734543}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+--- !u!4 &139959659 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8594773304526802858, guid: b195f778652f5044c974259fe5b60c7c, type: 3}
+  m_PrefabInstance: {fileID: 139959658}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104043055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6f26a45162201640a15f07975576310, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &141298454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,6 +3077,113 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372116674}
   m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
+--- !u!1 &401734542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 401734543}
+  - component: {fileID: 401734546}
+  - component: {fileID: 401734545}
+  - component: {fileID: 401734544}
+  m_Layer: 0
+  m_Name: NoteObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &401734543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401734542}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5182678687466605865}
+  m_Father: {fileID: 139959659}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &401734544
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401734542}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2840508161140071744, guid: d8f2ebc19362c5b478044133dc395ec6, type: 3}
+--- !u!23 &401734545
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401734542}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &401734546
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401734542}
+  m_Mesh: {fileID: 2840508161140071744, guid: d8f2ebc19362c5b478044133dc395ec6, type: 3}
 --- !u!1 &411778604
 GameObject:
   m_ObjectHideFlags: 0
@@ -8147,139 +8275,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1422605702}
   m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
---- !u!1 &1434516590
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1434516591}
-  - component: {fileID: 1434516595}
-  - component: {fileID: 1434516594}
-  - component: {fileID: 1434516593}
-  - component: {fileID: 1434516592}
-  m_Layer: 0
-  m_Name: Pusat_Anchor_For All_Object
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1434516591
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434516590}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0010092142, z: -5.5719132}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2725507760212879788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1434516592
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434516590}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!65 &1434516593
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434516590}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.019999988, y: 0.019999992, z: 0.02}
-  m_Center: {x: -0.000000003259629, y: 0.000000003259629, z: 0}
---- !u!23 &1434516594
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434516590}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1434516595
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434516590}
-  m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
 --- !u!1 &1439752342
 GameObject:
   m_ObjectHideFlags: 0
@@ -12801,9 +12796,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3732513262528118413}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 766311895657852082}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5478611769684001830}
@@ -12867,21 +12862,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.019999988, y: 0.019999992, z: 0.02}
   m_Center: {x: -0.000000003259629, y: 0.000000003259629, z: 0}
---- !u!4 &75589355852339656
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958072128502329350}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0.44904214}
-  m_LocalScale: {x: 10.161684, y: 10.161684, z: 10.161684}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2725507760212879788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &76737522883279757
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12924,9 +12904,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6466518593778149330}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2831336790173622412}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7358896118099541319}
@@ -13018,9 +12998,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4080644754822489692}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7307207508606286803}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2208001016891552661}
@@ -14478,75 +14458,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7545664270166580988}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &194830446194267565
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4957204744315770211}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3e1c9afe2ea46f34e869d75aa91d9746, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &196211455052646419
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417877711148634280}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!23 &197354412755053963
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14784,9 +14695,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3972159768193982354}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7540667653450289221}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1216036002041827236}
@@ -15957,9 +15868,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 418086938734979123}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4487197963521027487}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 815717899357818547}
@@ -17561,9 +17472,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2147072659844710645}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 423579237244700813}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 913999618047723647}
@@ -17664,9 +17575,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2115281814913436212}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7457641722772381594}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3545440789934216038}
@@ -18459,9 +18370,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8567736343259924118}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5732842905373067095}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2096581923436743269}
@@ -18700,9 +18611,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6061357394837597972}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6498229829034738203}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5159193932254045297}
@@ -18754,9 +18665,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3063705813102133457}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4814854923198232663}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5689374724218651946}
@@ -18916,9 +18827,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3587709804940925008}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8324483531932262794}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6919844737714229714}
@@ -19633,9 +19544,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2048733899083909074}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1118799737945839835}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3358818447152993492}
@@ -20872,9 +20783,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4524554260841547591}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3364042961557210467}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4794303356286603687}
@@ -20910,9 +20821,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6011984303806125618}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4646034829666732238}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8862826991744644176}
@@ -20948,9 +20859,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3618079480556556278}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 560742953870238074}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2067601768536387471}
@@ -21028,9 +20939,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8027520768527230118}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1874272620719177129}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2128872052222478655}
@@ -21257,9 +21168,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8486005981399687986}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6404352940208149098}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2942471122917651295}
@@ -22551,9 +22462,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 1009713588005043964}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2712867379814198513}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7429606576898944751}
@@ -22756,9 +22667,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2826421842486218953}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8633625723448294185}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5572589208769175460}
@@ -22974,9 +22885,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 629447754846045331}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7583265256832249609}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4320929756338479584}
@@ -23459,9 +23370,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 734589811463195468}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3010879191570822680}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6091641334299575603}
@@ -23541,26 +23452,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &958072128502329350
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 75589355852339656}
-  - component: {fileID: 1167644912000941291}
-  - component: {fileID: 3302067158071974601}
-  - component: {fileID: 6659700697265546378}
-  - component: {fileID: 8515892144790693088}
-  m_Layer: 0
-  m_Name: Judgement 2
-  m_TagString: judgeline
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &958361696410168239
 GameObject:
   m_ObjectHideFlags: 0
@@ -23594,27 +23485,6 @@ Transform:
   - {fileID: 8531603306405587224}
   m_Father: {fileID: 2052867637741653112}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &959803772806390904
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4576028884521167221}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.34, y: 0.32, z: 0.04}
-  m_Center: {x: 0, y: 0, z: 0.45}
 --- !u!54 &961380096652414481
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23817,9 +23687,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5681550231497951624}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 510879731302797711}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5227931606296008615}
@@ -24445,9 +24315,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6517100063023821739}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1686956360185265947}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7589655669165675392}
@@ -24552,62 +24422,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1038841291071657320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4576028884521167221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce4775e3c8f8848ae8ac85a6dcc95d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startRotating: 0
-  hasrunning: 0
-  optimising: 0
-  is_rotating: 0
-  optimizing: 0
-  checking: 0
-  optimizing_minus: 0
-  optimizing_plus: 0
-  finishless: 0
-  finishmore: 0
-  RM180: 0
-  RM150: 0
-  RM120: 0
-  RM90: 0
-  RM60: 0
-  RM30: 0
-  R0: 0
-  R30: 0
-  R60: 0
-  R90: 0
-  R120: 0
-  R150: 0
-  R180: 0
-  lessrota: 0
-  morerota: 0
-  more: 0
-  less: 0
-  xplus: 0
-  xplus180optmin: 0
-  xplus180optplus: 0
-  xminus: 0
-  xminus180optmin: 0
-  xminus180optplus: 0
-  X_optimize: 0
-  rotaz: 0
-  currentZ: 0
-  lane: {fileID: 4576028884521167221}
-  timelapsed: 0
-  timelapsestop: 0
-  rotationTime: 0
-  speedrotation: 0
-  targetspeed: 0
-  currentspeed: 0
-  step: 0
 --- !u!4 &1048321702273643865
 Transform:
   m_ObjectHideFlags: 0
@@ -25057,9 +24871,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3053931814889085754}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2359567393084826288}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5064806132386642052}
@@ -25466,9 +25280,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6235683943569194155}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6304538059194341428}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8390256525080173585}
@@ -26424,14 +26238,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5164947993459828276}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1167644912000941291
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958072128502329350}
-  m_Mesh: {fileID: 4498548314725771797, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
 --- !u!23 &1173602414270385599
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -26617,9 +26423,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 1098685900205339657}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1847158295709263973}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8827183843660427538}
@@ -27020,9 +26826,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6810762228346712945}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7822594647336222842}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5477376040059567134}
@@ -27340,24 +27146,6 @@ GameObject:
   - component: {fileID: 5642284626585694580}
   m_Layer: 0
   m_Name: note_J(Clone)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1265572631262690935
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3018300834142169386}
-  - component: {fileID: 5130182381461194641}
-  - component: {fileID: 8980406756863772141}
-  m_Layer: 0
-  m_Name: Judgement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27685,68 +27473,6 @@ Transform:
   - {fileID: 510879731302797711}
   m_Father: {fileID: 5188649383638452444}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 15}
---- !u!108 &1300575779516883394
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4802319408267762337}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 1
-  m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1 &1302019991453749762
 GameObject:
   m_ObjectHideFlags: 0
@@ -27802,9 +27528,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7348205734820692763}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 765292997674509514}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1256817662410868057}
@@ -27920,9 +27646,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 9179463709018062790}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 621992206937129355}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5710330468492970163}
@@ -28435,9 +28161,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5157215625251103767}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 868059133353164036}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2460286042116845387}
@@ -28516,9 +28242,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 1831013169206039690}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2144240932473726417}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1977431694745796156}
@@ -28670,9 +28396,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4996312551685082267}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5699878186485940051}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6264676238654505082}
@@ -28735,9 +28461,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5546327272968769042}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6711802323696524252}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1367342406615076892}
@@ -29140,24 +28866,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1417877711148634280
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3358868234630210351}
-  - component: {fileID: 6840283920150646761}
-  - component: {fileID: 196211455052646419}
-  m_Layer: 0
-  m_Name: On_Area_Trigger
-  m_TagString: active area
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1419509244419844362
 GameObject:
   m_ObjectHideFlags: 0
@@ -29304,9 +29012,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 361674023814664236}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6895133477103775442}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1147024050040375826}
@@ -29978,9 +29686,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3092263719576630219}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7999800788590199326}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3243961510001870538}
@@ -30197,9 +29905,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 1766145945733591651}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3547674125807582463}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3456114531545549463}
@@ -30286,57 +29994,6 @@ Transform:
   - {fileID: 4060432533725311893}
   m_Father: {fileID: 2033945397857011804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &1514206525264653172
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5555073003716384113}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 2
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10000
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.099999994
-  far clip plane: 1000
-  field of view: 26.991467
-  orthographic: 0
-  orthographic size: 0.0023999999
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!54 &1516093377036355985
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -30433,9 +30090,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2048038634461610151}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 572861745574886906}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7265628596280965619}
@@ -30780,9 +30437,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3228747705041324479}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4833368938819466972}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4056246774762014520}
@@ -30865,9 +30522,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8110031936040354587}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5448916862236108033}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1121898774141441899}
@@ -30888,48 +30545,6 @@ MonoBehaviour:
   penambahan: 0
   kind: 0
   test_pc: 0
---- !u!23 &1551552981226945991
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7696726390982547402}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -8719572371529340827, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &1552859382535789762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31087,9 +30702,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5768700239660680461}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6970350371259459224}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4562803598025989614}
@@ -31169,9 +30784,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4713163377518608998}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1167422315695197071}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4413579357746287702}
@@ -31686,9 +31301,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8832630436957550675}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2653615170876334366}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7135831365108391414}
@@ -32592,9 +32207,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2216792023630189489}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7680985007005541194}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 919043589387991087}
@@ -33257,9 +32872,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2686021269935465923}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1942977434525641468}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6434028857998059135}
@@ -33504,9 +33119,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6920967230634609531}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5584689586243061036}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4939538980696061016}
@@ -34051,9 +33666,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5411905767995253681}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8456937707574743028}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5237851879470462413}
@@ -34191,9 +33806,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2426773875373144539}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1854526883783006676}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 43440316482149578}
@@ -34406,9 +34021,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2245206111748758386}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7789496999933770501}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 9113171943427874760}
@@ -34477,21 +34092,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1914849172094098668
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3185671203167454265}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.44161403}
-  m_LocalScale: {x: 10.141361, y: 10.141361, z: 10.161684}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2725507760212879788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1918432583249188922
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -34801,9 +34401,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7645940981603736877}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1526317761385930932}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5271227924495991174}
@@ -35538,9 +35138,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 565312797937440412}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 9076951474556317607}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1438641124656381181}
@@ -35824,9 +35424,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 471184796450037286}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8745351115866564623}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8211779713875045837}
@@ -36243,22 +35843,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2076190572117326731
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3185671203167454265}
-  m_Mesh: {fileID: 9104947815850751055, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
---- !u!33 &2076515703888064495
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5376429960613806436}
-  m_Mesh: {fileID: -7859401362885015629, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
 --- !u!65 &2080118459638103667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36486,9 +36070,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2268049998769460006}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3190979387512620111}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6833535721785026217}
@@ -36541,9 +36125,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7177955118480120432}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 638288105471588933}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1271511810199821802}
@@ -37321,9 +36905,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2610813581361070141}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3608727643595054942}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5715202793811806266}
@@ -38030,9 +37614,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4938669973396421547}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3330699515251272263}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7250704863723756582}
@@ -38101,9 +37685,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 1622289816323597650}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6248423384972379403}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2155606577984766112}
@@ -38377,21 +37961,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!4 &2239860062191719803
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7696726390982547402}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.43481314}
-  m_LocalScale: {x: 0.04064674, y: 0.040646736, z: 1.4754415}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2725507760212879788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2240613558909473312
 Transform:
   m_ObjectHideFlags: 0
@@ -39141,9 +38710,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6530183430698544604}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1985939274237821175}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 118569842738910167}
@@ -41084,9 +40653,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 1900636768539363743}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8465701087557169598}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2054413604253231470}
@@ -41330,9 +40899,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6467652153131936576}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8150005510543358615}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7771890215752535391}
@@ -42025,9 +41594,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3293575931838254062}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1728194335681282164}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8650704186494850562}
@@ -42395,9 +41964,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4638578039173478577}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4451203623716936341}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5032354416530770488}
@@ -42571,9 +42140,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8108386227599704552}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4591954689803543378}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1456288298078483346}
@@ -44093,9 +43662,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4850533298999771582}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7222661869046823227}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 9071998612942580162}
@@ -44143,29 +43712,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!4 &2725507760212879788
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4576028884521167221}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5295022, y: 16.938679, z: -50.767426}
-  m_LocalScale: {x: 9.840888, y: 9.840888, z: 9.840888}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1434516591}
-  - {fileID: 1914849172094098668}
-  - {fileID: 3018300834142169386}
-  - {fileID: 75589355852339656}
-  - {fileID: 8541539527208600915}
-  - {fileID: 6322972328593787356}
-  - {fileID: 2239860062191719803}
-  - {fileID: 8821112052503824788}
-  m_Father: {fileID: 3203057712747844046}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2726857435014097154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44610,9 +44156,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2698859101414444746}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4576643743118026051}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3005774349263607448}
@@ -45390,9 +44936,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2815619383985853680}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7423177415338041959}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7113639032459571808}
@@ -45998,9 +45544,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6400811059898260790}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8531433203603859629}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8567223465842154464}
@@ -46219,9 +45765,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2960072162945660228}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5465487405924148102}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1885005751532271590}
@@ -46445,9 +45991,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6122035910032135204}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1022227476763595541}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4276251982403758152}
@@ -46898,6 +46444,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!33 &2963738687668153817
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490125693743572028}
+  m_Mesh: {fileID: 2840508161140071744, guid: d8f2ebc19362c5b478044133dc395ec6, type: 3}
 --- !u!4 &2970808975873906923
 Transform:
   m_ObjectHideFlags: 0
@@ -47356,21 +46910,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7753031337184875264}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &3018300834142169386
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265572631262690935}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0.43516797}
-  m_LocalScale: {x: 10.161684, y: 10.161684, z: 10.161684}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2725507760212879788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3019543668699706357
 Transform:
   m_ObjectHideFlags: 0
@@ -47419,9 +46958,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 217236749683642537}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4167457548592162627}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5919449167642176727}
@@ -48013,9 +47552,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 53302603355701200}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5804369069291713276}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1647476420702618158}
@@ -48059,11 +47598,11 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2927486622808544907}
   bpmcontroller: {fileID: 1591486772128282332}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5948749124020413576}
-  canvas_vfx: {fileID: 5948184136759354784}
+  canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5073122931096539232}
   maxvalue: 0
   currentfloat: 0
@@ -48310,9 +47849,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8909137012347801457}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2170260993478962727}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1640705390833881469}
@@ -49280,24 +48819,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &3185671203167454265
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1914849172094098668}
-  - component: {fileID: 2076190572117326731}
-  - component: {fileID: 8000297750543432173}
-  m_Layer: 0
-  m_Name: Add
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!33 &3188381559050656483
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -49499,29 +49020,6 @@ MonoBehaviour:
   maincamera: {fileID: 0}
   transform_target: {fileID: 8981408800910577426}
   transform_update: {fileID: 8411984379844031780}
---- !u!4 &3203057712747844046
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5677190250397694202}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7819049718755878402}
-  - {fileID: 2725507760212879788}
-  - {fileID: 3358868234630210351}
-  - {fileID: 7120514308126382375}
-  - {fileID: 5274768171037369468}
-  - {fileID: 5128805588509181366}
-  - {fileID: 5948184136759354784}
-  - {fileID: 104043056}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &3209958939338185237
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -50079,9 +49577,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7716154257697616449}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8154315528051358255}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6631022705265997921}
@@ -50415,9 +49913,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6874468593795408650}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2619084916464523343}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6683572948985117520}
@@ -50504,48 +50002,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &3302067158071974601
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958072128502329350}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -6485246797521090168, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &3306125879383181665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50773,9 +50229,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 448942140012169109}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6293452844547313234}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6927220243753736092}
@@ -51076,21 +50532,6 @@ MonoBehaviour:
   maincamera: {fileID: 0}
   transform_target: {fileID: 2553997695285638519}
   transform_update: {fileID: 2048733899083909074}
---- !u!4 &3358868234630210351
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417877711148634280}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5295022, y: 16.198221, z: -68.267426}
-  m_LocalScale: {x: 6.81, y: 5.61, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3203057712747844046}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3358891724941260645
 GameObject:
   m_ObjectHideFlags: 0
@@ -51454,9 +50895,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8629483057151655660}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 557335491735654344}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5672907320452182846}
@@ -51977,9 +51418,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7373783480381361874}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8211895800617769629}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8151603191665478890}
@@ -52427,9 +51868,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7106068257421000760}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8487105437295833469}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2396183992542256289}
@@ -52926,48 +52367,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3720577606925529185}
   m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
---- !u!23 &3545724328353369937
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5307909962620391106}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -8429478370507844628, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &3547674125807582463
 Transform:
   m_ObjectHideFlags: 0
@@ -53995,14 +53394,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &3666513112808893286
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7696726390982547402}
-  m_Mesh: {fileID: -1660595305606206942, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
 --- !u!33 &3669089540406972586
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -55228,9 +54619,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 988914171149398996}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 609684548181757222}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1622606888342185693}
@@ -55410,9 +54801,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5103933812152197684}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2209152885368184478}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5049145475436768436}
@@ -55448,9 +54839,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3036510920485098726}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5474499041981723382}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8087838055172236455}
@@ -55618,9 +55009,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3822230234810827374}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 432812761200717748}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 157995745059577534}
@@ -56120,9 +55511,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8898825209847048819}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4932844872219766530}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 843335083022143945}
@@ -56687,9 +56078,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8019104330942710431}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6145047993365212568}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5866634898170725323}
@@ -56874,9 +56265,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7890737225873466315}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2083193318645226424}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2665151925006001402}
@@ -57349,9 +56740,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5769379369453693624}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 9172347264278993045}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5067731543469772122}
@@ -57870,9 +57261,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6247315202916542644}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2398605012319576170}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3254553562706160975}
@@ -57952,9 +57343,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2565410475333623956}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3513629303951158965}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 699375468962383429}
@@ -58160,9 +57551,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5157719199421929118}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2448205736904306905}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8196505935843263718}
@@ -59017,9 +58408,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5241093772211492340}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4384775480346340846}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7407597086443535791}
@@ -59472,9 +58863,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7455554303770986658}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2906877648577472036}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 310310603657596602}
@@ -60305,9 +59696,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8477258592436659183}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1628106650898733916}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5060684066989160048}
@@ -60530,9 +59921,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8015051856829560618}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5158773235233786785}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1726710257914436032}
@@ -60755,9 +60146,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 1533103422721721199}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1471651466863801283}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 9178426573312381530}
@@ -60833,6 +60224,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!23 &4284410921707265085
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490125693743572028}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 8566311265330961765, guid: d8f2ebc19362c5b478044133dc395ec6, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &4284620611308357194
 GameObject:
   m_ObjectHideFlags: 0
@@ -61013,9 +60446,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7060984606242968018}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 67784440769363471}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1478964491657464527}
@@ -61954,9 +61387,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 455591539299370235}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1966617791615914142}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7806060019415728710}
@@ -62224,11 +61657,11 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3137263281801388642}
   bpmcontroller: {fileID: 6247421348704365253}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6744424019811630789}
-  canvas_vfx: {fileID: 5948184136759354784}
+  canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7414210725523966261}
   maxvalue: 0
   currentfloat: 0
@@ -62419,9 +61852,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6371270338605870988}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6262922574807064585}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5400566135735045758}
@@ -62633,9 +62066,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2335785789360375107}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7809837445171139097}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2906154444627060944}
@@ -62829,9 +62262,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2052544488720758730}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5387912504761279074}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2832338598912218178}
@@ -62997,6 +62430,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8355332293198555508}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4490125693743572028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5182678687466605865}
+  - component: {fileID: 2963738687668153817}
+  - component: {fileID: 4284410921707265085}
+  m_Layer: 0
+  m_Name: BezierCircle.002
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!33 &4491873714711544307
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -63753,9 +63204,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8816188283490296449}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8225346041768883332}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 508520942860287651}
@@ -63791,29 +63242,6 @@ GameObject:
   - component: {fileID: 1891332046560818917}
   m_Layer: 0
   m_Name: anchoronly
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &4576028884521167221
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2725507760212879788}
-  - component: {fileID: 1038841291071657320}
-  - component: {fileID: 7341483467228086911}
-  - component: {fileID: 8420928263025767923}
-  - component: {fileID: 8420928263025767922}
-  - component: {fileID: 8351807733229276908}
-  - component: {fileID: 959803772806390904}
-  - component: {fileID: 6375491746958426573}
-  m_Layer: 0
-  m_Name: inti_lane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64522,9 +63950,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 67788528285599373}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 9071486283803145960}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3398283467675037180}
@@ -65898,9 +65326,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 649758865196724402}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3776905505258174244}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 9001616095824939395}
@@ -65964,9 +65392,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8550888226607097350}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4093484041492037161}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8967874448500829461}
@@ -66207,9 +65635,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 1417584603168392714}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3200184723341465763}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6931645144667302437}
@@ -66561,23 +65989,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8062542870928249099}
   m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
---- !u!1 &4802319408267762337
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5128805588509181366}
-  - component: {fileID: 1300575779516883394}
-  m_Layer: 0
-  m_Name: Directional Light (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!54 &4804488042683470803
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -67081,9 +66492,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8487604498180547393}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1930490767691108766}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3141219330833311571}
@@ -67140,9 +66551,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7178879285523136316}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2624844746120702804}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 9184681444083508581}
@@ -68240,9 +67651,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7298582195028868853}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7053186233605328853}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3699581356022696308}
@@ -68305,9 +67716,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6133516962130716609}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5061768034871914719}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4203169302908040611}
@@ -68604,25 +68015,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &4957204744315770211
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8541539527208600915}
-  - component: {fileID: 5842041828167139756}
-  - component: {fileID: 194830446194267565}
-  - component: {fileID: 6493240056661212628}
-  m_Layer: 0
-  m_Name: Lane
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!33 &4962190501777785649
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -70156,9 +69548,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 151917072118355767}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 9079795220441725821}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6871682340037335395}
@@ -70634,29 +70026,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8527193937824918781}
   m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
---- !u!4 &5128805588509181366
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4802319408267762337}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 45.24646, y: 17.004513, z: -53.070305}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3203057712747844046}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!33 &5130182381461194641
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265572631262690935}
-  m_Mesh: {fileID: -6905286545574791971, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
 --- !u!33 &5131154379261935284
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -70873,9 +70242,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8193091047111200291}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2446577751367482174}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6012942203410270464}
@@ -71148,9 +70517,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7696542756916041624}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1806622773780648092}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6469422027502833299}
@@ -71288,6 +70657,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.019999988, y: 0.019999992, z: 0.02}
   m_Center: {x: -0.000000003259629, y: 0.000000003259629, z: 0}
+--- !u!4 &5182678687466605865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4490125693743572028}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.53, y: 17.108, z: -46.568}
+  m_LocalScale: {x: 99, y: 99, z: 75}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 401734543}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5185354942679376551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72308,21 +71692,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522298084496186780}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &5274768171037369468
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8172281424437118936}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.5295022, y: 16.938677, z: -46.36595}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3203057712747844046}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5279852194162031349
 GameObject:
   m_ObjectHideFlags: 0
@@ -72403,9 +71772,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3780890666387320547}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8370901162010626725}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3735214593246231316}
@@ -72556,24 +71925,6 @@ GameObject:
   - component: {fileID: 4727459581760561505}
   m_Layer: 0
   m_Name: sample note K
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &5307909962620391106
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8821112052503824788}
-  - component: {fileID: 5502655718511605464}
-  - component: {fileID: 3545724328353369937}
-  m_Layer: 0
-  m_Name: Outer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72755,11 +72106,11 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2398791371470183623}
   bpmcontroller: {fileID: 6857190353786518204}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6013482447334055542}
-  canvas_vfx: {fileID: 5948184136759354784}
+  canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4916317617748518829}
   maxvalue: 0
   currentfloat: 0
@@ -72967,9 +72318,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5095835549440875366}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1450935624346760298}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7264019753194464869}
@@ -73005,9 +72356,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7159048789995670980}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 9144601454379777818}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3384215179933783845}
@@ -73423,24 +72774,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5376429960613806436
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6322972328593787356}
-  - component: {fileID: 2076515703888064495}
-  - component: {fileID: 7907849052764911653}
-  m_Layer: 0
-  m_Name: Line
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!33 &5377668085435900504
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -74567,9 +73900,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 9045736299409951672}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2151843680228567435}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6156052727850963977}
@@ -75367,14 +74700,6 @@ Transform:
   - {fileID: 7188414887518579710}
   m_Father: {fileID: 5440153675693339455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5502655718511605464
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5307909962620391106}
-  m_Mesh: {fileID: 4310030198444546032, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
 --- !u!54 &5503900522616006342
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -75597,9 +74922,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4543108499663622638}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3811258724639052413}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8701537627015294857}
@@ -75907,23 +75232,6 @@ GameObject:
   - component: {fileID: 2140950730704128183}
   m_Layer: 0
   m_Name: anchoronly
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &5555073003716384113
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7819049718755878402}
-  - component: {fileID: 1514206525264653172}
-  m_Layer: 0
-  m_Name: Camera (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76325,9 +75633,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4022406548374802654}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2062409858914896074}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1998259005167858071}
@@ -76363,9 +75671,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2061198369086107317}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7356936055186139105}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4946784032898898124}
@@ -76492,9 +75800,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2877598193086947961}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3115283943143826192}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 280648640537200692}
@@ -77161,24 +76469,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6877423084508879089}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &5645056687641064565
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7120514308126382375}
-  - component: {fileID: 6250555537991788204}
-  - component: {fileID: 5913938794126161228}
-  m_Layer: 0
-  m_Name: Shell (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &5650856141993726592
 GameObject:
   m_ObjectHideFlags: 0
@@ -77401,31 +76691,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5069659494327173414}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5677190250397694202
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3203057712747844046}
-  - component: {fileID: 5677190250397694203}
-  m_Layer: 0
-  m_Name: Final Product For Autoplay
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &5677190250397694203
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5677190250397694202}
-  m_Enabled: 1
 --- !u!33 &5677886431109410942
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -78565,22 +77830,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.019999988, y: 0.019999992, z: 0.02}
   m_Center: {x: -0.000000003259629, y: 0.000000003259629, z: 0}
---- !u!1 &5780981040145366035
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5948184136759354784}
-  m_Layer: 0
-  m_Name: vfx spawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &5781204598492250161
 GameObject:
   m_ObjectHideFlags: 0
@@ -79157,9 +78406,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4128655796490680705}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3831523405207440164}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2200064131647917117}
@@ -79180,14 +78429,6 @@ MonoBehaviour:
   penambahan: 0
   kind: 0
   test_pc: 0
---- !u!33 &5842041828167139756
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4957204744315770211}
-  m_Mesh: {fileID: 7600973022163189724, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
 --- !u!1 &5846088312454097327
 GameObject:
   m_ObjectHideFlags: 0
@@ -79981,48 +79222,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471184796450037286}
   m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
---- !u!23 &5913938794126161228
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5645056687641064565}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -6922793697723135513, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5914758193339252297
 GameObject:
   m_ObjectHideFlags: 0
@@ -80364,21 +79563,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!4 &5948184136759354784
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5780981040145366035}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5052918, y: 21.666893, z: -75.435295}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3203057712747844046}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5948749124020413576
 Transform:
   m_ObjectHideFlags: 0
@@ -81647,9 +80831,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 760730127179242988}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6469207271169973685}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8679047237197740796}
@@ -82147,9 +81331,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2612893690013821988}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5036648647257502226}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 48051178124401575}
@@ -82286,9 +81470,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8681422835338486876}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1073289910819343517}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 39075188629013581}
@@ -82883,9 +82067,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7215544055063376316}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2490786733336015378}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1639509574549821925}
@@ -83270,14 +82454,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8531603306405587224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6250555537991788204
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5645056687641064565}
-  m_Mesh: {fileID: -4974468161004867859, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
 --- !u!54 &6251468355558624932
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -83875,9 +83051,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3864064678553828693}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7776189807278490971}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1803582852489135074}
@@ -84004,9 +83180,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5382232765844545941}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5406746859194614400}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3430293482029082758}
@@ -84194,21 +83370,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &6322972328593787356
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5376429960613806436}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3.0546098}
-  m_LocalScale: {x: 0.0457075, y: 0.0457075, z: 349.04752}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2725507760212879788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6323194587770158732
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -84274,9 +83435,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7931064943388732637}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4364159416928610419}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1029542296669097601}
@@ -84852,33 +84013,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &6375491746958426573
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4576028884521167221}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!23 &6377361446559769293
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -85493,9 +84627,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4455376812387116095}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8867303694229541388}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3075477676399673669}
@@ -85984,9 +85118,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6117258610095366509}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2906798916430907950}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6413224542438129730}
@@ -86097,9 +85231,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7334448038112999171}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8371747035996912612}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7915203920739276875}
@@ -86728,33 +85862,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2398791371470183623}
   m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
---- !u!54 &6493240056661212628
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4957204744315770211}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!23 &6497132898093064039
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88220,9 +87327,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2404251683531071961}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2149623761219189505}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2833384722896379316}
@@ -88464,27 +87571,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6659700697265546378
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958072128502329350}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.0202, y: 0.015, z: 0.020199995}
-  m_Center: {x: 0, y: -0.0055, z: -0.000000001396983}
 --- !u!54 &6660652707581938381
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -88645,9 +87731,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3555721043534056005}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2763384201707171462}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1472451214497879881}
@@ -88853,9 +87939,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 723638086710415814}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7225625053315651726}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8162623465703959949}
@@ -90705,27 +89791,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &6840283920150646761
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417877711148634280}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6841302946636874801
 GameObject:
   m_ObjectHideFlags: 0
@@ -91955,9 +91020,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4623915000559191194}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1906765759882800697}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 9116736994171583929}
@@ -92330,9 +91395,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2898651986077154648}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7917454827254917271}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3649848121273538460}
@@ -92986,9 +92051,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7681029754063550633}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5463968884649861365}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 690046906319675526}
@@ -93330,9 +92395,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8521812699669547680}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8861466259064511134}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 9152745668210635053}
@@ -94129,21 +93194,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &7120514308126382375
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5645056687641064565}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1.5295022, y: 16.7, z: -50.767426}
-  m_LocalScale: {x: 32.158974, y: 32.15897, z: 32.15897}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3203057712747844046}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7121003046241636212
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -94183,9 +93233,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3240807870073757134}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6737432975134212898}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3523590850310312080}
@@ -95483,9 +94533,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7626881476156545836}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5136238607477985192}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 588623868808559008}
@@ -95666,9 +94716,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5809868567014728285}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4446086090115567508}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 786859436389575059}
@@ -95704,9 +94754,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6425803910889395254}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8528521135463635425}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 894760925009952999}
@@ -95804,48 +94854,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!23 &7267535901850017585
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8172281424437118936}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -348549966180262282, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &7273304359349154777
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -96521,9 +95529,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 945683468142966790}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5369459413267759779}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5050499980163874058}
@@ -96624,9 +95632,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 320451018559988084}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5257591986528746612}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1265642925661078875}
@@ -96704,23 +95712,6 @@ Transform:
   - {fileID: 4718827030877821608}
   m_Father: {fileID: 3463931109706085138}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7341483467228086911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4576028884521167221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62fa4cb08dfaa0841a96bcb946ec26dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: []
-  currenttarget: {fileID: 0}
-  parenttarget: {fileID: 1544628288}
-  listtarget: 0
-  aktive: 0
 --- !u!23 &7346806176202355134
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -97204,9 +96195,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 374332221528088810}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5853388074788592171}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1572174307368359592}
@@ -97681,9 +96672,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 692441417130482767}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5833602057314745961}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4303287762361717707}
@@ -98119,9 +97110,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8280263063660848396}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3111645705213956188}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 558119394237756018}
@@ -98273,9 +97264,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 305982169493991133}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7952648010034986559}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3324752025909030703}
@@ -98811,9 +97802,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 435415819261397578}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4600665670405600143}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7753407296870012708}
@@ -99080,9 +98071,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 1706042861021149063}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6273019354339114756}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4143051653450647739}
@@ -99118,9 +98109,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 9220025776240116975}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6685601027236685468}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8568652020923811218}
@@ -100457,9 +99448,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 1302019991453749762}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4057810266370714260}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7048832510077153086}
@@ -101091,9 +100082,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4015641951471460384}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2694082261062630100}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2095686330772923065}
@@ -101182,24 +100173,6 @@ GameObject:
   - component: {fileID: 1623984628762372976}
   m_Layer: 0
   m_Name: fix angle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &7696726390982547402
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2239860062191719803}
-  - component: {fileID: 3666513112808893286}
-  - component: {fileID: 1551552981226945991}
-  m_Layer: 0
-  m_Name: Line.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101550,9 +100523,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5271201262496795998}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2477192696918866644}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4583587656333676037}
@@ -102054,9 +101027,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2370332447372707739}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4915183692766575307}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 817774363015410489}
@@ -102510,9 +101483,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6724461544794149260}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1316446944550615274}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8756370265982428647}
@@ -102599,9 +101572,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8854940249159929630}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 455906865138257140}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3879963759596905104}
@@ -102658,21 +101631,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7819049718755878402
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5555073003716384113}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.9961947, z: 0.08715571, w: 0}
-  m_LocalPosition: {x: -1.5295022, y: 16.698221, z: -44.122375}
-  m_LocalScale: {x: 100, y: 100.000015, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3203057712747844046}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7820723595617999876
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -102787,9 +101745,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5103406947329544987}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4514612998091069180}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5169972929758924809}
@@ -103116,9 +102074,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2604093908364523422}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4360939111268959973}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6650303577963099540}
@@ -103154,9 +102112,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7532955750539180935}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8540702408431909835}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 267018340070098261}
@@ -103634,9 +102592,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 592831509381718069}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 9103927102712652413}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5406032536201497452}
@@ -103889,48 +102847,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 71a864554461ef04d95817903c0818df, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!23 &7907849052764911653
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5376429960613806436}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -8719572371529340827, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -105258,48 +104174,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.019999988, y: 0.019999992, z: 0.02}
   m_Center: {x: -0.000000003259629, y: 0.000000003259629, z: 0}
---- !u!23 &8000297750543432173
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3185671203167454265}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -8719572371529340827, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8002109454668105411
 GameObject:
   m_ObjectHideFlags: 0
@@ -105593,9 +104467,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 1183001477800651}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8873617129340891268}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8318034611231334041}
@@ -105723,9 +104597,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7992501841708759663}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7441126345091466790}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4543114173657099196}
@@ -106067,9 +104941,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7507428919999458502}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2755033223693975747}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 151463278285425436}
@@ -106994,9 +105868,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3678364398979344360}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 8763874489215057565}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4687212803303051095}
@@ -107309,24 +106183,6 @@ Transform:
   - {fileID: 7486499953069222262}
   m_Father: {fileID: 159707425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &8172281424437118936
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5274768171037369468}
-  - component: {fileID: 9194696063105123777}
-  - component: {fileID: 7267535901850017585}
-  m_Layer: 0
-  m_Name: Clock (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!114 &8174791892395456173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107342,9 +106198,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8035718656579306592}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2929741505419410500}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4290126404444414109}
@@ -107962,9 +106818,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 3943162286652651814}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4352139826129380063}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6330661609240622855}
@@ -108275,11 +107131,11 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5715431618843099077}
   bpmcontroller: {fileID: 6886713747118200374}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5098776979333180280}
-  canvas_vfx: {fileID: 5948184136759354784}
+  canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5240539681133553115}
   maxvalue: 0
   currentfloat: 0
@@ -108390,9 +107246,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4968205226289535204}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 9093293321466299261}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6446288404655077270}
@@ -109136,9 +107992,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8528901396514600813}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 924016053147404412}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2488563631499077629}
@@ -109305,48 +108161,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 71a864554461ef04d95817903c0818df, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!23 &8351807733229276908
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4576028884521167221}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109911,9 +108725,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7682375962496766627}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5673009374662008647}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7159881572246487193}
@@ -110180,33 +108994,6 @@ Transform:
   - {fileID: 7401551883611432105}
   m_Father: {fileID: 159707425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &8420928263025767922
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4576028884521167221}
-  m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
---- !u!114 &8420928263025767923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4576028884521167221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 295ffad2358e9144aa9729341146a372, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShiftAmount: 4
-  timelapsed: 0
-  RotationSpeed: 0
-  currentAngle: 0
-  startRotating: 0
-  stopRotating: 0
-  lane: {fileID: 4576028884521167221}
 --- !u!33 &8424511540368004675
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -110930,9 +109717,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 995754444204759272}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 9147563380587855148}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 6771308138940614438}
@@ -111313,33 +110100,6 @@ Transform:
   - {fileID: 5158773235233786785}
   m_Father: {fileID: 1259541832544604427}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15}
---- !u!54 &8515892144790693088
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958072128502329350}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!4 &8520289713195933004
 Transform:
   m_ObjectHideFlags: 0
@@ -111759,21 +110519,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2883395501847118976}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &8541539527208600915
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4957204744315770211}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: -5.629958}
-  m_LocalScale: {x: 10.161684, y: 10.161684, z: 10.161684}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2725507760212879788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8543838043725303386
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -111893,9 +110638,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5846088312454097327}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2269894951621527168}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8472567154600288012}
@@ -112268,9 +111013,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4742513164953032308}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5521215357086859733}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 7705076937475604431}
@@ -112371,9 +111116,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 281973178368706966}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7875105688237237342}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8288783722589388419}
@@ -112493,9 +111238,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 6001294536268265022}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 551811445409450995}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 2884451533303294795}
@@ -113633,9 +112378,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7506857768451271733}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2317828005058185255}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4115924265085391923}
@@ -113824,9 +112569,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 9099132393797495173}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 2251419600065712016}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 3609936858059640998}
@@ -114255,9 +113000,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2672444164513157344}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 4307077582419648699}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4652813602708676744}
@@ -114408,9 +113153,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 7081170322541345344}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1715422941922679468}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4418609877939080753}
@@ -114810,21 +113555,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!4 &8821112052503824788
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5307909962620391106}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0.43487036}
-  m_LocalScale: {x: 10.195513, y: 0.0153692495, z: 10.195513}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2725507760212879788}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &8821146734400219352
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -115384,9 +114114,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 4731958377819776677}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 3907026128119074519}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4819296892624149128}
@@ -115675,9 +114405,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8628522504743137751}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5268187652828319735}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 5553976273540068116}
@@ -116040,9 +114770,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5572675741888622216}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7916680825094397706}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4051023357116008077}
@@ -116120,9 +114850,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 998567971670049487}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7982277991427868964, guid: 68ce4360b3c47f345978d02440a8de66, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 6699616386338061453}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 8622817919170738834}
@@ -116158,9 +114888,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 5387958452429838512}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 5310346613842867926}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1238325934570485405}
@@ -116503,9 +115233,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8895342597506976423}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 1561077258607335020}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 651156562334110466}
@@ -116792,48 +115522,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8019104330942710431}
   m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
---- !u!23 &8980406756863772141
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265572631262690935}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -6485246797521090168, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &8980409341018447633
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -117044,9 +115732,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 2268211643140529843}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 9173223690345315345}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 1460905480302555758}
@@ -117616,9 +116304,9 @@ MonoBehaviour:
   on_area: 0
   anchorpoint_script: {fileID: 8527193937824918781}
   bpmcontroller: {fileID: 7737153013791888720}
-  lane: {fileID: 4576028884521167221}
+  lane: {fileID: 0}
   VFX: {fileID: 7705681409969724944, guid: 22a148f258332df45b43d2f96915c4a5, type: 3}
-  judge2: {fileID: 958072128502329350}
+  judge2: {fileID: 0}
   selfpos: {fileID: 7666999341907331430}
   canvas_vfx: {fileID: 0}
   vfxscr: {fileID: 4928407231968902047}
@@ -119580,14 +118268,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6478574112326485949}
   m_Mesh: {fileID: 4711208715938537054, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
---- !u!33 &9194696063105123777
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8172281424437118936}
-  m_Mesh: {fileID: 2797687578962592920, guid: c31ed4bf4134bcc4a83b797e2d2fb27c, type: 3}
 --- !u!54 &9194978974063423871
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -119882,7 +118562,7 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 3203057712747844046}
+  - {fileID: 139959658}
   - {fileID: 1772318639}
   - {fileID: 4833168101631052065}
   - {fileID: 1110531448}

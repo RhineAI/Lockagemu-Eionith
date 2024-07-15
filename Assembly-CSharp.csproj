@@ -64,11 +64,14 @@
     <Analyzer Include="E:\Unity\Editor\2022.3.18f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Gameplay\SongInfo.cs" />
+    <Compile Include="Assets\Scripts\Chart\NoteTypes\RawHideGroup.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Notes\Hold.cs" />
     <Compile Include="Assets\Scripts\experiment script\beatlineposbynotespeed.cs" />
     <Compile Include="Assets\Scripts\updated note script\noteupdatescriptv2.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\Chart\charter.cs" />
+    <Compile Include="Assets\Scripts\Chart\NoteTypes\RawTimingGroup.cs" />
+    <Compile Include="Assets\Scripts\Chart\NoteTypes\RawSlide.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Notes\Flick.cs" />
     <Compile Include="Assets\Scripts\hold &amp; multitouch control script\realsecontrol.cs" />
@@ -80,8 +83,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\Scripts\Chart\NoteTypes\RawFlick.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Notes\Note.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\Scripts\Chart\NoteTypes\RawEvents.cs" />
     <Compile Include="Assets\shapecontrol.cs" />
     <Compile Include="Assets\Scripts\hold &amp; multitouch control script\touch1.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -93,23 +98,22 @@
     <Compile Include="Assets\projectormesh.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scripts\hold &amp; multitouch control script\touch.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\Scene Control\BeatRun.cs" />
     <Compile Include="Assets\Scripts\experiment script\chiildcommand.cs" />
+    <Compile Include="Assets\Scripts\Chart\NoteTypes\RawDirectionalFlick.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Samples\Advertisement Legacy\4.4.2\UnityAds Example App\Scripts\UnityAdsExampleUI.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\Chart\ChartReader.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Scene Control\Play.cs" />
     <Compile Include="Assets\Materials\Vfx\Script\livefx.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Notes\movetoward.cs" />
     <Compile Include="Assets\Scripts\experiment script\expsimplecoroutine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\updated note script\notescriptupdatev1.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\Chart\ChartLoader.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\Chart\chartbpm.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\Chart\positionissue.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Scene Control\ResetSceneControl.cs" />
+    <Compile Include="Assets\Scripts\Chart\positionissue.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\hold &amp; multitouch control script\touchlocate.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -122,8 +126,10 @@
     <Compile Include="Assets\Scripts\updated note script\lanescriptupdatev1.cs" />
     <Compile Include="Assets\Scripts\UI\UI Profile\PlayerUserName.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\Scripts\Chart\NoteTypes\RawNote.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Lane Rotation\LaneRotation.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Score\ComboDisplay.cs" />
+    <Compile Include="Assets\Scripts\Chart\charter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
@@ -133,6 +139,7 @@
     <Compile Include="Assets\Scripts\Gameplay\Scene Control\JudgementLine.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Lane Rotation\rotalane.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Scripts\Chart\NoteTypes\RawTiming.cs" />
     <Compile Include="Assets\Materials\Vfx\warehouse\vfx_instans.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Gimmick\gimmickanchor.cs" />
@@ -140,10 +147,13 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\experiment script\beatlineplaytester.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Scene Control\TapNote.cs" />
+    <Compile Include="Assets\Scripts\Chart\chartbpm.cs" />
     <Compile Include="Assets\Materials\Vfx\warehouse\startstopcontrol.cs" />
-    <Compile Include="Assets\Scripts\Gameplay\Scene Control\resetSceneControl.cs" />
     <Compile Include="Assets\Scripts\updated note script\HoldTrialScr.cs" />
+    <Compile Include="Assets\Scripts\Gameplay\Scene Control\Beatline.cs" />
     <Compile Include="Assets\Scripts\updated note script\changetarget.cs" />
+    <Compile Include="Assets\Scripts\Chart\NoteTypes\RawLaneRotation.cs" />
+    <Compile Include="Assets\Scripts\Chart\NoteTypes\RawHold.cs" />
     <Compile Include="Assets\Materials\Vfx\Script\HoldVfx.cs" />
     <Compile Include="Assets\holdtrial.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
@@ -1142,6 +1152,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Eionith.ChartFormat.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

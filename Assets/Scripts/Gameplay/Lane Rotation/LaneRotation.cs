@@ -4,21 +4,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class LaneRotation : MonoBehaviour, IChartElement
+public class LaneRotation : MonoBehaviour
 {
-    // // CONSTRUCTOR ROTATION (USED LATER)
-    public int StartTiming { get; set; }
-    public int EndTiming { get; set; }
-    // public int ShiftAmount { get; set; }
-    // public float RotationSpeed { get; set; }
-
-    // public LaneRotation(int startTiming, int endTiming, int shiftAmount, float rotationSpeed)
-    // {
-    //     ShiftAmount = shiftAmount;
-    //     RotationSpeed = rotationSpeed;
-    // }
-
-    public int ShiftAmount;
+    public int ShiftCount;
 
     public float timelapsed = 0f;
     [SerializeField]
@@ -82,16 +70,16 @@ public class LaneRotation : MonoBehaviour, IChartElement
             string laneKey = laneAngle.Key;
             float laneValue = laneAngle.Value;
 
-            if (ShiftAmount < 0)
+            if (ShiftCount < 0)
             {
-                if (Mathf.Abs(ShiftAmount).ToString() == laneKey)
+                if (Mathf.Abs(ShiftCount).ToString() == laneKey)
                 {
                     return currentAngle - laneValue; // Adjust rotation for negative shift
                 }
             }
             else
             {
-                if (ShiftAmount.ToString() == laneKey)
+                if (ShiftCount.ToString() == laneKey)
                 {
                     return currentAngle + laneValue; // Keep positive shift as is
                 }
