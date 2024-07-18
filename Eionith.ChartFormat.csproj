@@ -64,9 +64,21 @@
     <Analyzer Include="E:\Unity\Editor\2022.3.18f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Chart\ChartFormat\ChartReader.cs" />
-    <Compile Include="Assets\Scripts\Chart\ChartFormat\ChartLoader.cs" />
-    <Compile Include="Assets\Scripts\Chart\ChartFormat\ChartSpawner.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\NoteTypes\RawTap.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\NoteTypes\RawTiming.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\NoteTypes\RawSideFlick.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\ChartAccess\ChartSpawner.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\ChartAccess\ChartLoader.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\NoteTypes\RawEvents.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\NoteTypes\RawHideGroup.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\NoteTypes\RawFlick.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\NoteTypes\RawTimingGroup.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\FIleAccess\FileReader.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\NoteTypes\RawHold.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\ChartAccess\ChartReader.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\NoteTypes\RawSlide.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\NoteTypes\RawLaneRotation.cs" />
+    <Compile Include="Assets\Scripts\Chart\ChartFormat\FIleAccess\SongInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Chart\ChartFormat\Eionith.ChartFormat.asmdef" />

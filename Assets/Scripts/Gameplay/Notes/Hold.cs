@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using Eionith.ChartFormat;
 
 public class Hold : MonoBehaviour
 {
@@ -74,7 +71,7 @@ public class Hold : MonoBehaviour
 
                 if(critical && !alreadyCritical) 
                 {
-                    float bpm = SongInfo.instance.bpm;
+                    float bpm = SongInfo.instance.BPM;
                     // while (self.transform.position.z <= endHold) {
                         // while (bpm <= bpm * 4) {
                             ScoreDisplay.instance.criticalTap += 1;
