@@ -7,32 +7,38 @@ namespace Eionith.ChartFormat
     public class ChartReader : MonoBehaviour
     {
         // public string chartFilePath;
-        public List<RawTap> Taps = new List<RawTap>();
-        public List<RawHold> Holds = new List<RawHold>();
-        public List<RawFlick> Flicks = new List<RawFlick>();
-        public List<RawSideFlick> SideFlicks = new List<RawSideFlick>();
-        public List<RawSlide> Slides = new List<RawSlide>();
-        public List<RawLaneRotation> LaneRotations = new List<RawLaneRotation>();
+        public static ChartReader instance;
+        public ChartReader chartReader;
+        private List<RawTap> Taps;
+        private List<RawHold> Holds;
+        private List<RawFlick> Flicks;
+        private List<RawSideFlick> SideFlicks;
+        private List<RawSlide> Slides;
+        private List<RawLaneRotation> LaneRotations;
 
+        void Awake() {
+            instance = this;
+        }
         void Start()
         {
             // ReadChartFile(chartFilePath);
         }
 
-        public void ReadChartFile(string path)
+       public void ReadChartFile(string path)
         {
             string[] lines = File.ReadAllLines(path);
 
+            Debug.Log($"{lines}\n");
             foreach (string line in lines)
             {
                 string[] parts = line.Split(new char[] { '(', ',', ')' }, System.StringSplitOptions.RemoveEmptyEntries);
-                if (parts[0] == "note")
+                if (parts[0] == "tap")
                 {
-                    RawTap note = new RawTap
+                    RawTap tap = new RawTap
                     {
                         StartTiming = int.Parse(parts[1]),
                     };
-                    Taps.Add(note);
+                    Taps.Add(tap);
                 }
                 else if (parts[0] == "hold")
                 {

@@ -14,45 +14,46 @@ namespace Eionith.ChartFormat
         public GameObject SlidePrefab;
 
         public ChartReader chartReader;
-        private List<RawTap> Taps;
-        private List<RawHold> Holds;
-        private List<RawFlick> Flicks;
-        private List<RawSideFlick> SideFlicks;
-        private List<RawSlide> Slides;
-        private List<RawLaneRotation> LaneRotations;
+        // private List<RawTap> Taps;
+        // private List<RawHold> Holds;
+        // private List<RawFlick> Flicks;
+        // private List<RawSideFlick> SideFlicks;
+        // private List<RawSlide> Slides;
+        // private List<RawLaneRotation> LaneRotations;
 
         void Start()
         {
-            Taps = chartReader.Taps;
-            Holds = chartReader.Holds;
-            Flicks = chartReader.Flicks;
-            SideFlicks = chartReader.SideFlicks;
-            Slides = chartReader.Slides;
-            LaneRotations = chartReader.LaneRotations;
+            // Taps = ChartReader.instance.Taps;
+            // Holds = ChartReader.instance.Holds;
+            // Flicks = ChartReader.instance.Flicks;
+            // SideFlicks = ChartReader.instance.SideFlicks;
+            // Slides = ChartReader.instance.Slides;
+            // LaneRotations = ChartReader.instance.LaneRotations;
 
-            StartCoroutine(SpawnNotes());
+            // StartCoroutine(SpawnTaps());
             // StartCoroutine(SpawnHolds());
         }
 
-        private IEnumerator SpawnNotes()
-        {
-            foreach (RawTap tap in Taps)
-            {
-                yield return new WaitForSeconds(tap.StartTiming / 1000f); // Konversi ms ke detik
-                SpawnNoteObject(tap);
-            }
-        }
+        // private IEnumerator SpawnTaps()
+        // {
+            // foreach (RawTap tap in Taps)
+            // {
+                // yield return new WaitForSeconds(tap.StartTiming / 1000f); 
+                // yield return null;
+                // SpawnTapObject(tap);
+            // }
+        // }
 
         // private IEnumerator SpawnHolds()
         // {
         //     foreach (RawHold hold in holds)
         //     {
-        //         yield return new WaitForSeconds(hold.StartTiming / 1000f); // Konversi ms ke detik
+        //         yield return new WaitForSeconds(hold.StartTiming / 1000f); 
         //         SpawnHoldObject(hold);
         //     }
         // }
 
-        void SpawnNoteObject(RawTap tap)
+        void SpawbTapObject(RawTap tap)
         {
             // Spawn note di lane yang ditentukan
             GameObject noteObj = Instantiate(NotePrefab, GetLanePosition(tap.LanePosition), Quaternion.identity, ChartElements.transform);
@@ -66,7 +67,35 @@ namespace Eionith.ChartFormat
 
         Vector3 GetLanePosition(int lane)
         {
-            return new Vector3(lane, 0, 0);
+            switch(lane) {
+                case 1:
+                    return new Vector3(15, 0, 0);
+                case 2:
+                    return new Vector3(45, 0, 0);
+                case 3:
+                    return new Vector3(75, 0, 0);
+                case 4:
+                    return new Vector3(105, 0, 0);
+                case 5:
+                    return new Vector3(135, 0, 0);
+                case 6:
+                    return new Vector3(165, 0, 0);
+                case 7:
+                    return new Vector3(195, 0, 0);
+                case 8:
+                    return new Vector3(225, 0, 0);
+                case 9:
+                    return new Vector3(255, 0, 0);
+                case 10:
+                    return new Vector3(285, 0, 0);
+                case 11:
+                    return new Vector3(315, 0, 0);
+                case 12:
+                    return new Vector3(330, 0, 0);
+                default:
+                    return new Vector3(15, 0, 0);
+      
+            }
         }
     }
 
