@@ -22,7 +22,7 @@ public class expsimplecoroutine : MonoBehaviour
     void Start()
     {
        //mykorotin = controller();
-        posisisblmnya = transform.position;
+        //posisisblmnya = transform.position;
         //percentage = 20;
     }
 

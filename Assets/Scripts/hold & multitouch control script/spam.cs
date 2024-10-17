@@ -9,14 +9,16 @@ public class spam : MonoBehaviour
     public GameObject sampel2;
     public List<touchlocate> touches = new List<touchlocate>();
     public List<realsecontrol> touchesr = new List<realsecontrol>();
+    public Camera realCam;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Camera.main = realCam;
         float mousey = Input.mousePosition.y;
         float mousex = Input.mousePosition.x;
-        Vector2 mouseposy = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 mouseposx = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mouseposy = realCam.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 mouseposx = realCam.ScreenToWorldPoint(Input.mousePosition);
         //sampel2 = Resources.Load("cancler") as GameObject;
     }
 
@@ -95,12 +97,12 @@ public class spam : MonoBehaviour
     }
     Vector3 gettouchposition(Vector3 touchposition)
     {
-        return Camera.main.ScreenToWorldPoint(new Vector3(touchposition.x, touchposition.y, 6f));
+        return realCam.ScreenToWorldPoint(new Vector3(touchposition.x, touchposition.y, 3f));
     }
 
     Vector3 gettouchposition2(Vector3 touchposition2)
     {
-        return Camera.main.ScreenToWorldPoint(new Vector3(touchposition2.x, touchposition2.y, 6f));
+        return realCam.ScreenToWorldPoint(new Vector3(touchposition2.x, touchposition2.y, 3f));
     }
 
     private GameObject create(Touch touch)

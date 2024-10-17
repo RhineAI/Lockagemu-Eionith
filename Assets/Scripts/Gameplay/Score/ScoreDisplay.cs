@@ -36,7 +36,7 @@ public class ScoreDisplay : MonoBehaviour
         // criticalJudgement = 1; 
         // fairTap = 1; 
         // DisplayedScore();
-        Debug.Log($"Critical : {criticalTap}, Fair : {fairTap}, Error : {errorTap} ");
+        //Debug.Log($"Critical : {criticalTap}, Fair : {fairTap}, Error : {errorTap} ");
     }
 
     public void DisplayedScore(bool critical, bool fair, bool error) 

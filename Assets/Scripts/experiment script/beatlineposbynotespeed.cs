@@ -16,12 +16,13 @@ public class beatlineposbynotespeed : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        beatline = GameObject.Find("beatline");
+        beatline = GameObject.Find("set note speed");
         note_speed = 1;
         self = gameObject;
         //selftrans = gameObject.transform;
-        posobj = self.transform.position;
+        posobj = new Vector3 (self.transform.position.x, 0, self.transform.position.z);
         beatline.GetComponent<expsimplecoroutine>().Note_speed = 1;
+        tambah = true;
     }
 
     // Update is called once per frame
@@ -38,8 +39,8 @@ public class beatlineposbynotespeed : MonoBehaviour
         
         if (tambah)
         {
-            self.transform.position = posobj * note_speed;
-            tambah = false;
+            self.transform.position = new Vector3(self.transform.position.x, self.transform.position.y, posobj.z * note_speed);
+            //tambah = false;
         }
         if(tambahan)
         {
@@ -49,7 +50,7 @@ public class beatlineposbynotespeed : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.RightArrow))
         {
             //beatline.GetComponent<expsimplecoroutine>().ex2 += wakilposz;
-            tambah = true;
+            //tambah = true;
             //tambahan = true;
         }
     }

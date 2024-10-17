@@ -3,24 +3,122 @@
   "WorkspaceRootPath": "D:\\for github\\Lockagemu-Eionith\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|d:\\for github\\lockagemu-eionith\\assets\\scripts\\for charting\\positionissue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\for charting\\positionissue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|d:\\for github\\lockagemu-eionith\\assets\\scripts\\hold \u0026 multitouch control script\\spam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hold \u0026 multitouch control script\\spam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|d:\\for github\\lockagemu-eionith\\assets\\scripts\\updated note script\\noteupdatescriptv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\gameplay\\judgemenr\\judgementscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\judgemenr\\judgementscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\updated note script\\noteupdatescriptv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\updated note script\\noteupdatescriptv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|d:\\for github\\lockagemu-eionith\\assets\\scripts\\hold \u0026 multitouch control script\\touchlocate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hold \u0026 multitouch control script\\touchlocate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\My project (3)\\Assets\\multi contol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\My project (3)\\Assets\\hold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\updated note script\\holdtrialscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\updated note script\\holdtrialscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\materials\\vfx\\script\\holdvfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\materials\\vfx\\script\\holdvfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|d:\\for github\\lockagemu-eionith\\assets\\scripts\\hold \u0026 multitouch control script\\spam1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hold \u0026 multitouch control script\\spam1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\for charting\\chartbpm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\for charting\\chartbpm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\editor script\\rayplacenote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editor script\\rayplacenote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\gameplay\\score\\scoredisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\score\\scoredisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\editor script\\script charting1\\placednote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editor script\\script charting1\\placednote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\editor script\\timeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editor script\\timeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\editor script\\commandcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editor script\\commandcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\updated note script\\lanescriptupdatev1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\updated note script\\lanescriptupdatev1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\editor script\\marker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editor script\\marker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\gameplay\\score\\combodisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\score\\combodisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\gameplay\\lane rotation\\lanerotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\lane rotation\\lanerotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\gameplay\\notes\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\notes\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\experiment script\\beatlineposbynotespeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\experiment script\\beatlineposbynotespeed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\editor script\\script charting1\\maincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editor script\\script charting1\\maincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\experiment script\\expsimplecoroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\experiment script\\expsimplecoroutine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\editor script\\lanepov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editor script\\lanepov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\chart\\charter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chart\\charter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\editor script\\script charting1\\givelife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editor script\\script charting1\\givelife.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\editor script\\script charting1\\raycaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editor script\\script charting1\\raycaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\experiment script\\timelinecharter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\experiment script\\timelinecharter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\chart\\holdfadeout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chart\\holdfadeout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\chart\\chartbpm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chart\\chartbpm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\positionissue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\for charting\\positionissue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\materials\\vfx\\script\\holdvfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\materials\\vfx\\script\\holdvfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\audiocontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,22 +127,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\updated note script\\changetarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\updated note script\\changetarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\score\\scoredisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\score\\scoredisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\updated note script\\lanescriptupdatev1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\updated note script\\lanescriptupdatev1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\score\\combodisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\score\\combodisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\rythm game scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\rythm game scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\gimmick\\glitch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,16 +141,8 @@
       "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\updated note script\\sideflicknote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\for charting\\charter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\for charting\\charter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated script\\changetarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\updated script\\changetarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\rythm game scripts\\arrowdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\rythm game scripts\\arrowdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\nyoba weh\\Assets\\restartgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -78,10 +152,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\newproj\\Assets\\controlgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\notes\\flick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\notes\\flick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated script\\lanescriptupdatev1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,6 +168,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\for github\\Lockagemu-Eionith\\Assets\\Materials\\Vfx\\livefx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Materials\\Vfx\\livefx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\for github\\Lockagemu-Eionith\\Assets\\Rythm Game Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Rythm Game Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\chartbpm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\for charting\\chartbpm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Score\\ComboDisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Score\\ComboDisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Score\\ScoreDisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Score\\ScoreDisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\charter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\for charting\\charter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Notes\\Flick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Notes\\Flick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\for github\\Lockagemu-Eionith\\Assets\\Rythm Game Scripts\\ArrowDown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Rythm Game Scripts\\ArrowDown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -107,37 +205,366 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "positionissue.cs",
-              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\positionissue.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\for charting\\positionissue.cs",
-              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\positionissue.cs",
-              "RelativeToolTip": "Assets\\Scripts\\for charting\\positionissue.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAowB0AAAAJAAAA",
+              "DocumentIndex": 4,
+              "Title": "multi contol.cs",
+              "DocumentMoniker": "D:\\unity\\My project (3)\\Assets\\multi contol.cs",
+              "RelativeDocumentMoniker": "..\\..\\unity\\My project (3)\\Assets\\multi contol.cs",
+              "ToolTip": "D:\\unity\\My project (3)\\Assets\\multi contol.cs",
+              "RelativeToolTip": "..\\..\\unity\\My project (3)\\Assets\\multi contol.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T08:03:47.758Z",
+              "WhenOpened": "2024-10-17T09:59:29.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "hold.cs",
+              "DocumentMoniker": "D:\\unity\\My project (3)\\Assets\\hold.cs",
+              "RelativeDocumentMoniker": "..\\..\\unity\\My project (3)\\Assets\\hold.cs",
+              "ToolTip": "D:\\unity\\My project (3)\\Assets\\hold.cs",
+              "RelativeToolTip": "..\\..\\unity\\My project (3)\\Assets\\hold.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T09:58:37.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "noteupdatescriptv2.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\noteupdatescriptv2.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\noteupdatescriptv2.cs",
               "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\noteupdatescriptv2.cs",
               "RelativeToolTip": "Assets\\Scripts\\updated note script\\noteupdatescriptv2.cs",
-              "ViewState": "AQIAAIIAAAAAAAAAAADgv5AAAAAqAAAA",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAvwJAAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T12:51:46.148Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "touchlocate.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\hold \u0026 multitouch control script\\touchlocate.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\hold \u0026 multitouch control script\\touchlocate.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\hold \u0026 multitouch control script\\touchlocate.cs",
+              "RelativeToolTip": "Assets\\Scripts\\hold \u0026 multitouch control script\\touchlocate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T09:38:15.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "spam1.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\hold \u0026 multitouch control script\\spam1.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\hold \u0026 multitouch control script\\spam1.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\hold \u0026 multitouch control script\\spam1.cs",
+              "RelativeToolTip": "Assets\\Scripts\\hold \u0026 multitouch control script\\spam1.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwAwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T09:24:30.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "spam.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\hold \u0026 multitouch control script\\spam.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\hold \u0026 multitouch control script\\spam.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\hold \u0026 multitouch control script\\spam.cs",
+              "RelativeToolTip": "Assets\\Scripts\\hold \u0026 multitouch control script\\spam.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAASwFkAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T08:52:29.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "judgementSCR.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gameplay\\judgemenr\\judgementSCR.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\judgemenr\\judgementSCR.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gameplay\\judgemenr\\judgementSCR.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\judgemenr\\judgementSCR.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwD0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T07:40:57.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "rayplacenote.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\rayplacenote.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\editor script\\rayplacenote.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\rayplacenote.cs",
+              "RelativeToolTip": "Assets\\Scripts\\editor script\\rayplacenote.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAmwHcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T08:27:26.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "commandcontrol.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\commandcontrol.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\editor script\\commandcontrol.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\commandcontrol.cs",
+              "RelativeToolTip": "Assets\\Scripts\\editor script\\commandcontrol.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAIAwwDsAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:48:52.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "timeline.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\timeline.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\editor script\\timeline.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\timeline.cs",
+              "RelativeToolTip": "Assets\\Scripts\\editor script\\timeline.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAIAxwK0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T00:23:15.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "marker.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\marker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\editor script\\marker.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\marker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\editor script\\marker.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAQwKEAAACZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T11:49:54.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "maincommand.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\script charting1\\maincommand.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\editor script\\script charting1\\maincommand.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\script charting1\\maincommand.cs",
+              "RelativeToolTip": "Assets\\Scripts\\editor script\\script charting1\\maincommand.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwIAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:40:47.148Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "HoldTrialScr.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
+              "RelativeToolTip": "Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
+              "ViewState": "AQIAAOoAAAAAAAAAAAAowK4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T13:16:26.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ScoreDisplay.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gameplay\\Score\\ScoreDisplay.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Score\\ScoreDisplay.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gameplay\\Score\\ScoreDisplay.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Score\\ScoreDisplay.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAwCYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T05:26:05.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ComboDisplay.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gameplay\\Score\\ComboDisplay.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Score\\ComboDisplay.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gameplay\\Score\\ComboDisplay.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Score\\ComboDisplay.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T05:30:12.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "placednote.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\script charting1\\placednote.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\editor script\\script charting1\\placednote.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\script charting1\\placednote.cs",
+              "RelativeToolTip": "Assets\\Scripts\\editor script\\script charting1\\placednote.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:37:42.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "lanescriptupdatev1.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
+              "RelativeToolTip": "Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T03:23:48.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LaneRotation.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gameplay\\Lane Rotation\\LaneRotation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Lane Rotation\\LaneRotation.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gameplay\\Lane Rotation\\LaneRotation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Lane Rotation\\LaneRotation.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAkwHUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T14:12:51.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Note.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gameplay\\Notes\\Note.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Gameplay\\Notes\\Note.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gameplay\\Notes\\Note.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Gameplay\\Notes\\Note.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwCgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T07:35:41.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "beatlineposbynotespeed.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\experiment script\\beatlineposbynotespeed.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\experiment script\\beatlineposbynotespeed.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\experiment script\\beatlineposbynotespeed.cs",
+              "RelativeToolTip": "Assets\\Scripts\\experiment script\\beatlineposbynotespeed.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:19:58.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "expsimplecoroutine.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\experiment script\\expsimplecoroutine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\experiment script\\expsimplecoroutine.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\experiment script\\expsimplecoroutine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\experiment script\\expsimplecoroutine.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:18:52.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "lanepov.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\lanepov.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\editor script\\lanepov.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\lanepov.cs",
+              "RelativeToolTip": "Assets\\Scripts\\editor script\\lanepov.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T04:15:16.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "charter.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Chart\\charter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Chart\\charter.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Chart\\charter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Chart\\charter.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T12:24:09.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "givelife.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\script charting1\\givelife.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\editor script\\script charting1\\givelife.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\script charting1\\givelife.cs",
+              "RelativeToolTip": "Assets\\Scripts\\editor script\\script charting1\\givelife.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAtwDcAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:32:23.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "raycaster.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\script charting1\\raycaster.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\editor script\\script charting1\\raycaster.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\editor script\\script charting1\\raycaster.cs",
+              "RelativeToolTip": "Assets\\Scripts\\editor script\\script charting1\\raycaster.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAD4v0EAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T15:31:46.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "timelinecharter.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\experiment script\\timelinecharter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\experiment script\\timelinecharter.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\experiment script\\timelinecharter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\experiment script\\timelinecharter.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwCIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T23:03:26.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "chartbpm.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Chart\\chartbpm.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Chart\\chartbpm.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Chart\\chartbpm.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Chart\\chartbpm.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T11:16:13.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "holdfadeout.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Chart\\holdfadeout.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Chart\\holdfadeout.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Chart\\holdfadeout.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Chart\\holdfadeout.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBMAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T11:07:06.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "positionissue.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\positionissue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\for charting\\positionissue.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\positionissue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\for charting\\positionissue.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T08:03:47.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "changetarget.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\changetarget.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\changetarget.cs",
@@ -149,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 29,
               "Title": "HoldVfx.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Materials\\Vfx\\Script\\HoldVfx.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Vfx\\Script\\HoldVfx.cs",
@@ -161,19 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HoldTrialScr.cs",
-              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
-              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
-              "RelativeToolTip": "Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAADwv8cAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T13:16:26.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 43,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Rythm Game Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Rythm Game Scripts\\GameManager.cs",
@@ -185,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 33,
               "Title": "justdestroy.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Materials\\Vfx\\Script\\justdestroy.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Vfx\\Script\\justdestroy.cs",
@@ -197,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 32,
               "Title": "Glitch.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gimmick\\Glitch.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Gimmick\\Glitch.cs",
@@ -209,7 +624,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 44,
               "Title": "chartbpm.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\chartbpm.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\for charting\\chartbpm.cs",
@@ -221,19 +636,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "lanescriptupdatev1.cs",
-              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
-              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
-              "RelativeToolTip": "Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
-              "ViewState": "AQIAALYBAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T03:23:48.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 45,
               "Title": "ComboDisplay.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Score\\ComboDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Score\\ComboDisplay.cs",
@@ -245,7 +648,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 46,
               "Title": "ScoreDisplay.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Score\\ScoreDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Score\\ScoreDisplay.cs",
@@ -257,7 +660,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 30,
               "Title": "AudioControl.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\AudioControl.cs",
               "RelativeDocumentMoniker": "Assets\\AudioControl.cs",
@@ -269,7 +672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 34,
               "Title": "sideflicknote.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\sideflicknote.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\sideflicknote.cs",
@@ -281,7 +684,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 47,
               "Title": "charter.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\charter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\for charting\\charter.cs",
@@ -293,7 +696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 39,
               "Title": "lanescriptupdatev1.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated script\\lanescriptupdatev1.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\updated script\\lanescriptupdatev1.cs",
@@ -305,7 +708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 35,
               "Title": "changetarget.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated script\\changetarget.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\updated script\\changetarget.cs",
@@ -316,7 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 40,
               "Title": "vfx_instans.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Materials\\Vfx\\vfx_instans.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Vfx\\vfx_instans.cs",
@@ -328,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 37,
               "Title": "cekor.cs",
               "DocumentMoniker": "D:\\unity\\nyoba weh\\Assets\\cekor.cs",
               "RelativeDocumentMoniker": "..\\..\\unity\\nyoba weh\\Assets\\cekor.cs",
@@ -340,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 42,
               "Title": "livefx.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Materials\\Vfx\\livefx.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Vfx\\livefx.cs",
@@ -352,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 48,
               "Title": "Flick.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Notes\\Flick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Notes\\Flick.cs",
@@ -364,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 49,
               "Title": "ArrowDown.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Rythm Game Scripts\\ArrowDown.cs",
               "RelativeDocumentMoniker": "Assets\\Rythm Game Scripts\\ArrowDown.cs",
@@ -376,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 36,
               "Title": "restartgame.cs",
               "DocumentMoniker": "D:\\unity\\nyoba weh\\Assets\\restartgame.cs",
               "RelativeDocumentMoniker": "..\\..\\unity\\nyoba weh\\Assets\\restartgame.cs",
@@ -388,7 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 41,
               "Title": "startstopcontrol.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Materials\\Vfx\\startstopcontrol.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Vfx\\startstopcontrol.cs",
@@ -400,7 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 38,
               "Title": "controlgame.cs",
               "DocumentMoniker": "D:\\unity\\newproj\\Assets\\controlgame.cs",
               "RelativeDocumentMoniker": "..\\..\\unity\\newproj\\Assets\\controlgame.cs",
