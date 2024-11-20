@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class judgementSCR : MonoBehaviour
@@ -7,17 +8,24 @@ public class judgementSCR : MonoBehaviour
     //OBJ
     //public GameObject Lane_Type; //masukkan collider untuk dideteksi ray apakah Lane 1,2,3,4?
     //public GameObject touch_control;
-    
+    public GameObject LaneLightTrigger;
+    public spam Spam;
+    public HashSet<GameObject> hasTap = new HashSet<GameObject>();
     //BOOL
     public bool Tap;
     public bool hold;
+    
 
     //float
     public float timer = 0;
     public float touch_detect;
+
+    //LIST
+    
     // Start is called before the first frame update
     void Start()
     {
+        
         //touch_control = GameObject.Find("touch_control");
     }
 
@@ -26,13 +34,29 @@ public class judgementSCR : MonoBehaviour
     {
         if(Tap)
         {
-            Debug.Log("Tap");
-            timer = 1;
+            Debug.Log("tap");
+            timer++;
         }
-        
 
-        if (timer == 1) { Tap = false; }
+        if(timer > 3)
+            {
+            Tap = false;
+            timer = 0;
+        }
 
+        if(touch_detect < 0)
+        {
+            touch_detect = 0;
+        }
+
+        if(hold)
+        {
+            LaneLightTrigger.GetComponent<Renderer>().material.color = Color.cyan;
+        }
+        else if (!hold)
+        {
+            LaneLightTrigger.GetComponent<Renderer>().material.color = Color.gray;
+        }
         /*Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(touch_control.GetComponent<spam1>().i).position);
         RaycastHit hit;
         RaycastHit[] hits = Physics.RaycastAll(ray); 
@@ -55,31 +79,61 @@ public class judgementSCR : MonoBehaviour
 
     }
 
+    
+
     void OnCollisionEnter(Collision collision)
     {
         if(collision.collider.CompareTag("touch system"))
         {
+            //spam Spam = GetComponent<spam>();
             touch_detect += 1;
-            if (timer == 0)
+            hold = true;
+            if (timer < 2 && !Spam.hasTap.Contains(collision.gameObject))
             {
                 Tap = true;
             }
-            
-            hold = true;
-            
+            Spam.hasTap.Add(collision.gameObject);
+
+
+
         }
         else if (collision.collider.CompareTag("falser"))
         {
-            touch_detect-=1;
-            timer = 0;
-            if(touch_detect < 1)
+            
+            
+            if(touch_detect == 1)
             {
                 hold = false;
+                touch_detect = 0;
+            }
+            else
+            {
+                touch_detect -= 1;
             }
             
 
         }
     }
 
-    
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.CompareTag("touch system"))
+        {
+
+
+            if (touch_detect == 1)
+            {
+                hold = false;
+                touch_detect = 0;
+            }
+            else
+            {
+                touch_detect -= 1;
+            }
+
+
+        }
+    }
+
+
 }

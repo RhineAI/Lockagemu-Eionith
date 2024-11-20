@@ -9,16 +9,21 @@ public class spam : MonoBehaviour
     public GameObject sampel2;
     public List<touchlocate> touches = new List<touchlocate>();
     public List<realsecontrol> touchesr = new List<realsecontrol>();
+    public HashSet<GameObject> hasTap = new HashSet<GameObject>();
     public Camera realCam;
+    //public float InitialPositionY; //update sumbu z dengan penambahan dari sumbu Y
+    //public float initialZ = 3f;
+    //Vector3 lockedY = new Vector3(0, 0, 0);
 
     // Start is called before the first frame update
     void Start()
     {
+        //lockedY = 0;
         //Camera.main = realCam;
-        float mousey = Input.mousePosition.y;
-        float mousex = Input.mousePosition.x;
-        Vector2 mouseposy = realCam.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 mouseposx = realCam.ScreenToWorldPoint(Input.mousePosition);
+        //float mousey = Input.mousePosition.y;
+        //float mousex = Input.mousePosition.x;
+        //Vector2 mouseposy = realCam.ScreenToWorldPoint(Input.mousePosition);
+        //Vector2 mouseposx = realCam.ScreenToWorldPoint(Input.mousePosition);
         //sampel2 = Resources.Load("cancler") as GameObject;
     }
 
@@ -63,7 +68,9 @@ public class spam : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
                 // Debug.Log("touched");
-                touches.Add(new touchlocate(touch.fingerId, create(touch)));
+                GameObject newobj = create(touch);
+                touches.Add(new touchlocate(touch.fingerId, newobj));
+                //hasTap.Add(newobj);
 
             }
 
@@ -78,6 +85,7 @@ public class spam : MonoBehaviour
                 Destroy(thistouch.sampel);
                 //Instantiate(thistouch.sampel2);
                 touches.RemoveAt(touches.IndexOf(thistouch));
+                
                 //touchesr.RemoveAt(touchesr.IndexOf(thistouchr));
 
 
@@ -97,13 +105,34 @@ public class spam : MonoBehaviour
     }
     Vector3 gettouchposition(Vector3 touchposition)
     {
-        return realCam.ScreenToWorldPoint(new Vector3(touchposition.x, touchposition.y, 3f));
+        //lock posisi Y
+        /*if(lockedY.y == 0)
+        {
+            lockedY.y = touchposition.y;
+        }
+        else if (lockedY.y > 0 ||  lockedY.y < 0)
+        {
+            float moveDistance =Mathf.Abs(touchposition.y - lockedY.y);
+            float totaldistance = 0;
+            totaldistance += moveDistance;
+            lockedY.y = touchposition.y - totaldistance;
+        }
+        float Ymove = touchposition.y - InitialPositionY;
+        float zmoveupdate = initialZ + Ymove * 0.01f - 1.1f;
+        return realCam.ScreenToWorldPoint(new Vector3(touchposition.x, lockedY.y, zmoveupdate));*/
+        return realCam.ScreenToWorldPoint(new Vector3(touchposition.x + 0.1f, touchposition.y-0.1f, 2.4f));
     }
 
     Vector3 gettouchposition2(Vector3 touchposition2)
     {
         return realCam.ScreenToWorldPoint(new Vector3(touchposition2.x, touchposition2.y, 3f));
     }
+
+    /*void freeze()
+    {
+
+        Vector3 freezeY = gettouchposition(touchposition);
+    }*/
 
     private GameObject create(Touch touch)
     {

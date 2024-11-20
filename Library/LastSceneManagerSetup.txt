@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/prebeta.unity
+- path: Assets/Prefabs/ProfileUI.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
