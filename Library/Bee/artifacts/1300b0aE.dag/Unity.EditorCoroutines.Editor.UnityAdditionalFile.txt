@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-D:\for github\Rhythm-Project
-=======
-D:\for github\Lockagemu-Eionith
->>>>>>> Stashed changes
+/home/luhung/Documents/Project/Unity/Lockagemu-Eionith

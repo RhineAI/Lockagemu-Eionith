@@ -1,4 +1,6 @@
 using UnityEngine;
+using Eionith.ChartFormat;
+using Eionith.Ultilities;
 
 public class Play : MonoBehaviour
 {
@@ -20,7 +22,7 @@ public class Play : MonoBehaviour
     }
     void Start()
     {
-        int bpm = SongInfo.instance.bpm;
+        float bpm = SongInfo.instance.bpm;
         speed = Mathf.Min(speed, 7);
         Debug.Log($"Bpm : {bpm}");
         spawnInterval = 60f / bpm;

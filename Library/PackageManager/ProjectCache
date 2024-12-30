@@ -1,25 +1,25 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: D:/Unity Project/Lockagemu-Eionith/Packages/manifest.json
+    m_FilePath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638566281950335465
-    m_Hash: 2224538044
+      ticks: 638678883710000000
+    m_Hash: 4189297570
   m_LockFileStatus:
-    m_FilePath: D:/Unity Project/Lockagemu-Eionith/Packages/packages-lock.json
+    m_FilePath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638566281950347127
-    m_Hash: 1038983805
+      ticks: 638678883710000000
+    m_Hash: 1655163700
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: D:/Unity Project/Lockagemu-Eionith/Packages
+m_ProjectPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Packages
 m_EditorVersion: 2022.3.18f1 (d29bea25151d)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
@@ -27,7 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.2d.sprite@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.2d.sprite@1.0.0
   assetPath: Packages/com.unity.2d.sprite
   name: com.unity.2d.sprite
   displayName: 2D Sprite
@@ -85,7 +85,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 4.4.2
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.ads@4.4.2
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.ads@4.4.2
   assetPath: Packages/com.unity.ads
   name: com.unity.ads
   displayName: Advertisement Legacy
@@ -154,8 +154,10 @@ m_ResolvedPackages:
     - 4.3.0
     - 4.4.1
     - 4.4.2
+    - 4.12.0
     compatible:
     - 4.4.2
+    - 4.12.0
     recommended: 4.4.2
     deprecated: []
   dependencies:
@@ -202,7 +204,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.2.0
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.collab-proxy@2.2.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.collab-proxy@2.2.0
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -291,10 +293,16 @@ m_ResolvedPackages:
     - 2.2.0
     - 2.3.1
     - 2.4.3
+    - 2.4.4
+    - 2.5.1
+    - 2.5.2
     compatible:
     - 2.2.0
     - 2.3.1
     - 2.4.3
+    - 2.4.4
+    - 2.5.1
+    - 2.5.2
     recommended: 2.2.0
     deprecated: []
   dependencies: []
@@ -345,7 +353,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.feature.development@1.0.1
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.feature.development@1.0.1
   assetPath: Packages/com.unity.feature.development
   name: com.unity.feature.development
   displayName: Engineering
@@ -438,7 +446,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.5.2
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.splines@2.5.2
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.splines@2.5.2
   assetPath: Packages/com.unity.splines
   name: com.unity.splines
   displayName: Splines
@@ -473,30 +481,34 @@ m_ResolvedPackages:
     - 2.5.2
     - 2.6.0
     - 2.6.1
+    - 2.7.1
+    - 2.7.2
     compatible:
     - 2.5.2
     - 2.6.0
     - 2.6.1
+    - 2.7.1
+    - 2.7.2
     recommended: 2.5.2
     deprecated: []
   dependencies:
-  - name: com.unity.settings-manager
-    version: 1.0.3
-  - name: com.unity.mathematics
-    version: 1.2.1
   - name: com.unity.ugui
     version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.settings-manager
-    version: 2.0.1
   - name: com.unity.mathematics
-    version: 1.2.6
+    version: 1.2.1
+  - name: com.unity.settings-manager
+    version: 1.0.3
+  resolvedDependencies:
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
+  - name: com.unity.mathematics
+    version: 1.2.6
+  - name: com.unity.settings-manager
+    version: 2.0.1
   keywords:
   - spline
   - curve
@@ -532,7 +544,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.6
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.textmeshpro@3.0.6
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.textmeshpro@3.0.6
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -727,7 +739,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.7.6
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.timeline@1.7.6
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.timeline@1.7.6
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -842,18 +854,18 @@ m_ResolvedPackages:
     recommended: 1.7.6
     deprecated: []
   dependencies:
+  - name: com.unity.modules.audio
+    version: 1.0.0
   - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
-  - name: com.unity.modules.audio
-    version: 1.0.0
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.director
-    version: 1.0.0
   - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
@@ -891,12 +903,103 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.unity.toolchain.linux-x86_64@2.0.10
+  testable: 0
+  isDirectDependency: 1
+  version: 2.0.10
+  source: 1
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.toolchain.linux-x86_64@2.0.10
+  assetPath: Packages/com.unity.toolchain.linux-x86_64
+  name: com.unity.toolchain.linux-x86_64
+  displayName: Toolchain Linux x64
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: Toolchain to build player target Linux x86_64 on host Linux x86_64
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.5-preview
+    - 0.1.6-preview
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.13-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 0.1.16-preview
+    - 0.1.17-preview
+    - 0.1.18-preview
+    - 0.1.19-preview
+    - 1.0.0
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.9
+    - 2.0.10
+    compatible:
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.9
+    - 2.0.10
+    recommended: 2.0.10
+    deprecated: []
+  dependencies:
+  - name: com.unity.sysroot
+    version: 2.0.10
+  - name: com.unity.sysroot.linux-x86_64
+    version: 2.0.9
+  resolvedDependencies:
+  - name: com.unity.sysroot
+    version: 2.0.10
+  - name: com.unity.sysroot.linux-x86_64
+    version: 2.0.9
+  keywords:
+  - toolchain
+  - linux
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638651065863710000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.toolchain.linux-x86_64@2.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.sysroot.git
+    revision: c5a32c15f32b7de0b0aa81c256ea52b322478b15
+    path: 
+  unityLifecycle:
+    version: 2.0.4
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.ugui@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.ugui@1.0.0
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -968,7 +1071,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.1
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.visualscripting@1.9.1
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.visualscripting@1.9.1
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1015,11 +1118,13 @@ m_ResolvedPackages:
     - 1.9.1
     - 1.9.2
     - 1.9.4
+    - 1.9.5
     compatible:
     - 1.9.1
     - 1.9.2
     - 1.9.4
-    recommended: 1.9.4
+    - 1.9.5
+    recommended: 1.9.5
     deprecated:
     - 1.8.0-pre.1
   dependencies:
@@ -1068,7 +1173,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.ai@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.ai@1.0.0
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -1123,7 +1228,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.androidjni@1.0.0
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -1177,7 +1282,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.animation@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.animation@1.0.0
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1232,7 +1337,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.assetbundle@1.0.0
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1287,7 +1392,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.audio@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.audio@1.0.0
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1342,7 +1447,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.cloth@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.cloth@1.0.0
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1401,7 +1506,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.director@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.director@1.0.0
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1464,7 +1569,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.imageconversion@1.0.0
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1520,7 +1625,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.imgui@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.imgui@1.0.0
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1575,7 +1680,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.jsonserialize@1.0.0
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1630,7 +1735,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.particlesystem@1.0.0
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1685,7 +1790,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.physics@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.physics@1.0.0
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1740,7 +1845,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.physics2d@1.0.0
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1795,7 +1900,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.screencapture@1.0.0
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1854,7 +1959,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.terrain@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.terrain@1.0.0
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1909,7 +2014,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.terrainphysics@1.0.0
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -1972,7 +2077,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.tilemap@1.0.0
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -2030,7 +2135,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.ui@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.ui@1.0.0
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -2085,7 +2190,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.uielements@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.uielements@1.0.0
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2152,7 +2257,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.umbra@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.umbra@1.0.0
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2207,7 +2312,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.unityanalytics@1.0.0
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2270,7 +2375,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.unitywebrequest@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2325,7 +2430,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2388,7 +2493,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.unitywebrequestaudio@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2451,7 +2556,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.unitywebrequesttexture@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2514,7 +2619,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.unitywebrequestwww@1.0.0
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2593,7 +2698,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.vehicles@1.0.0
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2652,7 +2757,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.video@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.video@1.0.0
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2719,7 +2824,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.vr@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.vr@1.0.0
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2788,7 +2893,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.wind@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.wind@1.0.0
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -2843,7 +2948,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.xr@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.xr@1.0.0
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -2910,7 +3015,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.modules.subsystems@1.0.0
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -2964,42 +3069,61 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.unity.settings-manager@2.0.1
+- packageId: com.unity.sysroot@2.0.10
   testable: 0
   isDirectDependency: 0
-  version: 2.0.1
+  version: 2.0.10
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.settings-manager@2.0.1
-  assetPath: Packages/com.unity.settings-manager
-  name: com.unity.settings-manager
-  displayName: Settings Manager
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.sysroot@2.0.10
+  assetPath: Packages/com.unity.sysroot
+  name: com.unity.sysroot
+  displayName: Sysroot Base
   author:
     name: 
     email: 
     url: 
   category: 
-  type: asset
-  description: A framework for making any serializable field a setting, complete
-    with a pre-built settings interface.
+  type: assets
+  description: This is the base sysroot package required by all sysroot and toolchain
+    packages
   status: 0
   errors: []
   versions:
     all:
-    - 0.1.0-preview.4
-    - 0.1.0-preview.8
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.12-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 0.1.16-preview
+    - 0.1.17-preview
+    - 0.1.18-preview
+    - 0.1.19-preview
     - 1.0.0
-    - 1.0.1
-    - 1.0.2
-    - 1.0.3
     - 2.0.0
-    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.7
+    - 2.0.10
     compatible:
-    - 2.0.1
-    recommended: 2.0.1
+    - 2.0.5
+    - 2.0.6
+    - 2.0.7
+    - 2.0.10
+    recommended: 2.0.10
     deprecated: []
   dependencies: []
   resolvedDependencies: []
-  keywords: []
+  keywords:
+  - unity
+  - linux
+  - sysroot
   registry:
     id: main
     name: 
@@ -3010,16 +3134,98 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637744099390000000
-  documentationUrl: 
+  datePublishedTicks: 638500638510000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.sysroot@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
-    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
-    revision: 9b7c12d04ef880168151c127fd6b37b5931197dc
+    url: https://github.com/Unity-Technologies/com.unity.sysroot.git
+    revision: 48e503c8f30007e813fbcec90dc84795285406b4
     path: 
   unityLifecycle:
-    version: 2.0.1
+    version: 2.0.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.sysroot.linux-x86_64@2.0.9
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.9
+  source: 1
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.sysroot.linux-x86_64@2.0.9
+  assetPath: Packages/com.unity.sysroot.linux-x86_64
+  name: com.unity.sysroot.linux-x86_64
+  displayName: Sysroot Linux x64
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: Sysroot used to build unity player for linux x86_64
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.6-preview
+    - 0.1.7-preview
+    - 0.1.8-preview
+    - 0.1.9-preview
+    - 0.1.10-preview
+    - 0.1.11-preview
+    - 0.1.12-preview
+    - 0.1.13-preview
+    - 0.1.14-preview
+    - 0.1.15-preview
+    - 1.0.0
+    - 2.0.0
+    - 2.0.1
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.9
+    compatible:
+    - 2.0.4
+    - 2.0.5
+    - 2.0.6
+    - 2.0.9
+    recommended: 2.0.9
+    deprecated: []
+  dependencies:
+  - name: com.unity.sysroot
+    version: 2.0.10
+  resolvedDependencies:
+  - name: com.unity.sysroot
+    version: 2.0.10
+  keywords:
+  - unity
+  - linux
+  - sysroot
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638500638600000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.sysroot.linux-x86_64@2.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.sysroot.git
+    revision: bf7a008256a1175e0f8a0d7d26d6826cbfbe1bb2
+    path: 
+  unityLifecycle:
+    version: 2.0.4
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -3031,7 +3237,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.6
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.mathematics@1.2.6
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.mathematics@1.2.6
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -3102,12 +3308,74 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.unity.settings-manager@2.0.1
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.1
+  source: 1
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.settings-manager@2.0.1
+  assetPath: Packages/com.unity.settings-manager
+  name: com.unity.settings-manager
+  displayName: Settings Manager
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: A framework for making any serializable field a setting, complete
+    with a pre-built settings interface.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.4
+    - 0.1.0-preview.8
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 2.0.0
+    - 2.0.1
+    compatible:
+    - 2.0.1
+    recommended: 2.0.1
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637744099390000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
+    revision: 9b7c12d04ef880168151c127fd6b37b5931197dc
+    path: 
+  unityLifecycle:
+    version: 2.0.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.ide.visualstudio@2.0.22
   testable: 0
   isDirectDependency: 0
   version: 2.0.22
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.ide.visualstudio@2.0.22
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.ide.visualstudio@2.0.22
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -3196,7 +3464,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.0.27
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.ide.rider@3.0.27
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.ide.rider@3.0.27
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -3256,11 +3524,13 @@ m_ResolvedPackages:
     - 3.0.27
     - 3.0.28
     - 3.0.31
+    - 3.0.34
     compatible:
     - 3.0.27
     - 3.0.28
     - 3.0.31
-    recommended: 3.0.31
+    - 3.0.34
+    recommended: 3.0.34
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -3300,7 +3570,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.5
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.ide.vscode@1.2.5
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.ide.vscode@1.2.5
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -3368,7 +3638,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.editorcoroutines@1.0.0
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.editorcoroutines@1.0.0
   assetPath: Packages/com.unity.editorcoroutines
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
@@ -3433,7 +3703,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.2
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.performance.profile-analyzer@1.2.2
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.performance.profile-analyzer@1.2.2
   assetPath: Packages/com.unity.performance.profile-analyzer
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
@@ -3504,7 +3774,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.1.33
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.test-framework@1.1.33
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.test-framework@1.1.33
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -3567,6 +3837,7 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -3587,6 +3858,7 @@ m_ResolvedPackages:
     - 1.4.2
     - 1.4.3
     - 1.4.4
+    - 1.4.5
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -3641,7 +3913,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.5
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.testtools.codecoverage@1.2.5
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.testtools.codecoverage@1.2.5
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -3690,9 +3962,11 @@ m_ResolvedPackages:
     - 1.2.3
     - 1.2.4
     - 1.2.5
+    - 1.2.6
     compatible:
     - 1.2.5
-    recommended: 1.2.5
+    - 1.2.6
+    recommended: 1.2.6
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
@@ -3746,7 +4020,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.6
   source: 1
-  resolvedPath: D:\Unity Project\Lockagemu-Eionith\Library\PackageCache\com.unity.ext.nunit@1.0.6
+  resolvedPath: /home/luhung/Documents/Project/Unity/Lockagemu-Eionith/Library/PackageCache/com.unity.ext.nunit@1.0.6
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
