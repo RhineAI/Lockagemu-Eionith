@@ -30,10 +30,14 @@ EditorUserSettings:
       value: 00080c545150500a585a5d7149260f44464e407e287171627e2b4860e6b43068
       flags: 0
     RecentlyUsedSceneGuid-8:
+<<<<<<< Updated upstream
       value: 50095155540559580e575b7312775d44401649297c7876607e781835b6e1666a
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 5107015051570f0d0c5b5e7749730744434e4e7f287b72337d71446ae0e26261
+=======
+      value: 5407005e56565b0e085c0d2114260f4441161c2c747b73317a2b4a63e7b7356e
+>>>>>>> Stashed changes
       flags: 0
     UnityRemoteCompression:
       value: 337f73

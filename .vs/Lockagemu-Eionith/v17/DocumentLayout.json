@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "D:\\for github\\Lockagemu-Eionith\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|d:\\for github\\lockagemu-eionith\\assets\\scripts\\gameplay\\judgemenr\\judgementscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\judgemenr\\judgementscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,16 +22,41 @@
     {
       "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\editor script\\timeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editor script\\timeline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\for charting\\marker1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\for charting\\marker1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|d:\\for github\\lockagemu-eionith\\assets\\holdnotefadeout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\holdnotefadeout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|d:\\for github\\lockagemu-eionith\\assets\\scripts\\for charting\\marker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\for charting\\marker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\updated note script\\noteupdatescriptv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\updated note script\\noteupdatescriptv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\My project (3)\\Assets\\multi contol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\My project (3)\\Assets\\hold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\for charting\\chartbpm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\for charting\\chartbpm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\for charting\\charter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\for charting\\charter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\for charting\\positionissue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\for charting\\positionissue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\updated note script\\holdtrialscr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,6 +67,7 @@
       "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\editor script\\rayplacenote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\scripts\\gameplay\\score\\scoredisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameplay\\score\\scoredisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -121,6 +148,8 @@
       "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\materials\\vfx\\script\\holdvfx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|D:\\for github\\Lockagemu-Eionith\\assets\\audiocontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3758214C-26D1-508E-6E24-7DB21C20A59C}|Assembly-CSharp.csproj|solutionrelative:assets\\audiocontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -205,11 +234,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
+=======
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "holdnotefadeout.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\holdnotefadeout.cs",
+              "RelativeDocumentMoniker": "Assets\\holdnotefadeout.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\holdnotefadeout.cs",
+              "RelativeToolTip": "Assets\\holdnotefadeout.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T06:21:34.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "marker1.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\marker1.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\for charting\\marker1.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\marker1.cs",
+              "RelativeToolTip": "Assets\\Scripts\\for charting\\marker1.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAQwDAAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-19T04:16:50.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "marker.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\marker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\for charting\\marker.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\marker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\for charting\\marker.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCMAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T11:25:43.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+>>>>>>> Stashed changes
               "Title": "noteupdatescriptv2.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\noteupdatescriptv2.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\noteupdatescriptv2.cs",
@@ -246,6 +322,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "spam.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\hold \u0026 multitouch control script\\spam.cs",
@@ -560,6 +637,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 31,
+=======
+              "DocumentIndex": 10,
+>>>>>>> Stashed changes
               "Title": "changetarget.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\changetarget.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\changetarget.cs",
@@ -571,7 +651,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 29,
+=======
+              "DocumentIndex": 8,
+>>>>>>> Stashed changes
               "Title": "HoldVfx.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Materials\\Vfx\\Script\\HoldVfx.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Vfx\\Script\\HoldVfx.cs",
@@ -583,7 +667,23 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 43,
+=======
+              "DocumentIndex": 7,
+              "Title": "HoldTrialScr.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
+              "RelativeToolTip": "Assets\\Scripts\\updated note script\\HoldTrialScr.cs",
+              "ViewState": "AQIAAMEAAAAAAAAAAADwv8cAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T13:16:26.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+>>>>>>> Stashed changes
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Rythm Game Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Rythm Game Scripts\\GameManager.cs",
@@ -595,7 +695,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 33,
+=======
+              "DocumentIndex": 16,
+>>>>>>> Stashed changes
               "Title": "justdestroy.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Materials\\Vfx\\Script\\justdestroy.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Vfx\\Script\\justdestroy.cs",
@@ -607,7 +711,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 32,
+=======
+              "DocumentIndex": 15,
+>>>>>>> Stashed changes
               "Title": "Glitch.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Gimmick\\Glitch.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Gimmick\\Glitch.cs",
@@ -625,13 +733,53 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\for charting\\chartbpm.cs",
               "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\chartbpm.cs",
               "RelativeToolTip": "Assets\\Scripts\\for charting\\chartbpm.cs",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAIwH8AAAAOAAAA",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAIwH8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T12:52:05.697Z"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 45,
+=======
+              "DocumentIndex": 5,
+              "Title": "charter.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\charter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\for charting\\charter.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\charter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\for charting\\charter.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T02:08:10.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "positionissue.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\positionissue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\for charting\\positionissue.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\positionissue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\for charting\\positionissue.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T08:03:47.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "lanescriptupdatev1.cs",
+              "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
+              "ToolTip": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
+              "RelativeToolTip": "Assets\\Scripts\\updated note script\\lanescriptupdatev1.cs",
+              "ViewState": "AQIAALYBAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T03:23:48.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+>>>>>>> Stashed changes
               "Title": "ComboDisplay.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Score\\ComboDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Score\\ComboDisplay.cs",
@@ -643,7 +791,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 46,
+=======
+              "DocumentIndex": 11,
+>>>>>>> Stashed changes
               "Title": "ScoreDisplay.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Score\\ScoreDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Score\\ScoreDisplay.cs",
@@ -655,7 +807,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 30,
+=======
+              "DocumentIndex": 9,
+>>>>>>> Stashed changes
               "Title": "AudioControl.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\AudioControl.cs",
               "RelativeDocumentMoniker": "Assets\\AudioControl.cs",
@@ -667,7 +823,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 34,
+=======
+              "DocumentIndex": 17,
+>>>>>>> Stashed changes
               "Title": "sideflicknote.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated note script\\sideflicknote.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\updated note script\\sideflicknote.cs",
@@ -679,6 +839,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 47,
               "Title": "charter.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\for charting\\charter.cs",
@@ -692,6 +853,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 39,
+=======
+              "DocumentIndex": 24,
+>>>>>>> Stashed changes
               "Title": "lanescriptupdatev1.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated script\\lanescriptupdatev1.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\updated script\\lanescriptupdatev1.cs",
@@ -703,7 +867,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 35,
+=======
+              "DocumentIndex": 18,
+>>>>>>> Stashed changes
               "Title": "changetarget.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\updated script\\changetarget.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\updated script\\changetarget.cs",
@@ -714,7 +882,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 40,
+=======
+              "DocumentIndex": 25,
+>>>>>>> Stashed changes
               "Title": "vfx_instans.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Materials\\Vfx\\vfx_instans.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Vfx\\vfx_instans.cs",
@@ -726,7 +898,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 37,
+=======
+              "DocumentIndex": 21,
+>>>>>>> Stashed changes
               "Title": "cekor.cs",
               "DocumentMoniker": "D:\\unity\\nyoba weh\\Assets\\cekor.cs",
               "RelativeDocumentMoniker": "..\\..\\unity\\nyoba weh\\Assets\\cekor.cs",
@@ -738,7 +914,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 42,
+=======
+              "DocumentIndex": 27,
+>>>>>>> Stashed changes
               "Title": "livefx.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Materials\\Vfx\\livefx.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Vfx\\livefx.cs",
@@ -750,7 +930,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 48,
+=======
+              "DocumentIndex": 23,
+>>>>>>> Stashed changes
               "Title": "Flick.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Scripts\\Notes\\Flick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Notes\\Flick.cs",
@@ -762,7 +946,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 49,
+=======
+              "DocumentIndex": 19,
+>>>>>>> Stashed changes
               "Title": "ArrowDown.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Rythm Game Scripts\\ArrowDown.cs",
               "RelativeDocumentMoniker": "Assets\\Rythm Game Scripts\\ArrowDown.cs",
@@ -774,7 +962,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 36,
+=======
+              "DocumentIndex": 20,
+>>>>>>> Stashed changes
               "Title": "restartgame.cs",
               "DocumentMoniker": "D:\\unity\\nyoba weh\\Assets\\restartgame.cs",
               "RelativeDocumentMoniker": "..\\..\\unity\\nyoba weh\\Assets\\restartgame.cs",
@@ -786,7 +978,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 41,
+=======
+              "DocumentIndex": 26,
+>>>>>>> Stashed changes
               "Title": "startstopcontrol.cs",
               "DocumentMoniker": "D:\\for github\\Lockagemu-Eionith\\Assets\\Materials\\Vfx\\startstopcontrol.cs",
               "RelativeDocumentMoniker": "Assets\\Materials\\Vfx\\startstopcontrol.cs",
@@ -798,7 +994,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 38,
+=======
+              "DocumentIndex": 22,
+>>>>>>> Stashed changes
               "Title": "controlgame.cs",
               "DocumentMoniker": "D:\\unity\\newproj\\Assets\\controlgame.cs",
               "RelativeDocumentMoniker": "..\\..\\unity\\newproj\\Assets\\controlgame.cs",

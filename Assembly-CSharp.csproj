@@ -81,9 +81,14 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\Gameplay\judgemenr\judgementSCR.cs" />
     <Compile Include="Assets\Scripts\Chart\holdfadeout.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Notes\Note.cs" />
+=======
+    <Compile Include="Assets\holdnotefadeout.cs" />
+    <Compile Include="Assets\Scripts\RhythmSceneScript\BeatRun.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\shapecontrol.cs" />
     <Compile Include="Assets\Scripts\hold &amp; multitouch control script\touch1.cs" />
@@ -109,6 +114,7 @@
     <Compile Include="Assets\Scripts\experiment script\expsimplecoroutine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
+    <Compile Include="Assets\Scripts\for charting\marker.cs" />
     <Compile Include="Assets\Scripts\updated note script\notescriptupdatev1.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
@@ -128,10 +134,18 @@
     <Compile Include="Assets\Scripts\editor script\script charting1\for gameengine\timingbpm.cs" />
     <Compile Include="Assets\Scripts\UI\UI Profile\PlayerUserName.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\Gameplay\Lane Rotation\LaneRotation.cs" />
     <Compile Include="Assets\Scripts\editor script\script charting1\raycaster.cs" />
     <Compile Include="Assets\Scripts\Gameplay\Score\ComboDisplay.cs" />
     <Compile Include="Assets\Scripts\Chart\charter.cs" />
+=======
+    <Compile Include="Assets\Scripts\RhythmSceneScript\TapNote.cs" />
+    <Compile Include="Assets\Scripts\for charting\marker1.cs" />
+    <Compile Include="Assets\Rythm Game Scripts\ButtonController.cs" />
+    <Compile Include="Assets\Scripts\Notes\movetoward.cs" />
+    <Compile Include="Assets\Rythm Game Scripts\ArrowRight.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
