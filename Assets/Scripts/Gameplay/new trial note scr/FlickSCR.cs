@@ -1,9 +1,4 @@
 using UnityEngine;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-//using UnityEngine;
-using UnityEngine.Video;
-using System;
 
 public class flickscr : MonoBehaviour
 {
@@ -28,11 +23,13 @@ public class flickscr : MonoBehaviour
     //Jack or Train Pattern Detection
     public GameObject jack;
 
+    public float detectionRange = 10f; // Jarak maksimum deteksi
+    public LayerMask detectionLayer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //baris code Jack Or Train Pattern Detection
-        RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, Mathf.Infinity);
+        /*RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, Mathf.Infinity);
         float closest_distance = Mathf.Infinity;
         GameObject closest_note = null;
         foreach (RaycastHit hit in hits)
@@ -48,7 +45,7 @@ public class flickscr : MonoBehaviour
                     gameObject.GetComponent<Collider>().enabled = false;
                 }
             }
-        }
+        }*/
 
         //Definisi GO untuk VFX
         selfpos = gameObject.transform;
@@ -59,7 +56,7 @@ public class flickscr : MonoBehaviour
     void Update()
     {
         //baris code Jack Or Train Pattern Detection
-        RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, Mathf.Infinity);
+        /*RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, Mathf.Infinity);
         float closest_distance = Mathf.Infinity;
         foreach (RaycastHit hit in hits)
         {
@@ -75,6 +72,20 @@ public class flickscr : MonoBehaviour
 
                 }
             }
+        }*/
+
+        Ray ray = new Ray(selfpos.position, selfpos.forward); // Mulai ray dari posisi note, ke arah depannya
+        RaycastHit hit;
+
+        // Raycast ke depan dari posisi note
+        if (Physics.Raycast(ray, out hit, detectionRange, detectionLayer))
+        {
+            //Debug.Log($"Objek terdekat di depan: {hit.collider.gameObject.name}");
+            jack = hit.collider.gameObject;
+        }
+        else
+        {
+            jack = null;
         }
 
         if (jack == null)
@@ -115,7 +126,7 @@ public class flickscr : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         //sebuah note mendeteksi berada di lane mana
-        if (collision.collider.CompareTag("parent judge"))
+        if (collision.collider.CompareTag("lane"))
         { 
             save_parent_lane = collision.gameObject;
             if (save_parent_lane.transform.childCount > 0)

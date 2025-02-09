@@ -27,11 +27,13 @@ public class slidescr : MonoBehaviour
     //Jack or Train Pattern Detection
     public GameObject jack;
 
+    public float detectionRange = 10f; // Jarak maksimum deteksi
+    public LayerMask detectionLayer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //baris code Jack Or Train Pattern Detection
-        RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, Mathf.Infinity);
+        /*RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, Mathf.Infinity);
         float closest_distance = Mathf.Infinity;
         GameObject closest_note = null;
         foreach (RaycastHit hit in hits)
@@ -47,7 +49,7 @@ public class slidescr : MonoBehaviour
                     gameObject.GetComponent<Collider>().enabled = false;
                 }
             }
-        }
+        }*/
 
         //Definisi GO untuk VFX
         selfpos = gameObject.transform;
@@ -58,7 +60,7 @@ public class slidescr : MonoBehaviour
     void Update()
     {
         //baris code Jack Or Train Pattern Detection
-        RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, Mathf.Infinity);
+        /*RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, Mathf.Infinity);
         float closest_distance = Mathf.Infinity;
         foreach (RaycastHit hit in hits)
         {
@@ -74,6 +76,20 @@ public class slidescr : MonoBehaviour
 
                 }
             }
+        }*/
+
+        Ray ray = new Ray(selfpos.position, selfpos.forward); // Mulai ray dari posisi note, ke arah depannya
+        RaycastHit hit;
+
+        // Raycast ke depan dari posisi note
+        if (Physics.Raycast(ray, out hit, detectionRange, detectionLayer))
+        {
+            //Debug.Log($"Objek terdekat di depan: {hit.collider.gameObject.name}");
+            jack = hit.collider.gameObject;
+        }
+        else
+        {
+            jack = null;
         }
 
         if (jack == null)

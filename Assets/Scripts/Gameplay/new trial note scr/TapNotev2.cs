@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine.Video;
 using System;
+using UnityEditor.Experimental.GraphView;
 
 public class TapNotev2 : MonoBehaviour
 {
@@ -23,17 +24,22 @@ public class TapNotev2 : MonoBehaviour
 
     //Variable untuk VFX
     public Transform selfpos;
+    public Transform selfup;
     public Transform canvas_vfx;
     public GameObject VFX;
 
     //Jack or Train Pattern Detection
     public GameObject jack;
- 
+
+    public float detectionRange = 10f; // Jarak maksimum deteksi
+    public LayerMask detectionLayer;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
         //baris code Jack Or Train Pattern Detection
-        RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, Mathf.Infinity);
+        /*RaycastHit[] hits = Physics.RaycastAll(transform.position, -transform.forward, Mathf.Infinity);
         float closest_distance = Mathf.Infinity;
         GameObject closest_note = null;
         foreach (RaycastHit hit in hits){
@@ -43,7 +49,7 @@ public class TapNotev2 : MonoBehaviour
                     closest_note = hit.collider.gameObject;
                     jack = hit.collider.gameObject;
                     gameObject.GetComponent<Collider>().enabled = false;
-                }}}
+                }}}*/
 
         //Definisi GO untuk VFX
         selfpos = gameObject.transform;
@@ -53,8 +59,25 @@ public class TapNotev2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //selfup.transform.position = new Vector3(selfpos.transform.position.x, selfpos.transform.position.y - 1, selfpos.transform.position.z);
+        Ray ray = new Ray(selfpos.position, selfpos.forward); // Mulai ray dari posisi note, ke arah depannya
+        RaycastHit hit;
+
+        // Raycast ke depan dari posisi note
+        if (Physics.Raycast(ray, out hit, detectionRange, detectionLayer))
+        {
+            //Debug.Log($"Objek terdekat di depan: {hit.collider.gameObject.name}");
+            jack = hit.collider.gameObject;
+        }
+        else
+        {
+            jack = null;
+        }
+
+        // Debug visual dengan Gizmos
+        //Debug.DrawRay(selfpos.position, selfpos.forward * detectionRange, Color.red);
         //baris code Jack Or Train Pattern Detection
-        RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, Mathf.Infinity);
+        /*RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, Mathf.Infinity);
         float closest_distance = Mathf.Infinity;
         foreach (RaycastHit hit in hits)
         {
@@ -68,7 +91,7 @@ public class TapNotev2 : MonoBehaviour
                     jack = hit.collider.gameObject;
                     gameObject.GetComponent<Collider>().enabled = false;
 
-                }}}
+                }}}*/
 
         if (jack == null)
         { gameObject.GetComponent<Collider>().enabled = true; }
@@ -91,6 +114,12 @@ public class TapNotev2 : MonoBehaviour
         { Debug.Log("miss"); Destroy(MainSelf.gameObject); ; }
     }
 
+    /*void OnDrawGizmos()
+    {
+        // Gambar ray untuk debugging
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(gameObject.transform.position, gameObject.transform.forward * detectionRange);
+    }*/
     //bool check posisi note didepan atau dibelakang titik judgement
     bool EarlyLateCheck(GameObject other)
     {
@@ -103,7 +132,7 @@ public class TapNotev2 : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         //sebuah note mendeteksi berada di lane mana
-        if (collision.collider.CompareTag("parent judge"))
+        if (collision.collider.CompareTag("lane"))
         {save_parent_lane = collision.gameObject;
             if (save_parent_lane.transform.childCount > 0)
             {lane = save_parent_lane.transform.GetChild(0).gameObject;}}
@@ -111,9 +140,9 @@ public class TapNotev2 : MonoBehaviour
 
     void OnCollisionStay(Collision collision)
     {
-        float Far = 1f;
-        float Pure = 0.25f;
-        float PerfectPlus = 0.1f;
+        float Far = 2f;
+        float Pure = 1.25f;
+        float PerfectPlus = 0.5f;
         
         //update score apa yang akan didapat (pure/far?)
         if (hitpos <= PerfectPlus && hitpos >= -PerfectPlus) { perfectplus = true;} 

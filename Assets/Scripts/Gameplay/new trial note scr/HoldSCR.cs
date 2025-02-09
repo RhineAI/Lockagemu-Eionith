@@ -36,14 +36,16 @@ public class holdscr : MonoBehaviour
     Animator anim;
     public float multiply;
 
+    public float detectionRange = 10f; // Jarak maksimum deteksi
+    public LayerMask detectionLayer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //ambil komponen render object
         HoldRender = gameObject;
-
+        //scale_manipulation = gameObject;
         //baris code Jack Or Train Pattern Detection
-        RaycastHit[] hits = Physics.RaycastAll(transform.position, -transform.forward, Mathf.Infinity);
+        /*RaycastHit[] hits = Physics.RaycastAll(transform.position, -transform.forward, Mathf.Infinity);
         float closest_distance = Mathf.Infinity;
         GameObject closest_note = null;
         foreach (RaycastHit hit in hits)
@@ -59,7 +61,7 @@ public class holdscr : MonoBehaviour
                     gameObject.GetComponent<Collider>().enabled = false;
                 }
             }
-        }
+        }*/
 
         //Definisi GO untuk VFX
         anim = GetComponent<Animator>();
@@ -74,7 +76,7 @@ public class holdscr : MonoBehaviour
     void Update()
     {
         //baris code Jack Or Train Pattern Detection
-        RaycastHit[] hits = Physics.RaycastAll(transform.position, -transform.forward, Mathf.Infinity);
+        /*RaycastHit[] hits = Physics.RaycastAll(transform.position, -transform.forward, Mathf.Infinity);
         float closest_distance = Mathf.Infinity;
         foreach (RaycastHit hit in hits)
         {
@@ -90,6 +92,20 @@ public class holdscr : MonoBehaviour
 
                 }
             }
+        }*/
+
+        Ray ray = new Ray(selfpos.position, selfpos.forward); // Mulai ray dari posisi note, ke arah depannya
+        RaycastHit hit;
+
+        // Raycast ke depan dari posisi note
+        if (Physics.Raycast(ray, out hit, detectionRange, detectionLayer))
+        {
+            //Debug.Log($"Objek terdekat di depan: {hit.collider.gameObject.name}");
+            jack = hit.collider.gameObject;
+        }
+        else
+        {
+            jack = null;
         }
 
         if (jack == null)
@@ -111,13 +127,13 @@ public class holdscr : MonoBehaviour
                 {
                     multiply = 0.6f;
                     scale_manipulation.transform.localScale = new Vector3(scale_manipulation.transform.localScale.x,
-                            scale_manipulation.transform.localScale.y, UpdateScale - 0.12f);
+                            scale_manipulation.transform.localScale.y, UpdateScale /*- 0.12f*/);
                     Instantiate(VFX, lane.transform.position, selfpos.rotation, canvas_vfx);
                     if (UpdateScale <= 0)
                     {
                         scale_manipulation.transform.localScale = new Vector3(scale_manipulation.transform.localScale.x,
                             scale_manipulation.transform.localScale.y, 0);
-                        anim.SetBool("end_hold", true);
+                        //anim.SetBool("end_hold", true);
                     }
                 }
                 else
@@ -127,7 +143,7 @@ public class holdscr : MonoBehaviour
             }
             if (EarlyLateCheck(lane))
             {
-                hitpos = -Vector3.Distance(thisHead, laneZ);
+                hitpos = Vector3.Distance(thisHead, laneZ);
             }
         }
             if (isHold ) { HoldRender.GetComponent<Renderer>().material.color = Color.magenta; }
@@ -149,7 +165,7 @@ public class holdscr : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         //sebuah note mendeteksi berada di lane mana
-        if (collision.collider.CompareTag("parent judge"))
+        if (collision.collider.CompareTag("lane"))
         {
             save_parent_lane = collision.gameObject;
             if (save_parent_lane.transform.childCount > 0)
@@ -166,7 +182,7 @@ public class holdscr : MonoBehaviour
         if (lane != null)
         {
             
-            if (hitpos <= 0.25)
+            if (hitpos <= 1)
             {
                 if (lane.GetComponent<JudgementSCR>().Tap == true)
                 {

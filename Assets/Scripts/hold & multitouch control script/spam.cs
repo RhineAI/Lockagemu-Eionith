@@ -5,6 +5,7 @@ using UnityEngine;
 public class spam : MonoBehaviour
 
 {
+    public static spam Spam;
     public GameObject sampel;
     public GameObject sampel2;
     public List<touchlocate> touches = new List<touchlocate>();
@@ -27,6 +28,10 @@ public class spam : MonoBehaviour
         //sampel2 = Resources.Load("cancler") as GameObject;
     }
 
+    private void Awake()
+    {
+        Spam = this;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -76,11 +81,15 @@ public class spam : MonoBehaviour
 
             if (touch.phase == TouchPhase.Ended)
             {
-                touchesr.Add(new realsecontrol(touch2.fingerId, create2(touch2)));
+                if(sampel2 != null)
+                {
+                    touchesr.Add(new realsecontrol(touch2.fingerId, create2(touch2)));
+                }
                 //sampel2 = Resources.Load("cancler") as GameObject;
                 // Debug.Log("release");
                 //touchesr.Add(new realsecontrol(touch2.fingerId, create2(touch2)));
                 touchlocate thistouch = touches.Find(touchlocate => touchlocate.touchid == touch.fingerId);
+                thistouch.sampel.gameObject.GetComponent<life>().ended();
                 //realsecontrol thistouchr = touchesr.Find(realsecontrol => realsecontrol.touchrel == touch2.fingerId);
                 Destroy(thistouch.sampel);
                 //Instantiate(thistouch.sampel2);
@@ -96,6 +105,7 @@ public class spam : MonoBehaviour
                 //Debug.Log("moving");
                 touchlocate thistouch = touches.Find(touchlocate => touchlocate.touchid == touch.fingerId);
                 thistouch.sampel.transform.position = gettouchposition(touch.position);
+                thistouch.sampel.gameObject.GetComponent<life>().flick();
                 //realsecontrol thistouchr = touchesr.Find(realsecontrol => realsecontrol.touchrel == touch2.fingerId);
                 //thistouchr.sampel2.transform.position = gettouchposition2(touch2.position);
             }
@@ -125,7 +135,7 @@ public class spam : MonoBehaviour
 
     Vector3 gettouchposition2(Vector3 touchposition2)
     {
-        return realCam.ScreenToWorldPoint(new Vector3(touchposition2.x, touchposition2.y, 3f));
+        return realCam.ScreenToWorldPoint(new Vector3(touchposition2.x + 0.1f, touchposition2.y - 0.1f, 2.4f));
     }
 
     /*void freeze()
